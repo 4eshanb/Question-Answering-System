@@ -29,7 +29,13 @@ Recall is the fraction of an answer that is returned vs the complete answer text
 
 <img src="Diagrams/Precision-Recall.png">
 
-## Sentence Retrieval
+tp = true positive, which is an outcome where the model correctly predicts the positive class.   
+tn = true negative, which is an outcome where the model correctly predicts the negative class.   
+fp = false positive, which is an outcome where the model incorrectly predicts the positive class.  
+fn = false negative, which is an outcome where the model incorrectly predicts the negative class.  
+
+
+
 
 
 

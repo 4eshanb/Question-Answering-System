@@ -25,6 +25,8 @@ F-measure is the tradeoff between precision and recall, where f-measure = (2* pr
 Precision is th the fraction of an answer that is considere correct.  
 Recall is the fraction of an answer that is returned vs the complete answer text.  
 
+m
+
 
 
 

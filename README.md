@@ -21,11 +21,17 @@ text within this sentence. Sometimes there is more than one correct answer and s
 
 ## Scoring
 Measures of performance are precision, recall, and f-measure.   
-F-measure is the tradeoff between precision and recall, where f-measure = (2* precision * recall)/(recall + precision).  
-Precision is th the fraction of an answer that is considere correct.  
+F-measure is the tradeoff between precision and recall:  
+ f-measure = (2* precision * recall)/(recall + precision).  
+
+Precision is the fraction of an answer that is considered correct. 
 Recall is the fraction of an answer that is returned vs the complete answer text.  
 
+<img src="Diagrams/Precision-Recall.png">
+
 ## Sentence Retrieval
+
+
 
 
 

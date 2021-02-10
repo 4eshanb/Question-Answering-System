@@ -49,7 +49,15 @@ The precision score is 1/3 because 1 out of the 3 words is correctly generated.
 The F-measure is:  
 (2 * 1/2 * 1/3)/(1/2 + 1/3) = 1/3/(5/6) = 1/3 * 6/5 = 2/5 
                                                     = .4  
-                                                    
+
+One can achieve a high recall if all the right answers are generated along with a lot of extra noise.  
+On the other hand, high precision is when all returned answers must be correct.  
+It is difficult to do well on both.  
+
+>   Results we achieved:  
+    AVERAGE RECALL =     0.6006  
+    AVERAGE PRECISION = 0.5187   
+    AVERAGE F-MEASURE = 0.4994  
 
 
 

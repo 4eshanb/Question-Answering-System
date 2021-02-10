@@ -215,14 +215,16 @@ Method 1 (constituency parsing utilized) -
     we implemented in the prior assignment. 
 
 ### When Questions
-Method 1 (constituency parsing utilized) - 
+Method 1 (constituency parsing utilized) -  
+  
     For when questions, first WHADPV phrases are checked in the constiuency parse tree. If one exists, the correct subtree is determined.
 
     If not, then check NER for time, data, cardinal, etc. Find NER word if it exists, then find corresponding noun phrases
     in const tree
 
 
-Method 2 - 
+Method 2 -   
+  
     For the when questions, we first try and find the spacy generated name entities of the 
     sentence retrieved. If there are name entities in the sentence that have the name entity
     of 'CARDINAL', 'DATE', or 'TIME', we return them.
@@ -231,7 +233,8 @@ Method 2 -
     coreferences and return the most likely one.
 
 ### Why Questions
-Method 1 - 
+Method 1 -  
+  
     To implement the why questions we tokenized the question to find the last word of it and
     tokenized the sentence to compare the last question word to the sentence tokens. If the 
     last question word was present in the sentence tokens we slice the sentence from that word
@@ -243,20 +246,23 @@ Method 1 -
     the tree that contains the INNP and return the answer phrase of it without the pos tags 
     attached. 
 
-Method 2 (synonyms, path similarity utilized) - 
+Method 2 (synonyms, path similarity utilized) -  
+   
     After finding the root word in the question, we use path similarity between that lemmatized word 
     and each lemmatized word in the sentence. The word that returns that highest path similarity
     with the root question word is used as the index in the sentence that we will slice the 
     sentence from and return.
 
-Method 3 (dependency parsing utilized) - 
+Method 3 (dependency parsing utilized) -  
+  
     Same as method 1 for where question.
 
-### Binary Questions(did/had/was, etc...): 
+### Binary Questions(did/had/was, etc...):
 We could not find an approach to use constituency parsing, dependency parsing, synonyms, 
 hyponyms, or hypernyms that yielded a better f-measure than our approach in the last assignment.
-
-Method 1:
+  
+Method 1:  
+  
     Used nltk's SentimentIntensityAnalyzer() after downloading the vader_lexicon to find the 
     negative words in a tokenized sentence. If negative words were present in the sentence,
     no is returned, else yes is returned.
@@ -269,12 +275,14 @@ Method 1:
             No, Gus has not been to the circus.
         
 ### Which Questions
-Method 1 (constituency parsing utilized) - 
+Method 1 (constituency parsing utilized) -   
+  
     There was a very low frequency of which questions supplied, so it was difficult to find a pattern.
     Nonetheless, the method we chose is similar to that of the who questions.
 
 ### What Questions
-Method 1 (dependency parsing, hypernym, hyponym utilized) - 
+Method 1 (dependency parsing, hypernym, hyponym utilized) -  
+  
     Improved previous system by using dependency graph to find headwords, then returning dependents of the selected headwords
 
     If the headword found id determined to not be ideal (by being a stop word, for example), then the old system for is used.
@@ -283,7 +291,8 @@ Method 1 (dependency parsing, hypernym, hyponym utilized) -
     When trying to find the headword in the selected sentence that best matches the headword in the question, the similarity of
     hyper and hyponyms of both each word is taken into account
 
-Method 2 - 
+Method 2 -  
+  
     If name was in the question, we use multiple methods to implement it. firstly, we use
     chunking with a grammar of "NPVBD: {<PRP.+|DT>?<JJ>*<NN.*>+<VBD>}". We search 
     through this tree to find the Noun phrase with the verb and return the answer phrase
@@ -297,7 +306,8 @@ Method 2 -
 
 
 ### How Questions
-Method 1 (constituency parse utilized) - 
+Method 1 (constituency parse utilized) -  
+  
     Improved how by filtering out when type questions, like questions that start with how long old, and number type questions.
     These questions are filtered to when, which can better handle these types of questions
 

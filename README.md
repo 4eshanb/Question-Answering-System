@@ -55,9 +55,30 @@ On the other hand, high precision is when all returned answers must be correct.
 It is difficult to do well on both.  
 
 >   Results we achieved:  
-    AVERAGE RECALL =     0.6006  
+    AVERAGE RECALL =  0.6006  
     AVERAGE PRECISION = 0.5187   
     AVERAGE F-MEASURE = 0.4994  
+
+
+## Sentence Retrieval 
+Since, we are already given the story id associated with a question, we know where to look for the sentence which has the 
+answer for that question. 
+
+### Baseline
+The baseline method for sentence retrieval is to find the overlap between the words in a given sentence and a question. 
+That sentence id is returned as the sentence that contains the answer. 
+
+### Method 1
+
+Firstly, we tokenize the sentences in  a given story.
+Then the question is tokenized, and stop words and pos tags(part of speech tags) are removed.
+A word is removed from a question is the pos tag isn't NN (noun phrase), RB (adverb), or VB(verb).
+The last question word is appended to the question if it was removed because it was found to be a significant factor in determining answers.
+Then the highest overlap is compyted between question and sentence in story, this sentence id is returned.
+If highest overlap was 0 for each sentence in the story, the path similarities between each question word and each sentence word are added up using synsets.
+The “highest” path similarity sentence is returned
+
+
 
 
 

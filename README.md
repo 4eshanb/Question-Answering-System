@@ -113,32 +113,31 @@ Accuracy = 69.97%
 Answer retrieval was split up into the different types of questions supplied
 based on the first word of the question.
 
-where:
+### Where
+Method 1 (dependency parsing used) -   
+    We utilized dependency parsing for this type of question by first finding the root word of the 
+    question dependency parse and lemmatizing it. Then we compare this word with each word in the 
+    sentence selected through the values of the story dependency pase after lemmatizing the story words.
+    If the lemmatized root word matches with the lemmatized story word, we have our "story node". 
+    We then get the dependents of this word by comparing it with the other nodes in the the story through the 
+    address of the "story node" and the head of a node in the story if the relationship is nmod.
 
-    Method 1 (dependency parsing used) - 
-        We utilized dependency parsing for this type of question by first finding the root word of the 
-        question dependency parse and lemmatizing it. Then we compare this word with each word in the 
-        sentence selected through the values of the story dependency pase after lemmatizing the story words.
-        If the lemmatized root word matches with the lemmatized story word, we have our "story node". 
-        We then get the dependents of this word by comparing it with the other nodes in the the story through the 
-        address of the "story node" and the head of a node in the story if the relationship is nmod.
+    If there is no "story word found in the lemmatized comparison mentioned earlier, we try to find the last 
+    question word in the sentence dependency parse leaves. If it is there, we slice the sentence from that word 
+    to the end of the sentence.
 
-        If there is no "story word found in the lemmatized comparison mentioned earlier, we try to find the last 
-        question word in the sentence dependency parse leaves. If it is there, we slice the sentence from that word 
-        to the end of the sentence.
+Method 2 -  
+    If the above method does not work, we use chunking with a grammar of 
+    "INNP: {<TO|IN><PRP.+|DT>?<JJ>*<NN.*>+<POS>?<NN.*>*}".If there was only one tree found in the sentence given 
+    this grammar, we return the INNP answer phrase in that tree without the pos tags. 
 
-    Method 2 -
-        If the above method does not work, we use chunking with a grammar of 
-        "INNP: {<TO|IN><PRP.+|DT>?<JJ>*<NN.*>+<POS>?<NN.*>*}".If there was only one tree found in the sentence given 
-        this grammar, we return the INNP answer phrase in that tree without the pos tags. 
+    If there is more than one tree found in the sentence, we compare the last question word after
+    tokenizing the question to see if that question word was in the sentnce. We find this word in
+    the sentence and slice the sentence from this question word to the end of the sentence and return.
+    (similar to second paragraph of method 1)
 
-        If there is more than one tree found in the sentence, we compare the last question word after
-        tokenizing the question to see if that question word was in the sentnce. We find this word in
-        the sentence and slice the sentence from this question word to the end of the sentence and return.
-        (similar to second paragraph of method 1)
-
-        If this method does not work, we find the most similar coreferece in the 
-        text fields of each coreference in the story to the sentence in terms of overlap.
+    If this method does not work, we find the most similar coreferece in the 
+    text fields of each coreference in the story to the sentence in terms of overlap.
 
 who:
     Method 1 (constituency parsing utilized) - 

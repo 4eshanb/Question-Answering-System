@@ -184,20 +184,21 @@ Examples of regex tag patterns:
   <DT>?<JJ.*><NN.*> matches an optional determiner(DT), followed by 0 or more instances of adjectives<JJ.*>, ending with any type of noun phrase (NN).
 
 The QA system uses chunking with regexes in nltk.
-> import nltk
-  sentence = [("the", "DT"), ("little", "JJ"), ("blue", "JJ"), ("fish","NN"), ("swam", "VBD"), ("to","TO"), ("the", "DT"), ("food", "NN")]
-  grammar = "NP: {<DT>?<JJ>*<NN>}"
-  cp = nltk.RegexpParser(grammar)
-  result = cp.parse(sentence)
-  print(result)
-  > (S
-      (NP the/DT little/JJ blue/JJ fish/NN)
-      swam/VBD
-      to/TO
-      (NP the/DT food/NN))
+> import nltk  
+  sentence = [("the", "DT"), ("little", "JJ"), ("blue", "JJ"), ("fish","NN"), ("swam", "VBD"), ("to","TO"), ("the", "DT"), ("food", "NN")]  
+  grammar = "NP: {<DT>?<JJ>*<NN>}"  
+  cp = nltk.RegexpParser(grammar)  
+  result = cp.parse(sentence)  
+  print(result)  
+  > (S  
+      (NP the/DT little/JJ blue/JJ fish/NN)  
+      swam/VBD  
+      to/TO  
+      (NP the/DT food/NN))  
 
+  
 <img src="Diagrams/Chunk-Tree.png">
-
+  
 For the QA system, Chunking is used for what, where, and why questions.
 ## Answer Retrieval
 

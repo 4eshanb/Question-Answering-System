@@ -108,13 +108,44 @@ To install deeppavlov:
 Accuracy = 69.97%
 
 
+## Answer Retrieval NLP techniques
+
+### Named Entity Recognition (NER)
+
+A named entity is anything that can be referred to with a proper name, whether that be a 
+person, a location, an organization, etc.
+They are commonly extended to include things that aren’t entities per se, including dates, times, and other
+kinds of temporal expressions, and even numerical expressions like prices.
+
+To use NER in nltk:
+
+> import nltk
+from nltk import word_tokenize, pos_tag, ne_chunk  
+
+sequence = "Gus thought Bob should buy some tacos."  
+print(ne_chunk(pos_tag(word_tokenize(sentence))))  
+
+> (S
+    (PERSON Gus/NNP)
+    thought/VBD
+    (PERSON Bob/NNP)
+    should/MD
+    buy/vb
+    tacos/NNS
+)
+
+For the QA system, NER is used for sequence labeling with when questions.
+
+### Spacy
+
+
 ## Answer Retrieval
 
 Answer retrieval was split up into the different types of questions supplied
 based on the first word of the question.
 
 ### Where Questions
-Method 1 (dependency parsing used)  
+Method 1 -
   
     We utilized dependency parsing for this type of question by first finding the root word of the 
     question dependency parse and lemmatizing it. Then we compare this word with each word in the 

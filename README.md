@@ -168,7 +168,7 @@ Chunks are defined as non-overlapping regions of text, which contains a head wor
 This is an example of chunk structure:
 > (S: (NP: 'I')  
     &emsp; 'saw'  
-    &emsp; (NP:'the' 'big' 'dog')
+    &emsp; (NP:'the' 'big' 'dog')  
     &emsp;'on'  
      &emsp; (NP:'the' 'hill'))  
 
@@ -196,8 +196,13 @@ The QA system uses chunking with regexes in nltk.
        &emsp;to/TO  
        &emsp;(NP the/DT food/NN))  
 
+### Dependency Parsing
+
+### Constituency Parsing
   
 <img src="Diagrams/Chunk-Tree.png">
+
+
   
 For the QA system, Chunking is used for what, where, and why questions.
 ## Answer Retrieval
@@ -208,9 +213,9 @@ based on the first word of the question.
 ### Where Questions
 Method 1 -
   
-    We utilized dependency parsing for this type of question by first finding the root word of the 
-    question dependency parse and lemmatizing it. Then we compare this word with each word in the 
-    sentence selected through the values of the story dependency pase after lemmatizing the story words.
+    Dependency parsing is utilized for this type of question by first finding the root word of the 
+    question dependency parse and lemmatizing it. Then this word is compared with each word in the 
+    sentence selected through the values of the story dependency parse after lemmatizing the story words.
     If the lemmatized root word matches with the lemmatized story word, we have our "story node". 
     We then get the dependents of this word by comparing it with the other nodes in the the story through the 
     address of the "story node" and the head of a node in the story if the relationship is nmod.

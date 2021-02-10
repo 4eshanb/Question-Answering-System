@@ -122,7 +122,7 @@ To use NER in nltk:
 > import nltk  
 from nltk import word_tokenize, pos_tag, ne_chunk  
 sequence = "Gus thought Bob should buy some tacos."  
-print(ne_chunk(pos_tag(word_tokenize(sentence))))    
+print(ne_chunk(pos_tag(word_tokenize(sequence))))    
 >> (S  
     &emsp;(PERSON Gus/NNP)  
     &emsp;thought/VBD  
@@ -135,6 +135,21 @@ print(ne_chunk(pos_tag(word_tokenize(sentence))))
 For the QA system, NER is used for sequence labeling with when questions.
 
 ### Spacy
+Spacy is another form of Name Entity Extraction.
+
+> import spacy    
+nlp = spacy.load("en_core_web_sm")  
+sentence1 = "Gus thought Bob should buy some tacos."
+sentence2 = "He went to church on Sundays."  
+doc = nlp(sentence1)  
+print("Named Entities:", [(ent.text, ent.label) for ent in doc.ents])     
+>>  Named Entities: [('Gus', 'PERSON'), ('Bob', 'PERSON')]  
+
+> doc = nlp(sentence2)  
+print("Named Entities:", [(ent.text, ent.label) for ent in doc.ents])  
+>>  Named Entities: [('Sundays', 'DATE')]  
+  
+For the QA system, Spacy is used for label name entities with when and what questions.
 
 
 ## Answer Retrieval

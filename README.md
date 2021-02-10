@@ -64,11 +64,13 @@ It is difficult to do well on both.
 Since, we are already given the story id associated with a question, we know where to look for the sentence which has the 
 answer for that question. 
 
-### Baseline
+### Baseline 
 The baseline method for sentence retrieval is to find the overlap between the words in a given sentence and a question. 
 That sentence id is returned as the sentence that contains the answer. 
 
-### Method 1
+Accuracy = 53%
+
+### Method 1 
 
 Firstly, we tokenize the sentences in  a given story.
 Then the question is tokenized, and stop words and pos tags(part of speech tags) are removed.
@@ -76,9 +78,25 @@ A word is removed from a question is the pos tag isn't NN (noun phrase), RB (adv
 The last question word is appended to the question if it was removed because it was found to be a significant factor in determining answers.
 Then the highest overlap is compyted between question and sentence in story, this sentence id is returned.
 If highest overlap was 0 for each sentence in the story, the path similarities between each question word and each sentence word are added up using synsets.
-The “highest” path similarity sentence is returned
+The “highest” path similarity sentence is returned.  
 
+Accuracy = 63%
 
+### Method 2 
+
+Each sentence was tokenized. Then each word stem was found using the snowball stemmer. 
+The sentence with the highest amount of stem overlap between question and sentence was returned.
+The “pywsd” library was used to find most likely synsense of each word. 
+The stemmed synonyms of chosen synsense were compared and weights were assigned to the different parts of speech.
+Weighted verbs vs nouns vs adjectives:
+> Verbs 1.5  
+  Nouns  .5  
+  Adjectives .5  
+  Everything else 1  
+
+Stemmed synonyms of each word sense of each word in the sentence and question were compared.
+
+Accuracy = 67%
 
 
 

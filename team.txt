@@ -1,0 +1,12 @@
+    Eshan Bhargava, esbharga@ucsc.edu
+    Alan Brilliant, briliant@ucsc.edu
+
+
+    To install deeppavlov:
+        pip3 install -q deeppavlov
+        python3 -m deeppavlov install tfidf_logreg_en_faq
+    
+    IMPORTANT:
+        To run qa.py, you must download and install the vader_lexicon and pywsd
+        https://github.com/alvations/pywsd
+        https://github.com/cjhutto/vaderSentiment

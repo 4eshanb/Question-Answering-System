@@ -151,6 +151,14 @@ print("Named Entities:", [(ent.text, ent.label) for ent in doc.ents])
   
 For the QA system, Spacy is used for label name entities with when and what questions.
 
+### Coreference Resolution
+These are important for natural language understanding of a task or statement. Coreferencing is about identifying all mentions 
+that refer to the same-real world entity.
+
+<img src="Diagrams/Coreference.png">
+
+The coreferenced stories can be seen in the data/hw8-stories-coref.tsv
+These are used for the where and when questions with the QA system.
 
 ## Answer Retrieval
 

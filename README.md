@@ -122,8 +122,8 @@ To use NER in nltk:
 > import nltk  
 from nltk import word_tokenize, pos_tag, ne_chunk  
 sequence = "Gus thought Bob should buy some tacos."  
-print(ne_chunk(pos_tag(word_tokenize(sentence))))  
-> (S  
+print(ne_chunk(pos_tag(word_tokenize(sentence))))    
+>> (S  
     (PERSON Gus/NNP)  
     thought/VBD  
     (PERSON Bob/NNP)  

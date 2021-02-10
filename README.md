@@ -124,12 +124,12 @@ from nltk import word_tokenize, pos_tag, ne_chunk
 sequence = "Gus thought Bob should buy some tacos."  
 print(ne_chunk(pos_tag(word_tokenize(sentence))))    
 >> (S  
-    (PERSON Gus/NNP)  
-    thought/VBD  
-    (PERSON Bob/NNP)  
-    should/MD  
-    buy/VB  
-    tacos/NNS  
+    &emsp;(PERSON Gus/NNP)  
+    &emsp;thought/VBD  
+    &emsp;(PERSON Bob/NNP)  
+    &emsp;should/MD  
+    &emsp;buy/VB  
+    &emsp;tacos/NNS  
 )  
   
 For the QA system, NER is used for sequence labeling with when questions.

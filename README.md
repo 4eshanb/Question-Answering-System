@@ -175,6 +175,29 @@ This is an example of chunk structure:
 In the QA system, regex tag patterns are used to extract chunks. NLTK provides a regular expression chunk parser that allows one to define 
 the kinds of chunks that you are interested in, and then chunk the tagged text.
 
+The chunk parser begins with a structure, in which no tokens are chunked. Each regex pattern or chunk rule is applied successively to update the 
+chunk structure. Once all the rules have been applied the resulting chunk structure is returned.
+
+Examples of regex tag patterns:
+> <NN>+ matches one or more repetitions of the tag string <NN>.
+  <NN.*> matches any single tag starting with NN.
+  <DT>?<JJ.*><NN.*> matches an optional determiner(DT), followed by 0 or more instances of adjectives<JJ.*>, ending with any type of noun phrase (NN).
+
+The QA system uses chunking with regexes in nltk.
+> import nltk
+  sentence = [("the", "DT"), ("little", "JJ"), ("blue", "JJ"), ("fish","NN"), ("swam", "VBD"), ("to","TO"), ("the", "DT"), ("food", "NN")]
+  grammar = "NP: {<DT>?<JJ>*<NN>}"
+  cp = nltk.RegexpParser(grammar)
+  result = cp.parse(sentence)
+  print(result)
+  > (S
+      (NP the/DT little/JJ blue/JJ fish/NN)
+      swam/VBD
+      to/TO
+      (NP the/DT food/NN))
+
+<img src="Diagrams/Chunk-Tree.png">
+
 For the QA system, Chunking is used for what, where, and why questions.
 ## Answer Retrieval
 

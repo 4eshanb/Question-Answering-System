@@ -34,6 +34,23 @@ tn = true negative, which is an outcome where the model correctly predicts the n
 fp = false positive, which is an outcome where the model incorrectly predicts the positive class.  
 fn = false negative, which is an outcome where the model incorrectly predicts the negative class.  
 
+Precision = tp/(tp + fp)
+In other words the precision is the percent of true positive over the number of positives.    
+Recall = tp/(tp + fn)
+The recall is the percent of true positives over the number of answers.  
+
+For example, suppose the Question Answering system comes up with an answer to a given question, where the answer was:  
+"Messi is phenomenal"  
+However, the correct Answer is:  
+"Lionel Messi"  
+  
+In this case, the recall would be 1/2 because the QA system found "Messi", but not "Lionel". 
+The precision score is 1/3 because 1 out of the 3 words is correctly generated.  
+The F-measure is:  
+(2 * 1/2 * 1/3)/(1/2 + 1/3) = 1/3/(5/6) = 1/3 * 6/5 = 2/5 
+                                                    = .4  
+                                                    
+
 
 
 

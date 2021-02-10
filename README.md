@@ -98,9 +98,145 @@ Stemmed synonyms of each word sense of each word in the sentence and question we
 
 Accuracy = 67%
 
+### Final Method
+Deepavlov BERT was used for sentence retrieval.
+To install deeppavlov:  
+    pip3 install -q deeppavlov  
+    python3 -m deeppavlov install tfidf_logreg_en_faq  
+  
+
+Accuracy = 69.97%
 
 
+## Answer Retrieval
 
+Answer retrieval was split up into the different types of questions supplied
+based on the first word of the question.
+
+ where:
+
+        Method 1 (dependency parsing used) - 
+
+            We utilized dependency parsing for this type of question by first finding the root word of the 
+            question dependency parse and lemmatizing it. Then we compare this word with each word in the 
+            sentence selected through the values of the story dependency pase after lemmatizing the story words.
+            If the lemmatized root word matches with the lemmatized story word, we have our "story node". 
+            We then get the dependents of this word by comparing it with the other nodes in the the story through the 
+            address of the "story node" and the head of a node in the story if the relationship is nmod.
+
+            If there is no "story word found in the lemmatized comparison mentioned earlier, we try to find the last 
+            question word in the sentence dependency parse leaves. If it is there, we slice the sentence from that word 
+            to the end of the sentence.
+
+        Method 2 -
+            If the above method does not work, we use chunking with a grammar of 
+            "INNP: {<TO|IN><PRP.+|DT>?<JJ>*<NN.*>+<POS>?<NN.*>*}".If there was only one tree found in the sentence given 
+            this grammar, we return the INNP answer phrase in that tree without the pos tags. 
+
+            If there is more than one tree found in the sentence, we compare the last question word after
+            tokenizing the question to see if that question word was in the sentnce. We find this word in
+            the sentence and slice the sentence from this question word to the end of the sentence and return.
+            (similar to second paragraph of method 1)
+
+            If this method does not work, we find the most similar coreferece in the 
+            text fields of each coreference in the story to the sentence in terms of overlap.
+
+    who:
+        Method 1 (constituency parsing utilized) - 
+            For the who questions, we use constituency parsing to find the first noun phrase in the sentence.
+            This is a simplistic approach, but it yielded a higher f-measure than the who question approach
+            we implemented in the prior assignment. 
+
+    when:
+        Method 1 (constituency parsing utilized) - 
+            For when questions, first WHADPV phrases are checked in the constiuency parse tree. If one exists, the correct subtree is determined.
+
+            If not, then check NER for time, data, cardinal, etc. Find NER word if it exists, then find corresponding noun phrases
+            in const tree
+        
+
+        Method 2 - 
+            For the when questions, we first try and find the spacy generated name entities of the 
+            sentence retrieved. If there are name entities in the sentence that have the name entity
+            of 'CARDINAL', 'DATE', or 'TIME', we return them.
+
+            If this method does not work, we try and find the same name entities mentioned above in the 
+            coreferences and return the most likely one.
+
+    why:
+        Method 1 - 
+            To implement the why questions we tokenized the question to find the last word of it and
+            tokenized the sentence to compare the last question word to the sentence tokens. If the 
+            last question word was present in the sentence tokens we slice the sentence from that word
+            in the sentence to the end of the sentence. Then we remove punctutaion in the sentence and 
+            return it.
+
+            If this method does not work, we use chunking with a grammar of 
+            "INNP: {<PRP.*><VBD><PRP.*|JJ|DT|RB|MD|CD|IN|VB.*|TO>*<NN.*|RB>+<POS>?<NN.*>*}". We find
+            the tree that contains the INNP and return the answer phrase of it without the pos tags 
+            attached. 
+
+        Method 2 (synonyms, path similarity utilized) - 
+            After finding the root word in the question, we use path similarity between that lemmatized word 
+            and each lemmatized word in the sentence. The word that returns that highest path similarity
+            with the root question word is used as the index in the sentence that we will slice the 
+            sentence from and return.
+
+        Method 3 (dependency parsing utilized) - 
+            Same as method 1 for where question.
+
+    binary questions(did/had/was, etc...): 
+        We could not find an approach to use constituency parsing, dependency parsing, synonyms, 
+        hyponyms, or hypernyms that yielded a better f-measure than our approach in the last assignment.
+
+        Method 1:
+            Used nltk's SentimentIntensityAnalyzer() after downloading the vader_lexicon to find the 
+            negative words in a tokenized sentence. If negative words were present in the sentence,
+            no is returned, else yes is returned.
+
+            For example:
+                Has Gus ever been to the circus?
+                    Gus has not been to the circus.
+                
+                Since not is a negative word, we return:
+                    No, Gus has not been to the circus.
+            
+    which:
+        Method 1 (constituency parsing utilized) - 
+            There was a very low frequency of which questions supplied, so it was difficult to find a pattern.
+            Nonetheless, the method we chose is similar to that of the who questions.
+
+    what:
+        Method 1 (dependency parsing, hypernym, hyponym utilized) - 
+            Improved previous system by using dependency graph to find headwords, then returning dependents of the selected headwords
+
+            If the headword found id determined to not be ideal (by being a stop word, for example), then the old system for is used.
+            The old system is improved however through the use of hyper/hyponyms
+
+            When trying to find the headword in the selected sentence that best matches the headword in the question, the similarity of
+            hyper and hyponyms of both each word is taken into account
+
+        Method 2 - 
+            If name was in the question, we use multiple methods to implement it. firstly, we use
+            chunking with a grammar of "NPVBD: {<PRP.+|DT>?<JJ>*<NN.*>+<VBD>}". We search 
+            through this tree to find the Noun phrase with the verb and return the answer phrase
+            without pos tags with the verb removed.
+
+            If there is no NPVBD found, we use name entities to find phrases in the sentence that 
+            have a name entity of 'PERSON' or 'ORG'.
+
+            If there are no name entities found, we find the noun phrases in the sentence with the 
+            spacy. 
+
+
+    how:
+        Method 1 (constituency parse utilized) - 
+            Improved how by filtering out when type questions, like questions that start with how long old, and number type questions.
+            These questions are filtered to when, which can better handle these types of questions
+
+
+    Methods mentioned in asg8 pdf used: constituency parsing, dependency parsing, synonyms (synsets, path similarirty),
+                                        hypernyms, hyponyms.
 
 
 

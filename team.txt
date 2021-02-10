@@ -1,6 +1,11 @@
     Eshan Bhargava, esbharga@ucsc.edu
     Alan Brilliant, briliant@ucsc.edu
 
+    Eshan Bhargava implemented answer retrieval from sentences for the who, (part of) when, why, where, which,
+    and binary questions. Eshan Bhargava implemented the deepavlov sentence retrieval.
+
+    Alan Brilliant implemented the what, how, and when questions.
+
 
     To install deeppavlov:
         pip3 install -q deeppavlov
@@ -10,3 +15,5 @@
         To run qa.py, you must download and install the vader_lexicon and pywsd
         https://github.com/alvations/pywsd
         https://github.com/cjhutto/vaderSentiment
+
+        

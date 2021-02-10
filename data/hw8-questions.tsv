@@ -1,0 +1,6277 @@
+const_parse	dep_parse	ner	question	questionid	storyid
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (NNP David))
+      (VP (VB put)
+        (PRT (RP on))
+        (NP
+          (NP (DT a) (NN lot))
+          (PP (IN of)
+            (NP
+              (NP (NN weight))
+              (ADVP (RB recently)))))))
+    (. ?)))"	"Why	WRB	4	advmod
+did	VBD	4	aux
+David	NNP	4	nsubj
+put	VB	0	ROOT
+on	RP	4	compound:prt
+a	DT	7	det
+lot	NN	4	dobj
+of	IN	9	case
+weight	NN	7	nmod
+recently	RB	4	advmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'David', 'characterOffsetBegin': 8, 'characterOffsetEnd': 13, 'ner': 'PERSON'}, {'docTokenBegin': 9, 'docTokenEnd': 10, 'tokenBegin': 9, 'tokenEnd': 10, 'text': 'recently', 'characterOffsetBegin': 37, 'characterOffsetEnd': 45, 'ner': 'DATE', 'normalizedNER': 'PAST_REF', 'timex': {'tid': 't1', 'type': 'DATE', 'value': 'PAST_REF'}}]"	Why did David put on a lot of weight recently?	8bbe6d11-1e2e-413c-bf81-eaea05f4f1bd_Q0	8bbe6d11-1e2e-413c-bf81-eaea05f4f1bd
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP David))
+      (VP (VB do)
+        (PP (RB instead) (IN of)
+          (S
+            (VP (VBG going)
+              (PP (TO to)
+                (NP (NN burger) (NNS places))))))))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+David	NNP	4	nsubj
+do	VB	0	ROOT
+instead	RB	7	mark
+of	IN	5	mwe
+going	VBG	4	advcl
+to	TO	10	case
+burger	NN	10	compound
+places	NNS	7	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'David', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	What did David do instead of going to burger places?	8bbe6d11-1e2e-413c-bf81-eaea05f4f1bd_Q1	8bbe6d11-1e2e-413c-bf81-eaea05f4f1bd
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD did)
+      (NP (NNP David))
+      (VP (VB start)
+        (S
+          (VP (TO to)
+            (VP (VB feel)
+              (ADJP (RB much) (JJR better)))))))
+    (. ?)))"	"When	WRB	4	advmod
+did	VBD	4	aux
+David	NNP	4	nsubj
+start	VB	0	ROOT
+to	TO	6	mark
+feel	VB	4	xcomp
+much	RB	8	advmod
+better	JJR	6	advmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'David', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	When did David start to feel much better?	8bbe6d11-1e2e-413c-bf81-eaea05f4f1bd_Q2	8bbe6d11-1e2e-413c-bf81-eaea05f4f1bd
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP (NNP David))
+      (VP (VBN married)
+        (S
+          (VP (TO to)))))
+    (. ?)))"	"Who	WP	4	dobj
+was	VBD	1	cop
+David	NNP	4	nsubj
+married	VBN	0	ROOT
+to	TO	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'David', 'characterOffsetBegin': 8, 'characterOffsetEnd': 13, 'ner': 'PERSON'}]"	Who was David married to?	8bbe6d11-1e2e-413c-bf81-eaea05f4f1bd_Q3	8bbe6d11-1e2e-413c-bf81-eaea05f4f1bd
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD had)
+        (NP (DT a) (JJ short) (NN temper))))
+    (. ?)))"	"Who	WP	2	nsubj
+had	VBD	0	ROOT
+a	DT	5	det
+short	JJ	5	amod
+temper	NN	2	dobj
+?	.	2	punct
+"	[]	Who had a short temper?	0beabab2-fb49-460e-a6e6-f35a202e3348_Q0	0beabab2-fb49-460e-a6e6-f35a202e3348
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD made)
+        (S
+          (NP (NNP Tom))
+          (ADJP (JJ angry)))))
+    (. ?)))"	"Who	WP	2	nsubj
+made	VBD	0	ROOT
+Tom	NNP	4	nsubj
+angry	JJ	2	xcomp
+?	.	2	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Tom', 'characterOffsetBegin': 9, 'characterOffsetEnd': 12, 'ner': 'PERSON'}]"	Who made Tom angry?	0beabab2-fb49-460e-a6e6-f35a202e3348_Q1	0beabab2-fb49-460e-a6e6-f35a202e3348
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD happened)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (NNP Tom))
+            (VP (VBD got)
+              (ADJP (JJ angry)))))))
+    (. ?)))"	"What	WP	2	nsubj
+happened	VBD	0	ROOT
+when	WRB	5	advmod
+Tom	NNP	5	nsubj
+got	VBD	2	advcl
+angry	JJ	5	xcomp
+?	.	2	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Tom', 'characterOffsetBegin': 19, 'characterOffsetEnd': 22, 'ner': 'PERSON'}]"	What happened when Tom got angry?	0beabab2-fb49-460e-a6e6-f35a202e3348_Q2	0beabab2-fb49-460e-a6e6-f35a202e3348
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBD did)
+      (NP (NNP Tom))
+      (VP (VB feel)
+        (SBAR (IN after)
+          (S
+            (NP (PRP he))
+            (VP (VBD scared)
+              (NP (PRP$ his) (NN guest)))))))
+    (. ?)))"	"How	WRB	4	advmod
+did	VBD	4	aux
+Tom	NNP	4	nsubj
+feel	VB	0	ROOT
+after	IN	7	mark
+he	PRP	7	nsubj
+scared	VBD	4	advcl
+his	PRP$	9	nmod:poss
+guest	NN	7	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Tom', 'characterOffsetBegin': 8, 'characterOffsetEnd': 11, 'ner': 'PERSON'}, {'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'he', 'characterOffsetBegin': 23, 'characterOffsetEnd': 25, 'ner': 'PERSON'}, {'docTokenBegin': 7, 'docTokenEnd': 8, 'tokenBegin': 7, 'tokenEnd': 8, 'text': 'his', 'characterOffsetBegin': 33, 'characterOffsetEnd': 36, 'ner': 'PERSON'}]"	How did Tom feel after he scared his guest?	0beabab2-fb49-460e-a6e6-f35a202e3348_Q3	0beabab2-fb49-460e-a6e6-f35a202e3348
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (NNP Marcus))
+      (VP (VB need)
+        (NP (NN clothing))
+        (PP (IN for)
+          (NP (DT a) (NN business) (JJ casual) (NN event)))))
+    (. ?)))"	"Why	WRB	4	advmod
+did	VBD	4	aux
+Marcus	NNP	4	nsubj
+need	VB	0	ROOT
+clothing	NN	4	dobj
+for	IN	10	case
+a	DT	10	det
+business	NN	10	compound
+casual	JJ	10	amod
+event	NN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Marcus', 'characterOffsetBegin': 8, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	Why did Marcus need clothing for a business casual event?	87da1a22-df0b-410c-b186-439700b70ba6_Q0	87da1a22-df0b-410c-b186-439700b70ba6
+"(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN color))
+    (SQ (VBD were)
+      (NP
+        (NP (NNP Andy) (POS 's))
+        (NNS khakis)))
+    (. ?)))"	"What	WDT	2	det
+color	NN	3	dobj
+were	VBD	0	ROOT
+Andy	NNP	6	nmod:poss
+'s	POS	4	case
+khakis	NNS	3	nsubj
+?	.	3	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Andy', 'characterOffsetBegin': 16, 'characterOffsetEnd': 20, 'ner': 'PERSON'}]"	What color were Andy's khakis?	87da1a22-df0b-410c-b186-439700b70ba6_Q1	87da1a22-df0b-410c-b186-439700b70ba6
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Marcus))
+      (VP (VB decide)
+        (S
+          (VP (TO to)
+            (VP (VB buy))))))
+    (. ?)))"	"What	WP	4	dep
+did	VBD	4	aux
+Marcus	NNP	4	nsubj
+decide	VB	0	ROOT
+to	TO	6	mark
+buy	VB	4	xcomp
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Marcus', 'characterOffsetBegin': 9, 'characterOffsetEnd': 15, 'ner': 'PERSON'}]"	What did Marcus decide to buy?	87da1a22-df0b-410c-b186-439700b70ba6_Q2	87da1a22-df0b-410c-b186-439700b70ba6
+"(ROOT
+  (S
+    (S
+      (VP (VBD Did)
+        (NP
+          (NP (DT the) (NN pair))
+          (PP (IN of)
+            (NP (NNP khakis) (NNP Marcus))))))
+    (VP (VBD bought)
+      (S
+        (ADJP (JJ fit))
+        (NP (PRP him))))
+    (. ?)))"	"Did	VBD	7	aux
+the	DT	3	det
+pair	NN	7	nsubj
+of	IN	6	case
+khakis	NNP	6	compound
+Marcus	NNP	3	nmod
+bought	VBD	0	ROOT
+fit	JJ	7	xcomp
+him	PRP	8	dobj
+?	.	7	punct
+"	"[{'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'Marcus', 'characterOffsetBegin': 23, 'characterOffsetEnd': 29, 'ner': 'PERSON'}, {'docTokenBegin': 8, 'docTokenEnd': 9, 'tokenBegin': 8, 'tokenEnd': 9, 'text': 'him', 'characterOffsetBegin': 41, 'characterOffsetEnd': 44, 'ner': 'PERSON'}]"	Did the pair of khakis Marcus bought fit him?	87da1a22-df0b-410c-b186-439700b70ba6_Q3	87da1a22-df0b-410c-b186-439700b70ba6
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD thought)
+        (SBAR
+          (S
+            (NP (DT a) (NN truck))
+            (VP (MD would)
+              (VP (VB be)
+                (ADJP (JJR better))))))))
+    (. ?)))"	"Who	WP	2	nsubj
+thought	VBD	0	ROOT
+a	DT	4	det
+truck	NN	7	nsubj
+would	MD	7	aux
+be	VB	7	cop
+better	JJR	2	ccomp
+?	.	2	punct
+"	[]	Who thought a truck would be better?	2d16bcd6-692a-4fc0-8e7c-4a6f81d9efa9_Q0	2d16bcd6-692a-4fc0-8e7c-4a6f81d9efa9
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Bill))
+      (VP (VB buy)
+        (PP (IN in)
+          (NP (DT the) (NN end)))))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+Bill	NNP	4	nsubj
+buy	VB	0	ROOT
+in	IN	7	case
+the	DT	7	det
+end	NN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Bill', 'characterOffsetBegin': 9, 'characterOffsetEnd': 13, 'ner': 'PERSON'}]"	What did Bill buy in the end?	2d16bcd6-692a-4fc0-8e7c-4a6f81d9efa9_Q1	2d16bcd6-692a-4fc0-8e7c-4a6f81d9efa9
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD suggested)
+        (S
+          (NP (NNP Bill))
+          (VP (TO to)
+            (VP (VB buy)
+              (NP (DT a) (NN trailer)))))))
+    (. ?)))"	"Who	WP	2	nsubj
+suggested	VBD	0	ROOT
+Bill	NNP	2	dobj
+to	TO	5	mark
+buy	VB	2	xcomp
+a	DT	7	det
+trailer	NN	5	dobj
+?	.	2	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Bill', 'characterOffsetBegin': 14, 'characterOffsetEnd': 18, 'ner': 'PERSON'}]"	Who suggested Bill to buy a trailer?	2d16bcd6-692a-4fc0-8e7c-4a6f81d9efa9_Q2	2d16bcd6-692a-4fc0-8e7c-4a6f81d9efa9
+"(ROOT
+  (SBARQ
+    (WHNP (WRB How) (RB much))
+    (SQ (VBD was)
+      (NP (DT the) (NN truck)))
+    (. ?)))"	"How	WRB	2	advmod
+much	RB	5	nsubj
+was	VBD	5	cop
+the	DT	5	det
+truck	NN	0	ROOT
+?	.	5	punct
+"	[]	How much was the truck?	2d16bcd6-692a-4fc0-8e7c-4a6f81d9efa9_Q3	2d16bcd6-692a-4fc0-8e7c-4a6f81d9efa9
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP
+        (NP (NNP John) (POS 's))
+        (NN job)))
+    (. ?)))"	"What	WP	0	ROOT
+was	VBD	1	cop
+John	NNP	5	nmod:poss
+'s	POS	3	case
+job	NN	1	nsubj
+?	.	1	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'John', 'characterOffsetBegin': 9, 'characterOffsetEnd': 13, 'ner': 'PERSON'}]"	What was John's job?	c71bb23b-7731-4233-8298-76ba6886cee1_Q0	c71bb23b-7731-4233-8298-76ba6886cee1
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD did)
+      (NP (NNP John))
+      (VP (VB sing)
+        (NP (PRP$ his) (NNS sermons))))
+    (. ?)))"	"When	WRB	4	advmod
+did	VBD	4	aux
+John	NNP	4	nsubj
+sing	VB	0	ROOT
+his	PRP$	6	nmod:poss
+sermons	NNS	4	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'John', 'characterOffsetBegin': 9, 'characterOffsetEnd': 13, 'ner': 'PERSON'}, {'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'his', 'characterOffsetBegin': 19, 'characterOffsetEnd': 22, 'ner': 'PERSON'}]"	When did John sing his sermons?	c71bb23b-7731-4233-8298-76ba6886cee1_Q1	c71bb23b-7731-4233-8298-76ba6886cee1
+"(ROOT
+  (S
+    (VP (VBD Did)
+      (NP
+        (NP (NNP John) (POS 's))
+        (NN congregation))
+      (PP (IN like)
+        (NP (DT the) (JJ musical) (NNS sermons))))
+    (. ?)))"	"Did	VBD	0	ROOT
+John	NNP	4	nmod:poss
+'s	POS	2	case
+congregation	NN	1	dobj
+like	IN	8	case
+the	DT	8	det
+musical	JJ	8	amod
+sermons	NNS	4	nmod
+?	.	1	punct
+"	"[{'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'John', 'characterOffsetBegin': 4, 'characterOffsetEnd': 8, 'ner': 'PERSON'}]"	Did John's congregation like the musical sermons?	c71bb23b-7731-4233-8298-76ba6886cee1_Q2	c71bb23b-7731-4233-8298-76ba6886cee1
+"(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS people))
+    (SQ
+      (VP (VBD were)
+        (PP (IN in)
+          (NP
+            (NP (NNP John) (POS 's))
+            (NN congregation)))))
+    (. ?)))"	"How	WRB	2	advmod
+many	JJ	3	amod
+people	NNS	4	nsubj
+were	VBD	0	ROOT
+in	IN	8	case
+John	NNP	8	nmod:poss
+'s	POS	6	case
+congregation	NN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'John', 'characterOffsetBegin': 24, 'characterOffsetEnd': 28, 'ner': 'PERSON'}]"	How many people were in John's congregation?	c71bb23b-7731-4233-8298-76ba6886cee1_Q3	c71bb23b-7731-4233-8298-76ba6886cee1
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ
+      (VP (VBD did)
+        (NP
+          (NP (NNP Melody) (POS 's))
+          (NNS parents) (NN tool))
+        (NP (PRP$ her))
+        (PP (TO to))))
+    (. ?)))"	"Where	WRB	6	advmod
+did	VBD	6	aux
+Melody	NNP	5	nmod:poss
+'s	POS	3	case
+parents	NNS	6	nsubj
+tool	NN	0	ROOT
+her	PRP$	6	dep
+to	TO	7	dep
+?	.	6	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Melody', 'characterOffsetBegin': 10, 'characterOffsetEnd': 16, 'ner': 'PERSON'}, {'docTokenBegin': 6, 'docTokenEnd': 7, 'tokenBegin': 6, 'tokenEnd': 7, 'text': 'her', 'characterOffsetBegin': 32, 'characterOffsetEnd': 35, 'ner': 'PERSON'}]"	Where did Melody's parents tool her to?	4d7b022e-25d2-4300-a9b0-24ab35f4045b_Q0	4d7b022e-25d2-4300-a9b0-24ab35f4045b
+"(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (RB long))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NN car) (NN ride))
+        (PP (TO to)
+          (NP (DT the) (NN aquarium)))))
+    (. ?)))"	"How	WRB	2	advmod
+long	RB	3	advmod
+was	VBD	0	ROOT
+the	DT	6	det
+car	NN	6	compound
+ride	NN	3	nsubj
+to	TO	9	case
+the	DT	9	det
+aquarium	NN	3	nmod
+?	.	3	punct
+"	[]	How long was the car ride to the aquarium?	4d7b022e-25d2-4300-a9b0-24ab35f4045b_Q1	4d7b022e-25d2-4300-a9b0-24ab35f4045b
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Melody))
+      (VP (VB see)
+        (PP (IN at)
+          (NP (DT the) (NN aquarium)))))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+Melody	NNP	4	nsubj
+see	VB	0	ROOT
+at	IN	7	case
+the	DT	7	det
+aquarium	NN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Melody', 'characterOffsetBegin': 9, 'characterOffsetEnd': 15, 'ner': 'PERSON'}]"	What did Melody see at the aquarium?	4d7b022e-25d2-4300-a9b0-24ab35f4045b_Q2	4d7b022e-25d2-4300-a9b0-24ab35f4045b
+"(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (RB long))
+    (SQ (VBD did)
+      (NP (NNP Melody))
+      (VP (VB stay)
+        (PP (IN at)
+          (NP (DT the) (NN aquarium)))))
+    (. ?)))"	"How	WRB	2	advmod
+long	RB	5	advmod
+did	VBD	5	aux
+Melody	NNP	5	nsubj
+stay	VB	0	ROOT
+at	IN	8	case
+the	DT	8	det
+aquarium	NN	5	nmod
+?	.	5	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Melody', 'characterOffsetBegin': 13, 'characterOffsetEnd': 19, 'ner': 'PERSON'}]"	How long did Melody stay at the aquarium?	4d7b022e-25d2-4300-a9b0-24ab35f4045b_Q3	4d7b022e-25d2-4300-a9b0-24ab35f4045b
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD announced)
+        (NP (DT a) (NN pop) (NN quiz))))
+    (. ?)))"	"Who	WP	2	nsubj
+announced	VBD	0	ROOT
+a	DT	5	det
+pop	NN	5	compound
+quiz	NN	2	dobj
+?	.	2	punct
+"	[]	Who announced a pop quiz?	8036c905-f23e-4976-83a1-85d679b5e0c2_Q0	8036c905-f23e-4976-83a1-85d679b5e0c2
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD did)
+      (NP (PRP I))
+      (VP (VBP finish)
+        (S
+          (VP (VBG working)
+            (PP (IN on)
+              (NP (DT the) (NN exam)))))))
+    (. ?)))"	"When	WRB	4	advmod
+did	VBD	4	aux
+I	PRP	4	nsubj
+finish	VBP	0	ROOT
+working	VBG	4	xcomp
+on	IN	8	case
+the	DT	8	det
+exam	NN	5	nmod
+?	.	4	punct
+"	[]	When did I finish working on the exam?	8036c905-f23e-4976-83a1-85d679b5e0c2_Q1	8036c905-f23e-4976-83a1-85d679b5e0c2
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD complained)
+        (PP (IN about)
+          (NP (DT the) (NN pop) (NN quiz)))))
+    (. ?)))"	"Who	WP	2	nsubj
+complained	VBD	0	ROOT
+about	IN	6	case
+the	DT	6	det
+pop	NN	6	compound
+quiz	NN	2	nmod
+?	.	2	punct
+"	[]	Who complained about the pop quiz?	8036c905-f23e-4976-83a1-85d679b5e0c2_Q2	8036c905-f23e-4976-83a1-85d679b5e0c2
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBD did)
+      (NP (PRP I))
+      (VP (VB feel)
+        (PP (IN after)
+          (NP (DT the) (NN quiz)))))
+    (. ?)))"	"How	WRB	4	advmod
+did	VBD	4	aux
+I	PRP	4	nsubj
+feel	VB	0	ROOT
+after	IN	7	case
+the	DT	7	det
+quiz	NN	4	nmod
+?	.	4	punct
+"	[]	How did I feel after the quiz?	8036c905-f23e-4976-83a1-85d679b5e0c2_Q3	8036c905-f23e-4976-83a1-85d679b5e0c2
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (PRP$ my) (JJ first) (NN girlfriend))
+      (VP (VB live)))
+    (. ?)))"	"Where	WRB	6	advmod
+did	VBD	6	aux
+my	PRP$	5	nmod:poss
+first	JJ	5	amod
+girlfriend	NN	6	nsubj
+live	VB	0	ROOT
+?	.	6	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'first', 'characterOffsetBegin': 13, 'characterOffsetEnd': 18, 'ner': 'ORDINAL', 'normalizedNER': '1.0'}]"	Where did my first girlfriend live?	77338898-07d4-4143-8451-284540c8b082_Q0	77338898-07d4-4143-8451-284540c8b082
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBD did)
+      (NP (PRP I))
+      (VP (VB meet)
+        (NP (PRP$ my) (JJ first) (NN girlfriend))))
+    (. ?)))"	"How	WRB	4	advmod
+did	VBD	4	aux
+I	PRP	4	nsubj
+meet	VB	0	ROOT
+my	PRP$	7	nmod:poss
+first	JJ	7	amod
+girlfriend	NN	4	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'first', 'characterOffsetBegin': 18, 'characterOffsetEnd': 23, 'ner': 'ORDINAL', 'normalizedNER': '1.0'}]"	How did I meet my first girlfriend?	77338898-07d4-4143-8451-284540c8b082_Q1	77338898-07d4-4143-8451-284540c8b082
+"(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (RB long))
+    (SQ (VBD did)
+      (NP (PRP$ my) (NN girlfriend))
+      (VP (VB stay)
+        (PP (IN with)
+          (NP (PRP me)))))
+    (. ?)))"	"How	WRB	2	advmod
+long	RB	6	advmod
+did	VBD	6	aux
+my	PRP$	5	nmod:poss
+girlfriend	NN	6	nsubj
+stay	VB	0	ROOT
+with	IN	8	case
+me	PRP	6	nmod
+?	.	6	punct
+"	[]	How long did my girlfriend stay with me?	77338898-07d4-4143-8451-284540c8b082_Q2	77338898-07d4-4143-8451-284540c8b082
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (PRP$ my) (NN girlfriend))
+      (VP (VBD moved)
+        (PP (IN in)
+          (PP (IN with)
+            (NP (PRP me))))))
+    (. ?)))"	"Why	WRB	5	advmod
+did	VBD	5	aux
+my	PRP$	4	nmod:poss
+girlfriend	NN	5	nsubj
+moved	VBD	0	ROOT
+in	IN	5	compound:prt
+with	IN	8	case
+me	PRP	5	nmod
+?	.	5	punct
+"	[]	Why did my girlfriend moved in with me?	77338898-07d4-4143-8451-284540c8b082_Q3	77338898-07d4-4143-8451-284540c8b082
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD did)
+      (NP (PRP I))
+      (VP (VB get)
+        (NP (NNP Charlie) (NN horse))))
+    (. ?)))"	"When	WRB	4	advmod
+did	VBD	4	aux
+I	PRP	4	nsubj
+get	VB	0	ROOT
+Charlie	NNP	6	compound
+horse	NN	4	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'Charlie', 'characterOffsetBegin': 15, 'characterOffsetEnd': 22, 'ner': 'PERSON'}]"	When did I get Charlie horse?	110fafd1-2bb7-4ffe-aac7-475706165d41_Q0	110fafd1-2bb7-4ffe-aac7-475706165d41
+"(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ old))
+    (SQ (VBP am)
+      (NP
+        (NP (PRP I))
+        (ADVP (RB now))))
+    (. ?)))"	"How	WRB	2	advmod
+old	JJ	0	ROOT
+am	VBP	2	dep
+I	PRP	3	nsubj
+now	RB	4	advmod
+?	.	2	punct
+"	"[{'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'now', 'characterOffsetBegin': 13, 'characterOffsetEnd': 16, 'ner': 'DATE', 'normalizedNER': 'PRESENT_REF', 'timex': {'tid': 't1', 'type': 'DATE', 'value': 'PRESENT_REF'}}]"	How old am I now?	110fafd1-2bb7-4ffe-aac7-475706165d41_Q1	110fafd1-2bb7-4ffe-aac7-475706165d41
+"(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN color))
+    (SQ (VBZ is)
+      (NP (NNP Charlie) (NN horse)))
+    (. ?)))"	"What	WDT	2	det
+color	NN	3	dobj
+is	VBZ	0	ROOT
+Charlie	NNP	5	compound
+horse	NN	3	nsubj
+?	.	3	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Charlie', 'characterOffsetBegin': 14, 'characterOffsetEnd': 21, 'ner': 'PERSON'}]"	What color is Charlie horse?	110fafd1-2bb7-4ffe-aac7-475706165d41_Q2	110fafd1-2bb7-4ffe-aac7-475706165d41
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP I))
+      (VP (VBP like)
+        (S
+          (VP (TO to)
+            (VP (VB do)
+              (SBAR (IN as)
+                (S
+                  (NP (PRP I))
+                  (VP (VBD fell)
+                    (ADJP (RB asleep))
+                    (S
+                      (VP (VBG cuddling)
+                        (NP (PRP him))))))))))))
+    (. ?)))"	"What	WP	4	dep
+did	VBD	4	aux
+I	PRP	4	nsubj
+like	VBP	0	ROOT
+to	TO	6	mark
+do	VB	4	xcomp
+as	IN	9	mark
+I	PRP	9	nsubj
+fell	VBD	4	advcl
+asleep	RB	11	advmod
+cuddling	VBG	9	xcomp
+him	PRP	11	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 11, 'docTokenEnd': 12, 'tokenBegin': 11, 'tokenEnd': 12, 'text': 'him', 'characterOffsetBegin': 48, 'characterOffsetEnd': 51, 'ner': 'PERSON'}]"	What did I like to do as I fell asleep cuddling him?	110fafd1-2bb7-4ffe-aac7-475706165d41_Q3	110fafd1-2bb7-4ffe-aac7-475706165d41
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Laura))
+      (VP (VB decide)
+        (S
+          (VP (TO to)
+            (VP (VB grow))))))
+    (. ?)))"	"What	WP	4	dep
+did	VBD	4	aux
+Laura	NNP	4	nsubj
+decide	VB	0	ROOT
+to	TO	6	mark
+grow	VB	4	xcomp
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Laura', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	What did Laura decide to grow?	13573c2e-5eed-40eb-bbe5-ed259b5c76a6_Q0	13573c2e-5eed-40eb-bbe5-ed259b5c76a6
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (NNP Laura))
+      (VP (VB decide)
+        (S
+          (VP (TO to)
+            (VP (VB grow)
+              (NP (NN corn)))))))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+Laura	NNP	4	nsubj
+decide	VB	0	ROOT
+to	TO	6	mark
+grow	VB	4	xcomp
+corn	NN	6	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Laura', 'characterOffsetBegin': 10, 'characterOffsetEnd': 15, 'ner': 'PERSON'}]"	Where did Laura decide to grow corn?	13573c2e-5eed-40eb-bbe5-ed259b5c76a6_Q1	13573c2e-5eed-40eb-bbe5-ed259b5c76a6
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Laura))
+      (VP (VB realize)))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+Laura	NNP	4	nsubj
+realize	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Laura', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	What did Laura realize?	13573c2e-5eed-40eb-bbe5-ed259b5c76a6_Q2	13573c2e-5eed-40eb-bbe5-ed259b5c76a6
+"(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN idea))
+    (SQ (VBD did)
+      (NP (NNP Laura))
+      (VP (VB decide)
+        (S
+          (VP (TO to)
+            (VP (VB abandon))))))
+    (. ?)))"	"What	WDT	2	det
+idea	NN	5	dobj
+did	VBD	5	aux
+Laura	NNP	5	nsubj
+decide	VB	0	ROOT
+to	TO	7	mark
+abandon	VB	5	xcomp
+?	.	5	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Laura', 'characterOffsetBegin': 14, 'characterOffsetEnd': 19, 'ner': 'PERSON'}]"	What idea did Laura decide to abandon?	13573c2e-5eed-40eb-bbe5-ed259b5c76a6_Q3	13573c2e-5eed-40eb-bbe5-ed259b5c76a6
+"(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN color))
+    (SQ (VBD was)
+      (NP
+        (NP (NNP Andy) (POS 's))
+        (NN costume)))
+    (. ?)))"	"What	WDT	2	det
+color	NN	3	dobj
+was	VBD	0	ROOT
+Andy	NNP	6	nmod:poss
+'s	POS	4	case
+costume	NN	3	nsubj
+?	.	3	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Andy', 'characterOffsetBegin': 15, 'characterOffsetEnd': 19, 'ner': 'PERSON'}]"	What color was Andy's costume?	c400d38a-54fc-45da-99ed-558fcfc81016_Q0	c400d38a-54fc-45da-99ed-558fcfc81016
+"(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN color))
+    (SQ (VBD did)
+      (NP (NNP Andy))
+      (VP (VB get)
+        (NP
+          (NP (PRP$ his) (NN hair))
+          (VP (VBN done)))))
+    (. ?)))"	"What	WDT	2	det
+color	NN	5	dep
+did	VBD	5	aux
+Andy	NNP	5	nsubj
+get	VB	0	ROOT
+his	PRP$	7	nmod:poss
+hair	NN	8	nsubj
+done	VBN	5	dep
+?	.	5	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Andy', 'characterOffsetBegin': 15, 'characterOffsetEnd': 19, 'ner': 'PERSON'}, {'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'his', 'characterOffsetBegin': 24, 'characterOffsetEnd': 27, 'ner': 'PERSON'}]"	What color did Andy get his hair done?	c400d38a-54fc-45da-99ed-558fcfc81016_Q1	c400d38a-54fc-45da-99ed-558fcfc81016
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBN colored)
+        (NP
+          (NP (NNP Andy) (POS 's))
+          (NN hair))))
+    (. ?)))"	"Who	WP	2	nsubj
+colored	VBN	0	ROOT
+Andy	NNP	5	nmod:poss
+'s	POS	3	case
+hair	NN	2	dobj
+?	.	2	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Andy', 'characterOffsetBegin': 12, 'characterOffsetEnd': 16, 'ner': 'PERSON'}]"	Who colored Andy's hair?	c400d38a-54fc-45da-99ed-558fcfc81016_Q2	c400d38a-54fc-45da-99ed-558fcfc81016
+"(ROOT
+  (S
+    (VP (VBD Did)
+      (NP
+        (NP (NNP Andy))
+        (PP (IN like)
+          (NP (PRP$ his) (JJ new) (NN hair) (NN color)))))
+    (. ?)))"	"Did	VBD	0	ROOT
+Andy	NNP	1	dobj
+like	IN	7	case
+his	PRP$	7	nmod:poss
+new	JJ	7	amod
+hair	NN	7	compound
+color	NN	1	nmod
+?	.	1	punct
+"	"[{'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'Andy', 'characterOffsetBegin': 4, 'characterOffsetEnd': 8, 'ner': 'PERSON'}, {'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'his', 'characterOffsetBegin': 14, 'characterOffsetEnd': 17, 'ner': 'PERSON'}]"	Did Andy like his new hair color?	c400d38a-54fc-45da-99ed-558fcfc81016_Q3	c400d38a-54fc-45da-99ed-558fcfc81016
+"(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NNS sports))
+    (SQ (VBD was)
+      (NP (NNP Luke))
+      (VP (VBG playing)
+        (PP (IN at)
+          (NP (NN school)))))
+    (. ?)))"	"What	WDT	2	det
+sports	NNS	5	dobj
+was	VBD	5	aux
+Luke	NNP	5	nsubj
+playing	VBG	0	ROOT
+at	IN	7	case
+school	NN	5	nmod
+?	.	5	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Luke', 'characterOffsetBegin': 16, 'characterOffsetEnd': 20, 'ner': 'PERSON'}]"	What sports was Luke playing at school?	8fbef343-8806-4bcf-9326-08ca6ebf6cb9_Q0	8fbef343-8806-4bcf-9326-08ca6ebf6cb9
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD made)
+        (NP (DT the) (VBG winning) (NN shot))))
+    (. ?)))"	"Who	WP	2	nsubj
+made	VBD	0	ROOT
+the	DT	5	det
+winning	VBG	5	amod
+shot	NN	2	dobj
+?	.	2	punct
+"	[]	Who made the winning shot?	8fbef343-8806-4bcf-9326-08ca6ebf6cb9_Q1	8fbef343-8806-4bcf-9326-08ca6ebf6cb9
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD cheered)
+        (PP (IN for)
+          (NP (DT the) (VBG winning) (NN shot)))))
+    (. ?)))"	"Who	WP	2	nsubj
+cheered	VBD	0	ROOT
+for	IN	6	case
+the	DT	6	det
+winning	VBG	6	amod
+shot	NN	2	nmod
+?	.	2	punct
+"	[]	Who cheered for the winning shot?	8fbef343-8806-4bcf-9326-08ca6ebf6cb9_Q2	8fbef343-8806-4bcf-9326-08ca6ebf6cb9
+"(ROOT
+  (S
+    (NP (NNP Hopw))
+    (VP (VBD did)
+      (S
+        (NP (NNP Luke))
+        (VP (VB feel)
+          (PP (IN after)
+            (NP (DT the) (VBG winning) (NN shot))))))
+    (. ?)))"	"Hopw	NNP	4	nsubj
+did	VBD	4	aux
+Luke	NNP	4	nsubj
+feel	VB	0	ROOT
+after	IN	8	case
+the	DT	8	det
+winning	VBG	8	amod
+shot	NN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 0, 'docTokenEnd': 1, 'tokenBegin': 0, 'tokenEnd': 1, 'text': 'Hopw', 'characterOffsetBegin': 0, 'characterOffsetEnd': 4, 'ner': 'PERSON'}, {'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Luke', 'characterOffsetBegin': 9, 'characterOffsetEnd': 13, 'ner': 'PERSON'}]"	Hopw did Luke feel after the winning shot?	8fbef343-8806-4bcf-9326-08ca6ebf6cb9_Q3	8fbef343-8806-4bcf-9326-08ca6ebf6cb9
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD happened)
+        (PP (TO to)
+          (NP (NNP Robbie)))
+        (PP
+          (ADVP (RB halfway))
+          (IN through)
+          (NP (DT the) (NN competition)))))
+    (. ?)))"	"What	WP	2	nsubj
+happened	VBD	0	ROOT
+to	TO	4	case
+Robbie	NNP	2	nmod
+halfway	RB	8	advmod
+through	IN	8	case
+the	DT	8	det
+competition	NN	2	nmod
+?	.	2	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Robbie', 'characterOffsetBegin': 17, 'characterOffsetEnd': 23, 'ner': 'PERSON'}]"	What happened to Robbie halfway through the competition?	3be3719a-ae77-4106-88ea-988afb19db99_Q0	3be3719a-ae77-4106-88ea-988afb19db99
+"(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (RB long))
+    (SQ (VBD did)
+      (NP (NNP Robbie))
+      (VP (VB stop)
+        (PP (IN for))))
+    (. ?)))"	"How	WRB	2	advmod
+long	RB	5	advmod
+did	VBD	5	aux
+Robbie	NNP	5	nsubj
+stop	VB	0	ROOT
+for	IN	5	nmod
+?	.	5	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Robbie', 'characterOffsetBegin': 13, 'characterOffsetEnd': 19, 'ner': 'PERSON'}]"	How long did Robbie stop for?	3be3719a-ae77-4106-88ea-988afb19db99_Q1	3be3719a-ae77-4106-88ea-988afb19db99
+"(ROOT
+  (SQ (VBD Did)
+    (NP (NNP Robbie))
+    (VP (VB finish)
+      (NP (DT the) (NN race)))
+    (. ?)))"	"Did	VBD	3	aux
+Robbie	NNP	3	nsubj
+finish	VB	0	ROOT
+the	DT	5	det
+race	NN	3	dobj
+?	.	3	punct
+"	"[{'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'Robbie', 'characterOffsetBegin': 4, 'characterOffsetEnd': 10, 'ner': 'PERSON'}]"	Did Robbie finish the race?	3be3719a-ae77-4106-88ea-988afb19db99_Q2	3be3719a-ae77-4106-88ea-988afb19db99
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP
+        (NP
+          (NP (NNP Robbie) (POS 's))
+          (NN rank))
+        (PP (IN in)
+          (NP (DT the) (NN race)))))
+    (. ?)))"	"What	WP	0	ROOT
+was	VBD	1	cop
+Robbie	NNP	5	nmod:poss
+'s	POS	3	case
+rank	NN	1	nsubj
+in	IN	8	case
+the	DT	8	det
+race	NN	5	nmod
+?	.	1	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Robbie', 'characterOffsetBegin': 9, 'characterOffsetEnd': 15, 'ner': 'PERSON'}]"	What was Robbie's rank in the race?	3be3719a-ae77-4106-88ea-988afb19db99_Q3	3be3719a-ae77-4106-88ea-988afb19db99
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (VP (VBG graduating)
+        (PP (IN from)
+          (NP (NN college)))))
+    (. ?)))"	"Who	WP	3	nsubj
+was	VBD	3	aux
+graduating	VBG	0	ROOT
+from	IN	5	case
+college	NN	3	nmod
+?	.	3	punct
+"	[]	Who was graduating from college?	a8d6e66b-da81-4dc7-a470-67f2ab32b9e6_Q0	a8d6e66b-da81-4dc7-a470-67f2ab32b9e6
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (DT the) (NN graduation) (NN ceremony)))
+    (. ?)))"	"Where	WRB	2	advmod
+was	VBD	0	ROOT
+the	DT	5	det
+graduation	NN	5	compound
+ceremony	NN	2	nsubj
+?	.	2	punct
+"	[]	Where was the graduation ceremony?	a8d6e66b-da81-4dc7-a470-67f2ab32b9e6_Q1	a8d6e66b-da81-4dc7-a470-67f2ab32b9e6
+"(ROOT
+  (SQ (VBD Did)
+    (NP (NNP Jude))
+    (VP (VB get)
+      (PP (TO to)
+        (NP
+          (NP (DT the) (NN graduation) (NN ceremony))
+          (PP (IN in)
+            (NP (NN time))))))
+    (. ?)))"	"Did	VBD	3	aux
+Jude	NNP	3	nsubj
+get	VB	0	ROOT
+to	TO	7	case
+the	DT	7	det
+graduation	NN	7	compound
+ceremony	NN	3	nmod
+in	IN	9	case
+time	NN	3	nmod
+?	.	3	punct
+"	"[{'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'Jude', 'characterOffsetBegin': 4, 'characterOffsetEnd': 8, 'ner': 'PERSON'}]"	Did Jude get to the graduation ceremony in time?	a8d6e66b-da81-4dc7-a470-67f2ab32b9e6_Q2	a8d6e66b-da81-4dc7-a470-67f2ab32b9e6
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Jude))
+      (VP (VB decide)
+        (S
+          (VP (TO to)
+            (VP (VB grow)
+              (PP (IN in)
+                (NP (PRP$ his) (NN backyard))))))))
+    (. ?)))"	"What	WP	4	dep
+did	VBD	4	aux
+Jude	NNP	4	nsubj
+decide	VB	0	ROOT
+to	TO	6	mark
+grow	VB	4	xcomp
+in	IN	9	case
+his	PRP$	9	nmod:poss
+backyard	NN	6	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Jude', 'characterOffsetBegin': 9, 'characterOffsetEnd': 13, 'ner': 'PERSON'}, {'docTokenBegin': 7, 'docTokenEnd': 8, 'tokenBegin': 7, 'tokenEnd': 8, 'text': 'his', 'characterOffsetBegin': 32, 'characterOffsetEnd': 35, 'ner': 'PERSON'}]"	What did Jude decide to grow in his backyard?	a8d6e66b-da81-4dc7-a470-67f2ab32b9e6_Q3	a8d6e66b-da81-4dc7-a470-67f2ab32b9e6
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD did)
+      (NP (NNP Beth))
+      (VP (VBD sent)
+        (NP (DT the) (NN letter))
+        (PP (TO to))))
+    (. ?)))"	"Who	WP	4	dep
+did	VBD	4	aux
+Beth	NNP	4	nsubj
+sent	VBD	0	ROOT
+the	DT	6	det
+letter	NN	4	dobj
+to	TO	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Beth', 'characterOffsetBegin': 8, 'characterOffsetEnd': 12, 'ner': 'PERSON'}]"	Who did Beth sent the letter to?	8fba56f8-e9f8-45a9-a5b9-8adf1744e1ba_Q0	8fba56f8-e9f8-45a9-a5b9-8adf1744e1ba
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Beth))
+      (VP (VB receive)
+        (ADVP (RB back))))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+Beth	NNP	4	nsubj
+receive	VB	0	ROOT
+back	RB	4	advmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Beth', 'characterOffsetBegin': 9, 'characterOffsetEnd': 13, 'ner': 'PERSON'}]"	What did Beth receive back?	8fba56f8-e9f8-45a9-a5b9-8adf1744e1ba_Q1	8fba56f8-e9f8-45a9-a5b9-8adf1744e1ba
+"(ROOT
+  (SQ (VBD Did)
+    (NP (NNP Beth))
+    (VP (VB think)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBD sounded)
+            (PP (IN like)
+              (NP (DT the) (JJ real) (NNP Santa)))))))
+    (. ?)))"	"Did	VBD	3	aux
+Beth	NNP	3	nsubj
+think	VB	0	ROOT
+it	PRP	5	nsubj
+sounded	VBD	3	ccomp
+like	IN	9	case
+the	DT	9	det
+real	JJ	9	amod
+Santa	NNP	5	nmod
+?	.	3	punct
+"	"[{'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'Beth', 'characterOffsetBegin': 4, 'characterOffsetEnd': 8, 'ner': 'PERSON'}, {'docTokenBegin': 8, 'docTokenEnd': 9, 'tokenBegin': 8, 'tokenEnd': 9, 'text': 'Santa', 'characterOffsetBegin': 40, 'characterOffsetEnd': 45, 'ner': 'CITY'}]"	Did Beth think it sounded like the real Santa?	8fba56f8-e9f8-45a9-a5b9-8adf1744e1ba_Q2	8fba56f8-e9f8-45a9-a5b9-8adf1744e1ba
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Beth))
+      (VP (VB call)
+        (SBAR (IN that)
+          (FRAG
+            (NP (NNP Santa))))))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+Beth	NNP	4	nsubj
+call	VB	0	ROOT
+that	IN	6	det
+Santa	NNP	4	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Beth', 'characterOffsetBegin': 9, 'characterOffsetEnd': 13, 'ner': 'PERSON'}, {'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'Santa', 'characterOffsetBegin': 24, 'characterOffsetEnd': 29, 'ner': 'CITY'}]"	What did Beth call that Santa?	8fba56f8-e9f8-45a9-a5b9-8adf1744e1ba_Q3	8fba56f8-e9f8-45a9-a5b9-8adf1744e1ba
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBD did)
+      (NP (NNP Jake))
+      (VP (VB go)
+        (PP (TO to)
+          (NP (DT the) (NN store)))))
+    (. ?)))"	"How	WRB	4	advmod
+did	VBD	4	aux
+Jake	NNP	4	nsubj
+go	VB	0	ROOT
+to	TO	7	case
+the	DT	7	det
+store	NN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Jake', 'characterOffsetBegin': 8, 'characterOffsetEnd': 12, 'ner': 'PERSON'}]"	How did Jake go to the store?	b94e1810-9869-4af6-bb74-b4a51c46f3d2_Q0	b94e1810-9869-4af6-bb74-b4a51c46f3d2
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (ADJP (VBG working)))
+    (. ?)))"	"Who	WP	3	nsubj
+was	VBD	3	aux
+working	VBG	0	ROOT
+?	.	3	punct
+"	[]	Who was working?	b94e1810-9869-4af6-bb74-b4a51c46f3d2_Q1	b94e1810-9869-4af6-bb74-b4a51c46f3d2
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (VP (VBG watching)
+        (NP (DT a) (NN movie))))
+    (. ?)))"	"Who	WP	3	nsubj
+was	VBD	3	aux
+watching	VBG	0	ROOT
+a	DT	5	det
+movie	NN	3	dobj
+?	.	3	punct
+"	[]	Who was watching a movie?	b94e1810-9869-4af6-bb74-b4a51c46f3d2_Q2	b94e1810-9869-4af6-bb74-b4a51c46f3d2
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Jake))
+      (VP (VB need)
+        (S
+          (VP (TO to)
+            (VP (VB buy)
+              (PP (IN from)
+                (NP (DT the) (NN store))))))))
+    (. ?)))"	"What	WP	4	dep
+did	VBD	4	aux
+Jake	NNP	4	nsubj
+need	VB	0	ROOT
+to	TO	6	mark
+buy	VB	4	xcomp
+from	IN	9	case
+the	DT	9	det
+store	NN	6	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Jake', 'characterOffsetBegin': 9, 'characterOffsetEnd': 13, 'ner': 'PERSON'}]"	What did Jake need to buy from the store?	b94e1810-9869-4af6-bb74-b4a51c46f3d2_Q3	b94e1810-9869-4af6-bb74-b4a51c46f3d2
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (PRP$ my) (NN dog))
+        (SBAR
+          (S
+            (VP (VBD terrified)
+              (PP (IN of)))))))
+    (. ?)))"	"What	WP	5	dobj
+is	VBZ	1	cop
+my	PRP$	4	nmod:poss
+dog	NN	5	nsubj
+terrified	VBD	0	ROOT
+of	IN	5	nmod
+?	.	5	punct
+"	[]	What is my dog terrified of?	ae7e744e-fd27-46c2-befb-7e8427cb679c_Q0	ae7e744e-fd27-46c2-befb-7e8427cb679c
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (PRP$ my) (NN dog))
+      (VP (VB hide)))
+    (. ?)))"	"Where	WRB	5	advmod
+did	VBD	5	aux
+my	PRP$	4	nmod:poss
+dog	NN	5	nsubj
+hide	VB	0	ROOT
+?	.	5	punct
+"	[]	Where did my dog hide?	ae7e744e-fd27-46c2-befb-7e8427cb679c_Q1	ae7e744e-fd27-46c2-befb-7e8427cb679c
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD happened)
+        (PP (TO to)
+          (NP
+            (NP (NNP Meg) (POS 's))
+            (NN mom)))))
+    (. ?)))"	"What	WP	2	nsubj
+happened	VBD	0	ROOT
+to	TO	6	case
+Meg	NNP	6	nmod:poss
+'s	POS	4	case
+mom	NN	2	nmod
+?	.	2	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Meg', 'characterOffsetBegin': 17, 'characterOffsetEnd': 20, 'ner': 'PERSON'}]"	What happened to Meg's mom?	f3643541-c339-4377-851d-144ea400d551_Q0	f3643541-c339-4377-851d-144ea400d551
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (NNP Meg) (POS 's))
+        (NN dad)))
+    (. ?)))"	"Who	WP	0	ROOT
+was	VBD	1	cop
+Meg	NNP	5	nmod:poss
+'s	POS	3	case
+dad	NN	1	nsubj
+?	.	1	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Meg', 'characterOffsetBegin': 8, 'characterOffsetEnd': 11, 'ner': 'PERSON'}]"	Who was Meg's dad?	f3643541-c339-4377-851d-144ea400d551_Q1	f3643541-c339-4377-851d-144ea400d551
+"(ROOT
+  (SBARQ
+    (WHNP
+      (WHNP (WRB How) (RB long))
+      (SBAR (IN after)
+        (S
+          (NP (PRP$ his) (NN wife))
+          (VP (VBD died)))))
+    (SQ (VBD did)
+      (NP (NNP Eric))
+      (VP (VB marry)))
+    (. ?)))"	"How	WRB	2	advmod
+long	RB	9	advmod
+after	IN	6	mark
+his	PRP$	5	nmod:poss
+wife	NN	6	nsubj
+died	VBD	2	advcl
+did	VBD	9	aux
+Eric	NNP	9	nsubj
+marry	VB	0	ROOT
+?	.	9	punct
+"	"[{'docTokenBegin': 7, 'docTokenEnd': 8, 'tokenBegin': 7, 'tokenEnd': 8, 'text': 'Eric', 'characterOffsetBegin': 33, 'characterOffsetEnd': 37, 'ner': 'PERSON'}, {'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'his', 'characterOffsetBegin': 15, 'characterOffsetEnd': 18, 'ner': 'PERSON'}]"	How long after his wife died did Eric marry?	f3643541-c339-4377-851d-144ea400d551_Q2	f3643541-c339-4377-851d-144ea400d551
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD were)
+        (ADJP (RB very) (JJ sad))))
+    (. ?)))"	"Who	WP	0	ROOT
+were	VBD	1	cop
+very	RB	4	advmod
+sad	JJ	1	nsubj
+?	.	1	punct
+"	[]	Who were very sad?	f3643541-c339-4377-851d-144ea400d551_Q3	f3643541-c339-4377-851d-144ea400d551
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (PRP I))
+      (VP (VB go)
+        (NP-TMP (JJ last) (NN year))))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+I	PRP	4	nsubj
+go	VB	0	ROOT
+last	JJ	6	amod
+year	NN	4	nmod:tmod
+?	.	4	punct
+"	"[{'docTokenBegin': 4, 'docTokenEnd': 6, 'tokenBegin': 4, 'tokenEnd': 6, 'text': 'last year', 'characterOffsetBegin': 15, 'characterOffsetEnd': 24, 'ner': 'DATE', 'normalizedNER': 'THIS P1Y OFFSET P-1Y', 'timex': {'tid': 't1', 'type': 'DATE', 'altValue': 'THIS P1Y OFFSET P-1Y'}}]"	Where did I go last year?	2ef3788f-6b2b-45c8-b6ba-71450d565e6a_Q0	2ef3788f-6b2b-45c8-b6ba-71450d565e6a
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (PRP we))
+      (VP (VBD had)
+        (NP (NN lunch))))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+we	PRP	4	nsubj
+had	VBD	0	ROOT
+lunch	NN	4	dobj
+?	.	4	punct
+"	[]	Where did we had lunch?	2ef3788f-6b2b-45c8-b6ba-71450d565e6a_Q1	2ef3788f-6b2b-45c8-b6ba-71450d565e6a
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBD did)
+      (NP (PRP I))
+      (VP (VB go)
+        (PP (TO to)
+          (NP (NNP Maine)))))
+    (. ?)))"	"How	WRB	4	advmod
+did	VBD	4	aux
+I	PRP	4	nsubj
+go	VB	0	ROOT
+to	TO	6	case
+Maine	NNP	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'Maine', 'characterOffsetBegin': 16, 'characterOffsetEnd': 21, 'ner': 'STATE_OR_PROVINCE'}]"	How did I go to Maine?	2ef3788f-6b2b-45c8-b6ba-71450d565e6a_Q2	2ef3788f-6b2b-45c8-b6ba-71450d565e6a
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD drove)
+        (NP (PRP me))
+        (ADVP (RB back)
+          (PP (TO to)
+            (NP (DT the) (NN train) (NN station))))))
+    (. ?)))"	"Who	WP	2	nsubj
+drove	VBD	0	ROOT
+me	PRP	2	dobj
+back	RB	2	advmod
+to	TO	8	case
+the	DT	8	det
+train	NN	8	compound
+station	NN	4	nmod
+?	.	2	punct
+"	"[{'docTokenBegin': 6, 'docTokenEnd': 7, 'tokenBegin': 6, 'tokenEnd': 7, 'text': 'train', 'characterOffsetBegin': 25, 'characterOffsetEnd': 30, 'ner': 'CRIMINAL_CHARGE'}]"	Who drove me back to the train station?	2ef3788f-6b2b-45c8-b6ba-71450d565e6a_Q3	2ef3788f-6b2b-45c8-b6ba-71450d565e6a
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD did)
+        (SBAR
+          (S
+            (NP
+              (NP (NNP Heather))
+              (CC and)
+              (NP (PRP$ her) (NN family)))
+            (VP (VBP want)
+              (PP (IN for)
+                (NP (NN dinner))))))))
+    (. ?)))"	"What	WP	7	dobj
+did	VBD	7	aux
+Heather	NNP	7	nsubj
+and	CC	3	cc
+her	PRP$	6	nmod:poss
+family	NN	3	conj
+want	VBP	0	ROOT
+for	IN	9	case
+dinner	NN	7	nmod
+?	.	7	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Heather', 'characterOffsetBegin': 9, 'characterOffsetEnd': 16, 'ner': 'PERSON'}, {'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'her', 'characterOffsetBegin': 21, 'characterOffsetEnd': 24, 'ner': 'PERSON'}]"	What did Heather and her family want for dinner?	9a66b66d-034d-495e-a60e-e22c25e0e0fa_Q0	9a66b66d-034d-495e-a60e-e22c25e0e0fa
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD prepared)
+        (NP (DT the) (NNS tacos))))
+    (. ?)))"	"Who	WP	2	nsubj
+prepared	VBD	0	ROOT
+the	DT	4	det
+tacos	NNS	2	dobj
+?	.	2	punct
+"	[]	Who prepared the tacos?	9a66b66d-034d-495e-a60e-e22c25e0e0fa_Q1	9a66b66d-034d-495e-a60e-e22c25e0e0fa
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NN name))
+        (PP (IN of)
+          (NP
+            (NP (NNP Anna) (POS 's))
+            (NN dog)))))
+    (. ?)))"	"What	WP	0	ROOT
+was	VBD	1	cop
+the	DT	4	det
+name	NN	1	nsubj
+of	IN	8	case
+Anna	NNP	8	nmod:poss
+'s	POS	6	case
+dog	NN	4	nmod
+?	.	1	punct
+"	"[{'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'Anna', 'characterOffsetBegin': 21, 'characterOffsetEnd': 25, 'ner': 'PERSON'}]"	What was the name of Anna's dog?	aab4ee80-fc00-4d9c-a127-a63b54dfd193_Q0	aab4ee80-fc00-4d9c-a127-a63b54dfd193
+"(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS kids))
+    (SQ (VBD did)
+      (NP (NNP Stacy))
+      (VP (VB want)
+        (ADVP (RB originally))))
+    (. ?)))"	"How	WRB	2	advmod
+many	JJ	3	amod
+kids	NNS	6	dobj
+did	VBD	6	aux
+Stacy	NNP	6	nsubj
+want	VB	0	ROOT
+originally	RB	6	advmod
+?	.	6	punct
+"	"[{'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'Stacy', 'characterOffsetBegin': 18, 'characterOffsetEnd': 23, 'ner': 'PERSON'}]"	How many kids did Stacy want originally?	a107d361-e8a4-4cb6-8ffb-623a4c49ee1e_Q0	a107d361-e8a4-4cb6-8ffb-623a4c49ee1e
+"(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS kids))
+    (SQ (VBD did)
+      (NP (NNP Bob)
+        (CC and)
+        (NNP Stacy))
+      (VP (VB have)))
+    (. ?)))"	"How	WRB	2	advmod
+many	JJ	3	amod
+kids	NNS	8	dobj
+did	VBD	8	aux
+Bob	NNP	8	nsubj
+and	CC	5	cc
+Stacy	NNP	5	conj
+have	VB	0	ROOT
+?	.	8	punct
+"	"[{'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'Bob', 'characterOffsetBegin': 18, 'characterOffsetEnd': 21, 'ner': 'PERSON'}, {'docTokenBegin': 6, 'docTokenEnd': 7, 'tokenBegin': 6, 'tokenEnd': 7, 'text': 'Stacy', 'characterOffsetBegin': 26, 'characterOffsetEnd': 31, 'ner': 'PERSON'}]"	How many kids did Bob and Stacy have?	a107d361-e8a4-4cb6-8ffb-623a4c49ee1e_Q1	a107d361-e8a4-4cb6-8ffb-623a4c49ee1e
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP (NNP Stacy))
+      (VP (VBG doing)
+        (PP (IN with)
+          (NP (DT all)
+            (NP (PRP$ her) (NN maternity))
+            (CC and)
+            (NP (NN babcy) (NNS clothes))))))
+    (. ?)))"	"What	WP	4	dobj
+is	VBZ	1	cop
+Stacy	NNP	4	nsubj
+doing	VBG	0	ROOT
+with	IN	8	case
+all	DT	8	det:predet
+her	PRP$	8	nmod:poss
+maternity	NN	4	nmod
+and	CC	8	cc
+babcy	NN	11	compound
+clothes	NNS	8	conj
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Stacy', 'characterOffsetBegin': 8, 'characterOffsetEnd': 13, 'ner': 'PERSON'}, {'docTokenBegin': 6, 'docTokenEnd': 7, 'tokenBegin': 6, 'tokenEnd': 7, 'text': 'her', 'characterOffsetBegin': 29, 'characterOffsetEnd': 32, 'ner': 'PERSON'}]"	What is Stacy doing with all her maternity and babcy clothes?	a107d361-e8a4-4cb6-8ffb-623a4c49ee1e_Q2	a107d361-e8a4-4cb6-8ffb-623a4c49ee1e
+"(ROOT
+  (S
+    (NP (NNP Does) (NNP Stacy))
+    (ADVP (RB still))
+    (VP (VBP want)
+      (NP (CD five) (NNS kids)))
+    (. ?)))"	"Does	NNP	2	compound
+Stacy	NNP	4	nsubj
+still	RB	4	advmod
+want	VBP	0	ROOT
+five	CD	6	nummod
+kids	NNS	4	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'Stacy', 'characterOffsetBegin': 5, 'characterOffsetEnd': 10, 'ner': 'PERSON'}, {'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'five', 'characterOffsetBegin': 22, 'characterOffsetEnd': 26, 'ner': 'NUMBER', 'normalizedNER': '5.0'}]"	Does Stacy still want five kids?	a107d361-e8a4-4cb6-8ffb-623a4c49ee1e_Q3	a107d361-e8a4-4cb6-8ffb-623a4c49ee1e
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (NNP Larry))
+      (VP (VB work)))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+Larry	NNP	4	nsubj
+work	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Larry', 'characterOffsetBegin': 10, 'characterOffsetEnd': 15, 'ner': 'PERSON'}]"	Where did Larry work?	04c164f6-da41-48a3-8aa3-eb7b650bb5f0_Q0	04c164f6-da41-48a3-8aa3-eb7b650bb5f0
+"(ROOT
+  (SQ (VBD Was)
+    (NP (NNP Larry))
+    (ADJP (JJ fond)
+      (PP (IN of)
+        (NP (DT this) (NN job))))
+    (. ?)))"	"Was	VBD	3	cop
+Larry	NNP	3	compound
+fond	JJ	0	ROOT
+of	IN	6	case
+this	DT	6	det
+job	NN	3	nmod
+?	.	3	punct
+"	"[{'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'Larry', 'characterOffsetBegin': 4, 'characterOffsetEnd': 9, 'ner': 'PERSON'}]"	Was Larry fond of this job?	04c164f6-da41-48a3-8aa3-eb7b650bb5f0_Q1	04c164f6-da41-48a3-8aa3-eb7b650bb5f0
+"(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ old))
+    (SQ (VBZ is)
+      (NP (NNP Larry)))
+    (. ?)))"	"How	WRB	2	advmod
+old	JJ	3	dep
+is	VBZ	0	ROOT
+Larry	NNP	3	nsubj
+?	.	3	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Larry', 'characterOffsetBegin': 11, 'characterOffsetEnd': 16, 'ner': 'PERSON'}]"	How old is Larry?	04c164f6-da41-48a3-8aa3-eb7b650bb5f0_Q2	04c164f6-da41-48a3-8aa3-eb7b650bb5f0
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD happened)
+        (PP (IN at)
+          (NP (DT the) (NN party)))))
+    (. ?)))"	"What	WP	2	nsubj
+happened	VBD	0	ROOT
+at	IN	5	case
+the	DT	5	det
+party	NN	2	nmod
+?	.	2	punct
+"	[]	What happened at the party?	04c164f6-da41-48a3-8aa3-eb7b650bb5f0_Q3	04c164f6-da41-48a3-8aa3-eb7b650bb5f0
+"(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ old))
+    (SQ (VBD was)
+      (NP (NNP Ava)))
+    (. ?)))"	"How	WRB	2	advmod
+old	JJ	3	dep
+was	VBD	0	ROOT
+Ava	NNP	3	nsubj
+?	.	3	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Ava', 'characterOffsetBegin': 12, 'characterOffsetEnd': 15, 'ner': 'PERSON'}]"	How old was Ava?	8ca3cedb-510e-4454-ba08-93eaa605563b_Q0	8ca3cedb-510e-4454-ba08-93eaa605563b
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD taught)
+        (S
+          (NP (NNP Ava))
+          (NP
+            (NP (DT the) (NNS basics))
+            (PP (IN of)
+              (NP (NN swimming)))))))
+    (. ?)))"	"Who	WP	2	nsubj
+taught	VBD	0	ROOT
+Ava	NNP	2	dobj
+the	DT	5	det
+basics	NNS	3	dobj
+of	IN	7	case
+swimming	NN	5	nmod
+?	.	2	punct
+"	[]	Who taught Ava the basics of swimming?	8ca3cedb-510e-4454-ba08-93eaa605563b_Q1	8ca3cedb-510e-4454-ba08-93eaa605563b
+"(ROOT
+  (SQ (VBD Was)
+    (NP (NNP Ava))
+    (VP
+      (ADJP (JJ able)
+        (S
+          (VP (TO to)
+            (VP (VB paddle)
+              (NP (DT all))))))
+      (PP (IN by)
+        (NP (PRP herself))
+        (ADVP (RB afterwards))))
+    (. ?)))"	"Was	VBD	3	cop
+Ava	NNP	3	nsubj
+able	JJ	0	ROOT
+to	TO	5	mark
+paddle	VB	3	xcomp
+all	DT	5	dobj
+by	IN	8	case
+herself	PRP	5	nmod
+afterwards	RB	8	advmod
+?	.	3	punct
+"	"[{'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'Ava', 'characterOffsetBegin': 4, 'characterOffsetEnd': 7, 'ner': 'PERSON'}]"	Was Ava able to paddle all by herself afterwards?	8ca3cedb-510e-4454-ba08-93eaa605563b_Q2	8ca3cedb-510e-4454-ba08-93eaa605563b
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ
+      (VP (VBD did)
+        (SBAR
+          (S
+            (NP
+              (NP (NNP Ava) (POS 's))
+              (NN mom))
+            (VP (VBD took)
+              (S
+                (NP (PRP her))
+                (VP (TO to)
+                  (VP (VB learn)
+                    (S
+                      (VP (TO to)
+                        (VP (VB swim))))))))))))
+    (. ?)))"	"Where	WRB	6	advmod
+did	VBD	6	aux
+Ava	NNP	5	nmod:poss
+'s	POS	3	case
+mom	NN	6	nsubj
+took	VBD	0	ROOT
+her	PRP	6	dobj
+to	TO	9	mark
+learn	VB	6	advcl
+to	TO	11	mark
+swim	VB	9	xcomp
+?	.	6	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Ava', 'characterOffsetBegin': 10, 'characterOffsetEnd': 13, 'ner': 'PERSON'}, {'docTokenBegin': 6, 'docTokenEnd': 7, 'tokenBegin': 6, 'tokenEnd': 7, 'text': 'her', 'characterOffsetBegin': 25, 'characterOffsetEnd': 28, 'ner': 'PERSON'}]"	Where did Ava's mom took her to learn to swim?	8ca3cedb-510e-4454-ba08-93eaa605563b_Q3	8ca3cedb-510e-4454-ba08-93eaa605563b
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (PP (IN on)
+        (NP (DT the) (NN ground))))
+    (. ?)))"	"What	WP	5	nsubj
+was	VBD	5	cop
+on	IN	5	case
+the	DT	5	det
+ground	NN	0	ROOT
+?	.	5	punct
+"	[]	What was on the ground?	271616db-90c2-4303-9c2b-64f4061ceb56_Q0	271616db-90c2-4303-9c2b-64f4061ceb56
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (PRP he))
+      (VP (VB bring)
+        (NP (DT the) (NN wallet))))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+he	PRP	4	nsubj
+bring	VB	0	ROOT
+the	DT	6	det
+wallet	NN	4	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'he', 'characterOffsetBegin': 10, 'characterOffsetEnd': 12, 'ner': 'PERSON'}]"	Where did he bring the wallet?	271616db-90c2-4303-9c2b-64f4061ceb56_Q1	271616db-90c2-4303-9c2b-64f4061ceb56
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SINV (VBD did)
+      (NP (DT the) (NN phone) (NN ring)))
+    (. ?)))"	"When	WRB	0	ROOT
+did	VBD	1	root
+the	DT	5	det
+phone	NN	5	compound
+ring	NN	2	nsubj
+?	.	2	punct
+"	[]	When did the phone ring?	271616db-90c2-4303-9c2b-64f4061ceb56_Q2	271616db-90c2-4303-9c2b-64f4061ceb56
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD called)
+        (NP (NNP James))))
+    (. ?)))"	"Who	WP	2	nsubj
+called	VBD	0	ROOT
+James	NNP	2	dobj
+?	.	2	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'James', 'characterOffsetBegin': 11, 'characterOffsetEnd': 16, 'ner': 'PERSON'}]"	Who called James?	271616db-90c2-4303-9c2b-64f4061ceb56_Q3	271616db-90c2-4303-9c2b-64f4061ceb56
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD jumped)
+        (PP (IN on)
+          (NP (NNS people)))))
+    (. ?)))"	"Who	WP	2	nsubj
+jumped	VBD	0	ROOT
+on	IN	4	case
+people	NNS	2	nmod
+?	.	2	punct
+"	[]	Who jumped on people?	b93f956f-2256-4c6d-91d2-7675dff455f0_Q0	b93f956f-2256-4c6d-91d2-7675dff455f0
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD did)
+      (NP (NNP Chad))
+      (VP (VB hire)))
+    (. ?)))"	"Who	WP	4	dobj
+did	VBD	4	aux
+Chad	NNP	4	nsubj
+hire	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Chad', 'characterOffsetBegin': 8, 'characterOffsetEnd': 12, 'ner': 'PERSON'}]"	Who did Chad hire?	b93f956f-2256-4c6d-91d2-7675dff455f0_Q1	b93f956f-2256-4c6d-91d2-7675dff455f0
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN trainer))
+      (VP (VB teach)
+        (NP (DT the) (NN dog))))
+    (. ?)))"	"What	WP	5	dep
+did	VBD	5	aux
+the	DT	4	det
+trainer	NN	5	nsubj
+teach	VB	0	ROOT
+the	DT	7	det
+dog	NN	5	dobj
+?	.	5	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'trainer', 'characterOffsetBegin': 13, 'characterOffsetEnd': 20, 'ner': 'TITLE'}]"	What did the trainer teach the dog?	b93f956f-2256-4c6d-91d2-7675dff455f0_Q2	b93f956f-2256-4c6d-91d2-7675dff455f0
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD was)
+      (NP (NNP Chad))
+      (ADJP (NN proud)))
+    (. ?)))"	"Why	WRB	4	advmod
+was	VBD	4	cop
+Chad	NNP	4	compound
+proud	NN	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Chad', 'characterOffsetBegin': 8, 'characterOffsetEnd': 12, 'ner': 'COUNTRY'}]"	Why was Chad proud?	b93f956f-2256-4c6d-91d2-7675dff455f0_Q3	b93f956f-2256-4c6d-91d2-7675dff455f0
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD was)
+      (NP (NNP Karl))
+      (NP (DT a) (JJ good) (NN baseball) (NN player)))
+    (. ?)))"	"When	WRB	7	advmod
+was	VBD	7	cop
+Karl	NNP	7	nsubj
+a	DT	7	det
+good	JJ	7	amod
+baseball	NN	7	compound
+player	NN	0	ROOT
+?	.	7	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Karl', 'characterOffsetBegin': 9, 'characterOffsetEnd': 13, 'ner': 'PERSON'}, {'docTokenBegin': 5, 'docTokenEnd': 7, 'tokenBegin': 5, 'tokenEnd': 7, 'text': 'baseball player', 'characterOffsetBegin': 21, 'characterOffsetEnd': 36, 'ner': 'TITLE'}]"	When was Karl a good baseball player?	d869c6d9-4a06-4d94-bf97-dc37167a5520_Q0	d869c6d9-4a06-4d94-bf97-dc37167a5520
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Karl))
+      (VP (VB join)))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+Karl	NNP	4	nsubj
+join	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Karl', 'characterOffsetBegin': 9, 'characterOffsetEnd': 13, 'ner': 'PERSON'}]"	What did Karl join?	d869c6d9-4a06-4d94-bf97-dc37167a5520_Q1	d869c6d9-4a06-4d94-bf97-dc37167a5520
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP (NNP Karl))
+      (VP (VB like)))
+    (. ?)))"	"What	WP	4	dobj
+is	VBZ	1	cop
+Karl	NNP	4	nsubj
+like	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Karl', 'characterOffsetBegin': 8, 'characterOffsetEnd': 12, 'ner': 'PERSON'}]"	What is Karl like?	d869c6d9-4a06-4d94-bf97-dc37167a5520_Q2	d869c6d9-4a06-4d94-bf97-dc37167a5520
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBD did)
+      (NP (PRP he))
+      (VP (VBD hurt)
+        (NP (PRP$ his) (NN knee))))
+    (. ?)))"	"How	WRB	4	advmod
+did	VBD	4	aux
+he	PRP	4	nsubj
+hurt	VBD	0	ROOT
+his	PRP$	6	nmod:poss
+knee	NN	4	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'he', 'characterOffsetBegin': 8, 'characterOffsetEnd': 10, 'ner': 'PERSON'}, {'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'his', 'characterOffsetBegin': 16, 'characterOffsetEnd': 19, 'ner': 'PERSON'}]"	How did he hurt his knee?	d869c6d9-4a06-4d94-bf97-dc37167a5520_Q3	d869c6d9-4a06-4d94-bf97-dc37167a5520
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP (NNP Nick))
+      (VP (VBG trying)
+        (S
+          (VP (TO to)
+            (VP (VB buy))))))
+    (. ?)))"	"What	WP	4	dobj
+was	VBD	1	cop
+Nick	NNP	4	nsubj
+trying	VBG	0	ROOT
+to	TO	6	mark
+buy	VB	4	xcomp
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Nick', 'characterOffsetBegin': 9, 'characterOffsetEnd': 13, 'ner': 'PERSON'}]"	What was Nick trying to buy?	f7559f25-0358-4f57-b079-dec2199b4ec3_Q0	f7559f25-0358-4f57-b079-dec2199b4ec3
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SINV
+      (VP (MD could) (RB n't))
+      (NP (NNP Nick) (NN trust)))
+    (. ?)))"	"Who	WP	5	nsubj
+could	MD	5	aux
+n't	RB	5	neg
+Nick	NNP	5	compound
+trust	NN	0	ROOT
+?	.	5	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Nick', 'characterOffsetBegin': 13, 'characterOffsetEnd': 17, 'ner': 'PERSON'}]"	Who couldn't Nick trust?	f7559f25-0358-4f57-b079-dec2199b4ec3_Q1	f7559f25-0358-4f57-b079-dec2199b4ec3
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (PRP he))
+      (VP (VB decide)
+        (S
+          (VP (TO to)
+            (VP (VB move)
+              (PRT (RP out)))))))
+    (. ?)))"	"Why	WRB	4	advmod
+did	VBD	4	aux
+he	PRP	4	nsubj
+decide	VB	0	ROOT
+to	TO	6	mark
+move	VB	4	xcomp
+out	RP	6	compound:prt
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'he', 'characterOffsetBegin': 8, 'characterOffsetEnd': 10, 'ner': 'PERSON'}]"	Why did he decide to move out?	f7559f25-0358-4f57-b079-dec2199b4ec3_Q2	f7559f25-0358-4f57-b079-dec2199b4ec3
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB How) (RB quickly))
+    (SQ (VBD did)
+      (NP (PRP he))
+      (VP (VB move)
+        (PRT (RP out))))
+    (. ?)))"	"How	WRB	2	advmod
+quickly	RB	5	advmod
+did	VBD	5	aux
+he	PRP	5	nsubj
+move	VB	0	ROOT
+out	RP	5	compound:prt
+?	.	5	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'he', 'characterOffsetBegin': 16, 'characterOffsetEnd': 18, 'ner': 'PERSON'}]"	How quickly did he move out?	f7559f25-0358-4f57-b079-dec2199b4ec3_Q3	f7559f25-0358-4f57-b079-dec2199b4ec3
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP jody))
+      (VP (VB buy)))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+jody	NNP	4	nsubj
+buy	VB	0	ROOT
+?	.	4	punct
+"	[]	What did jody buy?	1e379d2b-69e8-485e-92ac-4c3daa41e364_Q0	1e379d2b-69e8-485e-92ac-4c3daa41e364
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (NNP Jody))
+      (VP (VB buy)
+        (NP (DT the) (NN goldfish))))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+Jody	NNP	4	nsubj
+buy	VB	0	ROOT
+the	DT	6	det
+goldfish	NN	4	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Jody', 'characterOffsetBegin': 10, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	Where did Jody buy the goldfish?	1e379d2b-69e8-485e-92ac-4c3daa41e364_Q1	1e379d2b-69e8-485e-92ac-4c3daa41e364
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ
+      (VP (VBD did)
+        (NP (DT the) (NN goldfish) (NN look) (NN fat))))
+    (. ?)))"	"Why	WRB	0	ROOT
+did	VBD	1	dep
+the	DT	6	det
+goldfish	NN	6	compound
+look	NN	6	compound
+fat	NN	2	nsubj
+?	.	1	punct
+"	[]	Why did the goldfish look fat?	1e379d2b-69e8-485e-92ac-4c3daa41e364_Q2	1e379d2b-69e8-485e-92ac-4c3daa41e364
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD happened)
+        (PP (TO to)
+          (NP (DT the) (NN goldfish)))))
+    (. ?)))"	"What	WP	2	nsubj
+happened	VBD	0	ROOT
+to	TO	5	case
+the	DT	5	det
+goldfish	NN	2	nmod
+?	.	2	punct
+"	[]	What happened to the goldfish?	1e379d2b-69e8-485e-92ac-4c3daa41e364_Q3	1e379d2b-69e8-485e-92ac-4c3daa41e364
+"(ROOT
+  (SBARQ
+    (WHNP (WDT What))
+    (SQ (VBD had)
+      (NP (NNP Jane))
+      (VP (VBN gotten)))
+    (. ?)))"	"What	WDT	4	dobj
+had	VBD	4	aux
+Jane	NNP	4	nsubj
+gotten	VBN	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Jane', 'characterOffsetBegin': 9, 'characterOffsetEnd': 13, 'ner': 'PERSON'}]"	What had Jane gotten?	0dd3e2c3-3ea4-450a-97c4-42a54c426018_Q0	0dd3e2c3-3ea4-450a-97c4-42a54c426018
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP (PRP she))
+      (ADJP (JJ nervous)
+        (PP (IN about))))
+    (. ?)))"	"What	WP	4	dobj
+was	VBD	1	cop
+she	PRP	4	nsubj
+nervous	JJ	0	ROOT
+about	IN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'she', 'characterOffsetBegin': 9, 'characterOffsetEnd': 12, 'ner': 'PERSON'}]"	What was she nervous about?	0dd3e2c3-3ea4-450a-97c4-42a54c426018_Q1	0dd3e2c3-3ea4-450a-97c4-42a54c426018
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD did)
+      (NP (NNP Jane))
+      (VP (VB arrive)
+        (PP (IN at)
+          (NP (NN work)))))
+    (. ?)))"	"When	WRB	4	advmod
+did	VBD	4	aux
+Jane	NNP	4	nsubj
+arrive	VB	0	ROOT
+at	IN	6	case
+work	NN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Jane', 'characterOffsetBegin': 9, 'characterOffsetEnd': 13, 'ner': 'PERSON'}]"	When did Jane arrive at work?	0dd3e2c3-3ea4-450a-97c4-42a54c426018_Q2	0dd3e2c3-3ea4-450a-97c4-42a54c426018
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBD was)
+      (NP
+        (NP (PRP$ her) (JJ first) (NN day))
+        (PP (IN at)
+          (NP (NN work)))))
+    (. ?)))"	"How	WRB	0	ROOT
+was	VBD	1	dep
+her	PRP$	5	nmod:poss
+first	JJ	5	amod
+day	NN	2	nsubj
+at	IN	7	case
+work	NN	5	nmod
+?	.	1	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 5, 'tokenBegin': 3, 'tokenEnd': 5, 'text': 'first day', 'characterOffsetBegin': 12, 'characterOffsetEnd': 21, 'ner': 'DATE', 'normalizedNER': 'P1D-#1', 'timex': {'tid': 't1', 'type': 'DATE', 'altValue': 'P1D-#1'}}, {'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'her', 'characterOffsetBegin': 8, 'characterOffsetEnd': 11, 'ner': 'PERSON'}]"	How was her first day at work?	0dd3e2c3-3ea4-450a-97c4-42a54c426018_Q3	0dd3e2c3-3ea4-450a-97c4-42a54c426018
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (NNP Jill))
+      (VP (VBG going)))
+    (. ?)))"	"Where	WRB	4	advmod
+was	VBD	4	aux
+Jill	NNP	4	nsubj
+going	VBG	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Jill', 'characterOffsetBegin': 10, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	Where was Jill going?	865db3c4-a253-4d35-8766-25fc7e0a8cfb_Q0	865db3c4-a253-4d35-8766-25fc7e0a8cfb
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP she))
+      (VP (VB marvel)
+        (PP (IN at))))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+she	PRP	4	nsubj
+marvel	VB	0	ROOT
+at	IN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'she', 'characterOffsetBegin': 9, 'characterOffsetEnd': 12, 'ner': 'PERSON'}]"	What did she marvel at?	865db3c4-a253-4d35-8766-25fc7e0a8cfb_Q1	865db3c4-a253-4d35-8766-25fc7e0a8cfb
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (PRP she))
+      (VP (VB come)
+        (PP (IN from))))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+she	PRP	4	nsubj
+come	VB	0	ROOT
+from	IN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'she', 'characterOffsetBegin': 10, 'characterOffsetEnd': 13, 'ner': 'PERSON'}]"	Where did she come from?	865db3c4-a253-4d35-8766-25fc7e0a8cfb_Q2	865db3c4-a253-4d35-8766-25fc7e0a8cfb
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBD was)
+      (NP (PRP$ her) (NN trip)))
+    (. ?)))"	"How	WRB	4	advmod
+was	VBD	4	cop
+her	PRP$	4	nmod:poss
+trip	NN	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'her', 'characterOffsetBegin': 8, 'characterOffsetEnd': 11, 'ner': 'PERSON'}]"	How was her trip?	865db3c4-a253-4d35-8766-25fc7e0a8cfb_Q3	865db3c4-a253-4d35-8766-25fc7e0a8cfb
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP (NNP Chris)))
+    (. ?)))"	"What	WP	0	ROOT
+is	VBZ	1	cop
+Chris	NNP	1	nsubj
+?	.	1	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Chris', 'characterOffsetBegin': 8, 'characterOffsetEnd': 13, 'ner': 'PERSON'}]"	What is Chris?	88fba119-ccac-4b82-881f-e609e188bebc_Q0	88fba119-ccac-4b82-881f-e609e188bebc
+"(ROOT
+  (SQ (VBD Was)
+    (NP (DT the) (NN client))
+    (ADJP (JJ guilty))
+    (. ?)))"	"Was	VBD	4	cop
+the	DT	3	det
+client	NN	4	nsubj
+guilty	JJ	0	ROOT
+?	.	4	punct
+"	[]	Was the client guilty?	88fba119-ccac-4b82-881f-e609e188bebc_Q1	88fba119-ccac-4b82-881f-e609e188bebc
+"(ROOT
+  (SQ (VBZ Does)
+    (NP (NNP Chris))
+    (VP (VB win)
+      (NP (DT the) (NN case)))
+    (. ?)))"	"Does	VBZ	3	aux
+Chris	NNP	3	nsubj
+win	VB	0	ROOT
+the	DT	5	det
+case	NN	3	dobj
+?	.	3	punct
+"	"[{'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'Chris', 'characterOffsetBegin': 5, 'characterOffsetEnd': 10, 'ner': 'PERSON'}]"	Does Chris win the case?	88fba119-ccac-4b82-881f-e609e188bebc_Q2	88fba119-ccac-4b82-881f-e609e188bebc
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBZ happens)
+        (PP (TO to)
+          (NP (DT the) (NN client)))))
+    (. ?)))"	"What	WP	2	nsubj
+happens	VBZ	0	ROOT
+to	TO	5	case
+the	DT	5	det
+client	NN	2	nmod
+?	.	2	punct
+"	[]	What happens to the client?	88fba119-ccac-4b82-881f-e609e188bebc_Q3	88fba119-ccac-4b82-881f-e609e188bebc
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Julie))
+      (VP (VB order)))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+Julie	NNP	4	nsubj
+order	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Julie', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	What did Julie order?	1cc75245-93bd-44cc-b076-8d1b249e1ee5_Q0	1cc75245-93bd-44cc-b076-8d1b249e1ee5
+"(ROOT
+  (SBARQ
+    (WHNP (WRB How))
+    (SQ
+      (VP (VBD did)
+        (NP (NNP Julie) (NN order) (NN food))))
+    (. ?)))"	"How	WRB	0	ROOT
+did	VBD	1	root
+Julie	NNP	5	compound
+order	NN	5	compound
+food	NN	2	nsubj
+?	.	2	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Julie', 'characterOffsetBegin': 8, 'characterOffsetEnd': 13, 'ner': 'PERSON'}]"	How did Julie order food?	1cc75245-93bd-44cc-b076-8d1b249e1ee5_Q1	1cc75245-93bd-44cc-b076-8d1b249e1ee5
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP she))
+      (VP (VB give)
+        (NP (DT the) (NN driver))))
+    (. ?)))"	"What	WP	4	dep
+did	VBD	4	aux
+she	PRP	4	nsubj
+give	VB	0	ROOT
+the	DT	6	det
+driver	NN	4	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'driver', 'characterOffsetBegin': 22, 'characterOffsetEnd': 28, 'ner': 'TITLE'}, {'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'she', 'characterOffsetBegin': 9, 'characterOffsetEnd': 12, 'ner': 'PERSON'}]"	What did she give the driver?	1cc75245-93bd-44cc-b076-8d1b249e1ee5_Q2	1cc75245-93bd-44cc-b076-8d1b249e1ee5
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBD was)
+      (NP (DT the) (NN pizza)))
+    (. ?)))"	"How	WRB	4	advmod
+was	VBD	4	cop
+the	DT	4	det
+pizza	NN	0	ROOT
+?	.	4	punct
+"	[]	How was the pizza?	1cc75245-93bd-44cc-b076-8d1b249e1ee5_Q3	1cc75245-93bd-44cc-b076-8d1b249e1ee5
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP
+        (NP (NNP Justin))
+        (SBAR
+          (S
+            (VP (VBD terrified)
+              (PP (IN of)))))))
+    (. ?)))"	"What	WP	4	dobj
+was	VBD	1	cop
+Justin	NNP	4	nsubj
+terrified	VBD	0	ROOT
+of	IN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Justin', 'characterOffsetBegin': 9, 'characterOffsetEnd': 15, 'ner': 'PERSON'}]"	What was Justin terrified of?	bfa4ef8c-715d-4287-88a5-035611e34e40_Q0	bfa4ef8c-715d-4287-88a5-035611e34e40
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD had)
+        (NP (DT a) (NN dog))))
+    (. ?)))"	"Who	WP	2	nsubj
+had	VBD	0	ROOT
+a	DT	4	det
+dog	NN	2	dobj
+?	.	2	punct
+"	[]	Who had a dog?	bfa4ef8c-715d-4287-88a5-035611e34e40_Q1	bfa4ef8c-715d-4287-88a5-035611e34e40
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBD did)
+      (NP (NNP Justin))
+      (VP (VB get)
+        (PP (IN over)
+          (NP (PRP$ his) (NN fear)))))
+    (. ?)))"	"How	WRB	4	advmod
+did	VBD	4	aux
+Justin	NNP	4	nsubj
+get	VB	0	ROOT
+over	IN	7	case
+his	PRP$	7	nmod:poss
+fear	NN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Justin', 'characterOffsetBegin': 8, 'characterOffsetEnd': 14, 'ner': 'PERSON'}, {'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'his', 'characterOffsetBegin': 24, 'characterOffsetEnd': 27, 'ner': 'PERSON'}]"	How did Justin get over his fear?	bfa4ef8c-715d-4287-88a5-035611e34e40_Q2	bfa4ef8c-715d-4287-88a5-035611e34e40
+"(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (RB long))
+    (SQ (VBD did)
+      (NP (PRP it))
+      (VP (VB take)
+        (S
+          (NP (PRP him))
+          (VP (TO to)
+            (VP (VB get)
+              (PP (IN over)
+                (NP (PRP$ his) (NN fear))))))))
+    (. ?)))"	"How	WRB	2	advmod
+long	RB	5	advmod
+did	VBD	5	aux
+it	PRP	5	nsubj
+take	VB	0	ROOT
+him	PRP	5	dobj
+to	TO	8	mark
+get	VB	5	advcl
+over	IN	11	case
+his	PRP$	11	nmod:poss
+fear	NN	8	nmod
+?	.	5	punct
+"	"[{'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'him', 'characterOffsetBegin': 21, 'characterOffsetEnd': 24, 'ner': 'PERSON'}, {'docTokenBegin': 9, 'docTokenEnd': 10, 'tokenBegin': 9, 'tokenEnd': 10, 'text': 'his', 'characterOffsetBegin': 37, 'characterOffsetEnd': 40, 'ner': 'PERSON'}]"	How long did it take him to get over his fear?	bfa4ef8c-715d-4287-88a5-035611e34e40_Q3	bfa4ef8c-715d-4287-88a5-035611e34e40
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD happened)
+        (PP (TO to)
+          (NP (NNP David)))))
+    (. ?)))"	"What	WP	2	nsubj
+happened	VBD	0	ROOT
+to	TO	4	case
+David	NNP	2	nmod
+?	.	2	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'David', 'characterOffsetBegin': 17, 'characterOffsetEnd': 22, 'ner': 'PERSON'}]"	What happened to David?	210d56ce-a940-4766-9b7b-d086b2c5682d_Q0	210d56ce-a940-4766-9b7b-d086b2c5682d
+"(ROOT
+  (SQ (VBD Did)
+    (NP (PRP he))
+    (VP (VB get)
+      (VP (VBN hurt)))
+    (. ?)))"	"Did	VBD	4	aux
+he	PRP	4	nsubjpass
+get	VB	4	auxpass
+hurt	VBN	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'he', 'characterOffsetBegin': 4, 'characterOffsetEnd': 6, 'ner': 'PERSON'}]"	Did he get hurt?	210d56ce-a940-4766-9b7b-d086b2c5682d_Q1	210d56ce-a940-4766-9b7b-d086b2c5682d
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBD did)
+      (NP (PRP he))
+      (VP (VB stop)
+        (NP (DT the) (NN bleeding))))
+    (. ?)))"	"How	WRB	4	advmod
+did	VBD	4	aux
+he	PRP	4	nsubj
+stop	VB	0	ROOT
+the	DT	6	det
+bleeding	NN	4	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'he', 'characterOffsetBegin': 8, 'characterOffsetEnd': 10, 'ner': 'PERSON'}]"	How did he stop the bleeding?	210d56ce-a940-4766-9b7b-d086b2c5682d_Q2	210d56ce-a940-4766-9b7b-d086b2c5682d
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP he))
+      (VP (VB buy)
+        (PP (IN at)
+          (NP (DT the) (NN pharmacy)))))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+he	PRP	4	nsubj
+buy	VB	0	ROOT
+at	IN	7	case
+the	DT	7	det
+pharmacy	NN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'he', 'characterOffsetBegin': 9, 'characterOffsetEnd': 11, 'ner': 'PERSON'}]"	What did he buy at the pharmacy?	210d56ce-a940-4766-9b7b-d086b2c5682d_Q3	210d56ce-a940-4766-9b7b-d086b2c5682d
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (DT the) (NN concert)))
+    (. ?)))"	"Where	WRB	2	advmod
+was	VBD	0	ROOT
+the	DT	4	det
+concert	NN	2	nsubj
+?	.	2	punct
+"	[]	Where was the concert?	50357157-3765-40b5-8e32-f86961c98be0_Q0	50357157-3765-40b5-8e32-f86961c98be0
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD took)
+        (NP (PRP her))
+        (PP (TO to)
+          (NP (DT the) (NN concert)))))
+    (. ?)))"	"Who	WP	2	nsubj
+took	VBD	0	ROOT
+her	PRP	2	dobj
+to	TO	6	case
+the	DT	6	det
+concert	NN	2	nmod
+?	.	2	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'her', 'characterOffsetBegin': 9, 'characterOffsetEnd': 12, 'ner': 'PERSON'}]"	Who took her to the concert?	50357157-3765-40b5-8e32-f86961c98be0_Q1	50357157-3765-40b5-8e32-f86961c98be0
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (PRP she))
+      (VP (VB agree)
+        (S
+          (VP (TO to)
+            (VP (VB drive))))))
+    (. ?)))"	"Why	WRB	4	advmod
+did	VBD	4	aux
+she	PRP	4	nsubj
+agree	VB	0	ROOT
+to	TO	6	mark
+drive	VB	4	xcomp
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'she', 'characterOffsetBegin': 8, 'characterOffsetEnd': 11, 'ner': 'PERSON'}]"	Why did she agree to drive?	50357157-3765-40b5-8e32-f86961c98be0_Q2	50357157-3765-40b5-8e32-f86961c98be0
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD happened)
+        (PP (IN in)
+          (NP (DT the) (NN end)))))
+    (. ?)))"	"What	WP	2	nsubj
+happened	VBD	0	ROOT
+in	IN	5	case
+the	DT	5	det
+end	NN	2	nmod
+?	.	2	punct
+"	[]	What happened in the end?	50357157-3765-40b5-8e32-f86961c98be0_Q3	50357157-3765-40b5-8e32-f86961c98be0
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD did)
+      (NP (PRP they))
+      (VP (VB wake)))
+    (. ?)))"	"When	WRB	4	advmod
+did	VBD	4	aux
+they	PRP	4	nsubj
+wake	VB	0	ROOT
+?	.	4	punct
+"	[]	When did they wake?	006536d7-2be3-49a4-a750-769684e952ed_Q0	006536d7-2be3-49a4-a750-769684e952ed
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP they))
+      (VP (VB hear)))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+they	PRP	4	nsubj
+hear	VB	0	ROOT
+?	.	4	punct
+"	[]	What did they hear?	006536d7-2be3-49a4-a750-769684e952ed_Q1	006536d7-2be3-49a4-a750-769684e952ed
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (JJ sound) (VBG coming))
+        (PP (IN from))))
+    (. ?)))"	"Where	WRB	5	advmod
+was	VBD	5	aux
+the	DT	4	det
+sound	JJ	5	nsubj
+coming	VBG	0	ROOT
+from	IN	5	nmod
+?	.	5	punct
+"	[]	Where was the sound coming from?	006536d7-2be3-49a4-a750-769684e952ed_Q2	006536d7-2be3-49a4-a750-769684e952ed
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (PP (IN in)
+        (NP (DT the) (NN closet))))
+    (. ?)))"	"Who	WP	5	nsubj
+was	VBD	5	cop
+in	IN	5	case
+the	DT	5	det
+closet	NN	0	ROOT
+?	.	5	punct
+"	[]	Who was in the closet?	006536d7-2be3-49a4-a750-769684e952ed_Q3	006536d7-2be3-49a4-a750-769684e952ed
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Ken))
+      (VP (VB put)
+        (PP (IN in)
+          (NP (DT the) (NN freezer)))))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+Ken	NNP	4	nsubj
+put	VB	0	ROOT
+in	IN	7	case
+the	DT	7	det
+freezer	NN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Ken', 'characterOffsetBegin': 9, 'characterOffsetEnd': 12, 'ner': 'PERSON'}]"	What did Ken put in the freezer?	a111d580-1fb2-4ab1-848a-0856982dfcd5_Q0	a111d580-1fb2-4ab1-848a-0856982dfcd5
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP he))
+      (VP (VB hear)))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+he	PRP	4	nsubj
+hear	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'he', 'characterOffsetBegin': 9, 'characterOffsetEnd': 11, 'ner': 'PERSON'}]"	What did he hear?	a111d580-1fb2-4ab1-848a-0856982dfcd5_Q1	a111d580-1fb2-4ab1-848a-0856982dfcd5
+"(ROOT
+  (SBARQ
+    (WHNP (WP what))
+    (SQ
+      (VP (VBD happened)
+        (PP (TO to)
+          (NP (DT the) (NN bottle)))))
+    (. ?)))"	"what	WP	2	nsubj
+happened	VBD	0	ROOT
+to	TO	5	case
+the	DT	5	det
+bottle	NN	2	nmod
+?	.	2	punct
+"	[]	what happened to the bottle?	a111d580-1fb2-4ab1-848a-0856982dfcd5_Q2	a111d580-1fb2-4ab1-848a-0856982dfcd5
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP he))
+      (VP (VB drink)))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+he	PRP	4	nsubj
+drink	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'he', 'characterOffsetBegin': 9, 'characterOffsetEnd': 11, 'ner': 'PERSON'}]"	What did he drink?	a111d580-1fb2-4ab1-848a-0856982dfcd5_Q3	a111d580-1fb2-4ab1-848a-0856982dfcd5
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP
+        (NP (NNP Tyler) (POS 's))
+        (JJ favorite) (NN holiday)))
+    (. ?)))"	"What	WP	0	ROOT
+was	VBD	1	cop
+Tyler	NNP	6	nmod:poss
+'s	POS	3	case
+favorite	JJ	6	amod
+holiday	NN	1	nsubj
+?	.	1	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Tyler', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	What was Tyler's favorite holiday?	790d9cb4-4832-49e8-8137-331e79a4b9e6_Q0	790d9cb4-4832-49e8-8137-331e79a4b9e6
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Tyler))
+      (VP (VB see)))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+Tyler	NNP	4	nsubj
+see	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Tyler', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	What did Tyler see?	790d9cb4-4832-49e8-8137-331e79a4b9e6_Q1	790d9cb4-4832-49e8-8137-331e79a4b9e6
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP he))
+      (VP (VB see)
+        (NP (NNS downstairs))))
+    (. ?)))"	"What	WP	4	dep
+did	VBD	4	aux
+he	PRP	4	nsubj
+see	VB	0	ROOT
+downstairs	NNS	4	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'he', 'characterOffsetBegin': 9, 'characterOffsetEnd': 11, 'ner': 'PERSON'}]"	What did he see downstairs?	790d9cb4-4832-49e8-8137-331e79a4b9e6_Q2	790d9cb4-4832-49e8-8137-331e79a4b9e6
+"(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS presents))
+    (SQ (VBD did)
+      (NP (NNP Tyler))
+      (VP (VB open)))
+    (. ?)))"	"How	WRB	2	advmod
+many	JJ	3	amod
+presents	NNS	6	dobj
+did	VBD	6	aux
+Tyler	NNP	6	nsubj
+open	VB	0	ROOT
+?	.	6	punct
+"	"[{'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'Tyler', 'characterOffsetBegin': 22, 'characterOffsetEnd': 27, 'ner': 'PERSON'}]"	How many presents did Tyler open?	790d9cb4-4832-49e8-8137-331e79a4b9e6_Q3	790d9cb4-4832-49e8-8137-331e79a4b9e6
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ
+      (VP (VBD did)
+        (NP (NN Wendy) (NN work))))
+    (. ?)))"	"Where	WRB	0	ROOT
+did	VBD	1	root
+Wendy	NN	4	compound
+work	NN	2	dobj
+?	.	2	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Wendy', 'characterOffsetBegin': 10, 'characterOffsetEnd': 15, 'ner': 'PERSON'}]"	Where did Wendy work?	e663b977-2af7-4b1d-bd33-352d932f851b_Q0	e663b977-2af7-4b1d-bd33-352d932f851b
+"(ROOT
+  (S
+    (VP (VBD Did)
+      (NP (PRP she))
+      (PP (IN like)
+        (NP (PRP$ her) (NN job))))
+    (. ?)))"	"Did	VBD	0	ROOT
+she	PRP	1	dobj
+like	IN	5	case
+her	PRP$	5	nmod:poss
+job	NN	1	nmod
+?	.	1	punct
+"	"[{'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'she', 'characterOffsetBegin': 4, 'characterOffsetEnd': 7, 'ner': 'PERSON'}, {'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'her', 'characterOffsetBegin': 13, 'characterOffsetEnd': 16, 'ner': 'PERSON'}]"	Did she like her job?	e663b977-2af7-4b1d-bd33-352d932f851b_Q1	e663b977-2af7-4b1d-bd33-352d932f851b
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (VP (VBG annoying)
+        (NP (PRP$ her))))
+    (. ?)))"	"Who	WP	3	nsubj
+was	VBD	3	aux
+annoying	VBG	0	ROOT
+her	PRP$	3	dobj
+?	.	3	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'her', 'characterOffsetBegin': 17, 'characterOffsetEnd': 20, 'ner': 'PERSON'}]"	Who was annoying her?	e663b977-2af7-4b1d-bd33-352d932f851b_Q2	e663b977-2af7-4b1d-bd33-352d932f851b
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD did)
+      (NP (PRP she))
+      (VP (VB fire)))
+    (. ?)))"	"Who	WP	4	dobj
+did	VBD	4	aux
+she	PRP	4	nsubj
+fire	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'she', 'characterOffsetBegin': 8, 'characterOffsetEnd': 11, 'ner': 'PERSON'}]"	Who did she fire?	e663b977-2af7-4b1d-bd33-352d932f851b_Q3	e663b977-2af7-4b1d-bd33-352d932f851b
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD was)
+      (NP (NNP Walter))
+      (VP (VBN worried)))
+    (. ?)))"	"Why	WRB	4	advmod
+was	VBD	4	auxpass
+Walter	NNP	4	nsubjpass
+worried	VBN	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Walter', 'characterOffsetBegin': 8, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	Why was Walter worried?	375c34c9-3d98-4b2f-9076-404f34ad4e66_Q0	375c34c9-3d98-4b2f-9076-404f34ad4e66
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD did)
+      (NP (NNP Walter))
+      (VP (VB consult)
+        (PP (IN with))))
+    (. ?)))"	"Who	WP	4	dobj
+did	VBD	4	aux
+Walter	NNP	4	nsubj
+consult	VB	0	ROOT
+with	IN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Walter', 'characterOffsetBegin': 8, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	Who did Walter consult with?	375c34c9-3d98-4b2f-9076-404f34ad4e66_Q1	375c34c9-3d98-4b2f-9076-404f34ad4e66
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN vet))
+      (VP (VB discover)))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+vet	NN	5	nsubj
+discover	VB	0	ROOT
+?	.	5	punct
+"	[]	What did the vet discover?	375c34c9-3d98-4b2f-9076-404f34ad4e66_Q2	375c34c9-3d98-4b2f-9076-404f34ad4e66
+"(ROOT
+  (SBARQ
+    (WHNP (WDT What))
+    (SQ
+      (VP (VBD solved)
+        (NP (DT the) (NN issue))))
+    (. ?)))"	"What	WDT	2	nsubj
+solved	VBD	0	ROOT
+the	DT	4	det
+issue	NN	2	dobj
+?	.	2	punct
+"	[]	What solved the issue?	375c34c9-3d98-4b2f-9076-404f34ad4e66_Q3	375c34c9-3d98-4b2f-9076-404f34ad4e66
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (DT the) (NN couple))
+      (VP (VB take)
+        (NP (DT a) (JJ romantic) (NN trip))))
+    (. ?)))"	"Where	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+couple	NN	5	nsubj
+take	VB	0	ROOT
+a	DT	8	det
+romantic	JJ	8	amod
+trip	NN	5	dobj
+?	.	5	punct
+"	[]	Where did the couple take a romantic trip?	6ebc8d48-029b-4f00-89b3-773ce802825e_Q0	6ebc8d48-029b-4f00-89b3-773ce802825e
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (PRP they))
+      (VP (VB stay)))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+they	PRP	4	nsubj
+stay	VB	0	ROOT
+?	.	4	punct
+"	[]	Where did they stay?	6ebc8d48-029b-4f00-89b3-773ce802825e_Q1	6ebc8d48-029b-4f00-89b3-773ce802825e
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP they))
+      (VP (VB do)))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+they	PRP	4	nsubj
+do	VB	0	ROOT
+?	.	4	punct
+"	[]	What did they do?	6ebc8d48-029b-4f00-89b3-773ce802825e_Q2	6ebc8d48-029b-4f00-89b3-773ce802825e
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP they))
+      (VP (VBP do)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP they))
+            (VP (VBD returned)
+              (NP (NN home)))))))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+they	PRP	4	nsubj
+do	VBP	0	ROOT
+when	WRB	7	advmod
+they	PRP	7	nsubj
+returned	VBD	4	advcl
+home	NN	7	dobj
+?	.	4	punct
+"	[]	What did they do when they returned home?	6ebc8d48-029b-4f00-89b3-773ce802825e_Q3	6ebc8d48-029b-4f00-89b3-773ce802825e
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (DT the) (NN family))
+      (VP (VBG going)))
+    (. ?)))"	"Where	WRB	5	advmod
+was	VBD	5	aux
+the	DT	4	det
+family	NN	5	nsubj
+going	VBG	0	ROOT
+?	.	5	punct
+"	[]	Where was the family going?	5e76713f-92b2-4a5d-8f8d-510fde45705c_Q0	5e76713f-92b2-4a5d-8f8d-510fde45705c
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD were)
+      (NP (PRP they))
+      (VP (VBN excited)))
+    (. ?)))"	"Why	WRB	4	advmod
+were	VBD	4	auxpass
+they	PRP	4	nsubjpass
+excited	VBN	0	ROOT
+?	.	4	punct
+"	[]	Why were they excited?	5e76713f-92b2-4a5d-8f8d-510fde45705c_Q1	5e76713f-92b2-4a5d-8f8d-510fde45705c
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP they))
+      (VP (VB see)))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+they	PRP	4	nsubj
+see	VB	0	ROOT
+?	.	4	punct
+"	[]	What did they see?	5e76713f-92b2-4a5d-8f8d-510fde45705c_Q2	5e76713f-92b2-4a5d-8f8d-510fde45705c
+"(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ long))
+    (SQ (VBD were)
+      (NP (PRP they))
+      (NP (EX there)))
+    (. ?)))"	"How	WRB	2	advmod
+long	JJ	3	dep
+were	VBD	0	ROOT
+they	PRP	3	nsubj
+there	EX	3	dep
+?	.	3	punct
+"	[]	How long were they there?	5e76713f-92b2-4a5d-8f8d-510fde45705c_Q3	5e76713f-92b2-4a5d-8f8d-510fde45705c
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (PRP they))
+      (VP (VB go)))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+they	PRP	4	nsubj
+go	VB	0	ROOT
+?	.	4	punct
+"	[]	Where did they go?	712702cc-f042-4ca5-84dc-ada756cc8959_Q0	712702cc-f042-4ca5-84dc-ada756cc8959
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP they))
+      (VP (VB order)))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+they	PRP	4	nsubj
+order	VB	0	ROOT
+?	.	4	punct
+"	[]	What did they order?	712702cc-f042-4ca5-84dc-ada756cc8959_Q1	712702cc-f042-4ca5-84dc-ada756cc8959
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP they))
+      (VP (VBD put)
+        (PP (IN on)
+          (NP (DT the) (NNS fries)))))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+they	PRP	4	nsubj
+put	VBD	0	ROOT
+on	IN	7	case
+the	DT	7	det
+fries	NNS	4	nmod
+?	.	4	punct
+"	[]	What did they put on the fries?	712702cc-f042-4ca5-84dc-ada756cc8959_Q2	712702cc-f042-4ca5-84dc-ada756cc8959
+"(ROOT
+  (S
+    (VP (VBD Did)
+      (NP (PRP they))
+      (PP (IN like)
+        (NP (NN ketchup))))
+    (. ?)))"	"Did	VBD	0	ROOT
+they	PRP	1	dobj
+like	IN	4	case
+ketchup	NN	1	nmod
+?	.	1	punct
+"	[]	Did they like ketchup?	712702cc-f042-4ca5-84dc-ada756cc8959_Q3	712702cc-f042-4ca5-84dc-ada756cc8959
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN woman))
+      (VP (VBP want)
+        (S
+          (VP (TO to)
+            (VP (VB start))))))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+woman	NN	5	nsubj
+want	VBP	0	ROOT
+to	TO	7	mark
+start	VB	5	xcomp
+?	.	5	punct
+"	[]	What did the woman want to start?	61550fe1-c17d-4b94-b225-941026bdb68e_Q0	61550fe1-c17d-4b94-b225-941026bdb68e
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (PRP she))
+      (VP (VB go)))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+she	PRP	4	nsubj
+go	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'she', 'characterOffsetBegin': 10, 'characterOffsetEnd': 13, 'ner': 'PERSON'}]"	Where did she go?	61550fe1-c17d-4b94-b225-941026bdb68e_Q1	61550fe1-c17d-4b94-b225-941026bdb68e
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP she))
+      (VP (VB create)))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+she	PRP	4	nsubj
+create	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'she', 'characterOffsetBegin': 9, 'characterOffsetEnd': 12, 'ner': 'PERSON'}]"	What did she create?	61550fe1-c17d-4b94-b225-941026bdb68e_Q2	61550fe1-c17d-4b94-b225-941026bdb68e
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (PRP she))
+      (VP (VBD put)
+        (NP (PRP it))))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+she	PRP	4	nsubj
+put	VBD	0	ROOT
+it	PRP	4	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'she', 'characterOffsetBegin': 10, 'characterOffsetEnd': 13, 'ner': 'PERSON'}]"	Where did she put it?	61550fe1-c17d-4b94-b225-941026bdb68e_Q3	61550fe1-c17d-4b94-b225-941026bdb68e
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (NNP Alyssa))
+      (VP (VB go)
+        (PP (TO to)
+          (NP (NNP Miami)))))
+    (. ?)))"	"Why	WRB	4	advmod
+did	VBD	4	aux
+Alyssa	NNP	4	nsubj
+go	VB	0	ROOT
+to	TO	6	case
+Miami	NNP	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Alyssa', 'characterOffsetBegin': 8, 'characterOffsetEnd': 14, 'ner': 'PERSON'}, {'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'Miami', 'characterOffsetBegin': 21, 'characterOffsetEnd': 26, 'ner': 'CITY'}]"	Why did Alyssa go to Miami?	mc500.train.0_Q0	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Ellen))
+      (VP (VB order)))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+Ellen	NNP	4	nsubj
+order	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Ellen', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	What did Ellen order?	mc500.train.0_Q1	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHNP (WP who))
+    (SQ
+      (VP (VBD had)
+        (NP (NN soup))))
+    (. ?)))"	"who	WP	2	nsubj
+had	VBD	0	ROOT
+soup	NN	2	dobj
+?	.	2	punct
+"	[]	who had soup?	mc500.train.0_Q2	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB where))
+    (SQ (VBD did)
+      (NP (NNP Alyssa))
+      (VP (VB travel)
+        (PP (IN from))))
+    (. ?)))"	"where	WRB	4	advmod
+did	VBD	4	aux
+Alyssa	NNP	4	nsubj
+travel	VB	0	ROOT
+from	IN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Alyssa', 'characterOffsetBegin': 10, 'characterOffsetEnd': 16, 'ner': 'PERSON'}]"	where did Alyssa travel from?	mc500.train.0_Q3	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBZ makes)
+        (S
+          (NP (NNP Alyssa))
+          (ADJP (JJ happy)))))
+    (. ?)))"	"What	WP	2	nsubj
+makes	VBZ	0	ROOT
+Alyssa	NNP	4	nsubj
+happy	JJ	2	xcomp
+?	.	2	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Alyssa', 'characterOffsetBegin': 11, 'characterOffsetEnd': 17, 'ner': 'PERSON'}]"	What makes Alyssa happy?	mc500.train.0_Q4	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (PRP they))
+      (VP (VBP stay)
+        (NP-TMP (DT the) (NN night))))
+    (. ?)))"	"Why	WRB	4	advmod
+did	VBD	4	aux
+they	PRP	4	nsubj
+stay	VBP	0	ROOT
+the	DT	6	det
+night	NN	4	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'night', 'characterOffsetBegin': 22, 'characterOffsetEnd': 27, 'ner': 'TIME', 'normalizedNER': 'TNI', 'timex': {'tid': 't1', 'type': 'TIME', 'value': 'TNI'}}]"	Why did they stay the night?	mc500.train.0_Q5	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD traded)
+        (NP (NNS stories))))
+    (. ?)))"	"Who	WP	2	nsubj
+traded	VBD	0	ROOT
+stories	NNS	2	dobj
+?	.	2	punct
+"	[]	Who traded stories?	mc500.train.0_Q6	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD went)
+        (PP (TO to)
+          (NP (DT the) (NN beach)))))
+    (. ?)))"	"Who	WP	2	nsubj
+went	VBD	0	ROOT
+to	TO	5	case
+the	DT	5	det
+beach	NN	2	nmod
+?	.	2	punct
+"	[]	Who went to the beach?	mc500.train.0_Q7	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NN restaurant) (POS 's))
+        (NP (JJ special))))
+    (. ?)))"	"What	WP	0	ROOT
+was	VBD	1	cop
+the	DT	4	det
+restaurant	NN	1	nsubj
+'s	POS	4	case
+special	JJ	4	amod
+?	.	1	punct
+"	[]	What was the restaurant's special?	mc500.train.0_Q8	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Kristin))
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB eat))))))
+    (. ?)))"	"What	WP	4	dep
+did	VBD	4	aux
+Kristin	NNP	4	nsubj
+have	VB	0	ROOT
+to	TO	6	mark
+eat	VB	4	xcomp
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Kristin', 'characterOffsetBegin': 9, 'characterOffsetEnd': 16, 'ner': 'PERSON'}]"	What did Kristin have to eat?	mc500.train.0_Q9	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (DT the) (NNS girls))
+      (VP (VB go)
+        (PP (IN for)
+          (NP (NN dinner)))))
+    (. ?)))"	"Where	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+girls	NNS	5	nsubj
+go	VB	0	ROOT
+for	IN	7	case
+dinner	NN	5	nmod
+?	.	5	punct
+"	[]	Where did the girls go for dinner?	mc500.train.0_Q10	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (NNP Alyssa))
+      (VP (VB meet)
+        (NP (PRP$ her) (NNS friends))))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+Alyssa	NNP	4	nsubj
+meet	VB	0	ROOT
+her	PRP$	6	nmod:poss
+friends	NNS	4	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Alyssa', 'characterOffsetBegin': 10, 'characterOffsetEnd': 16, 'ner': 'PERSON'}, {'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'her', 'characterOffsetBegin': 22, 'characterOffsetEnd': 25, 'ner': 'PERSON'}]"	Where did Alyssa meet her friends?	mc500.train.0_Q11	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Ellen)
+        (CC and)
+        (NNP Alyssa))
+      (VP (VBP have)
+        (S
+          (VP (TO to)
+            (VP (VB drink))))))
+    (. ?)))"	"What	WP	6	dep
+did	VBD	6	aux
+Ellen	NNP	6	nsubj
+and	CC	3	cc
+Alyssa	NNP	3	conj
+have	VBP	0	ROOT
+to	TO	8	mark
+drink	VB	6	xcomp
+?	.	6	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Ellen', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}, {'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'Alyssa', 'characterOffsetBegin': 19, 'characterOffsetEnd': 25, 'ner': 'PERSON'}]"	What did Ellen and Alyssa have to drink?	mc500.train.0_Q12	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NNS ladies))
+      (VP (VBP do)
+        (PP (IN after)
+          (NP (NN dinner)))))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+ladies	NNS	5	nsubj
+do	VBP	0	ROOT
+after	IN	7	case
+dinner	NN	5	nmod
+?	.	5	punct
+"	[]	What did the ladies do after dinner?	mc500.train.0_Q13	mc500.train.0
+"(ROOT
+  (S
+    (VP (VBD Did)
+      (SBAR
+        (S
+          (NP
+            (NP (NNP Alyssa))
+            (CC and)
+            (NP (PRP$ her) (NNS friends)))
+          (VP (VBP have)
+            (NP
+              (NP (DT a) (NN lot))
+              (PP (IN of)
+                (NP (NN fun))))))))
+    (. ?)))"	"Did	VBD	6	aux
+Alyssa	NNP	6	nsubj
+and	CC	2	cc
+her	PRP$	5	nmod:poss
+friends	NNS	2	conj
+have	VBP	0	ROOT
+a	DT	8	det
+lot	NN	6	dobj
+of	IN	10	case
+fun	NN	8	nmod
+?	.	6	punct
+"	"[{'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'Alyssa', 'characterOffsetBegin': 4, 'characterOffsetEnd': 10, 'ner': 'PERSON'}, {'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'her', 'characterOffsetBegin': 15, 'characterOffsetEnd': 18, 'ner': 'PERSON'}]"	Did Alyssa and her friends have a lot of fun?	mc500.train.0_Q14	mc500.train.0
+"(ROOT
+  (SQ (VBD Did)
+    (NP (NNP Alyssa))
+    (VP (VB go)
+      (NP (VBG swimming)))
+    (. ?)))"	"Did	VBD	3	aux
+Alyssa	NNP	3	nsubj
+go	VB	0	ROOT
+swimming	VBG	3	xcomp
+?	.	3	punct
+"	"[{'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'Alyssa', 'characterOffsetBegin': 4, 'characterOffsetEnd': 10, 'ner': 'PERSON'}]"	Did Alyssa go swimming?	mc500.train.0_Q15	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP she))
+      (VP (VB do)
+        (SBAR (IN while)
+          (FRAG
+            (PP (IN at)
+              (NP (DT the) (NN beach)))))))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+she	PRP	4	nsubj
+do	VB	0	ROOT
+while	IN	8	mark
+at	IN	8	case
+the	DT	8	det
+beach	NN	4	advcl
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'she', 'characterOffsetBegin': 9, 'characterOffsetEnd': 12, 'ner': 'PERSON'}]"	What did she do while at the beach?	mc500.train.0_Q16	mc500.train.0
+"(ROOT
+  (SQ (VBD Did)
+    (NP (NNP Alyssa))
+    (VP (VB take)
+      (NP (DT a) (JJ long) (NN trip)))
+    (. ?)))"	"Did	VBD	3	aux
+Alyssa	NNP	3	nsubj
+take	VB	0	ROOT
+a	DT	6	det
+long	JJ	6	amod
+trip	NN	3	dobj
+?	.	3	punct
+"	"[{'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'Alyssa', 'characterOffsetBegin': 4, 'characterOffsetEnd': 10, 'ner': 'PERSON'}]"	Did Alyssa take a long trip?	mc500.train.0_Q17	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN city))
+    (SQ (VBZ is)
+      (NP (NNP Alyssa))
+      (PP (IN in)))
+    (. ?)))"	"What	WDT	2	det
+city	NN	3	nsubj
+is	VBZ	0	ROOT
+Alyssa	NNP	3	nsubj
+in	IN	3	dep
+?	.	3	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Alyssa', 'characterOffsetBegin': 13, 'characterOffsetEnd': 19, 'ner': 'PERSON'}]"	What city is Alyssa in?	mc500.train.0_Q18	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Alyssa))
+      (VP (VB eat)
+        (PP (IN at)
+          (NP (DT the) (NN restaurant)))))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+Alyssa	NNP	4	nsubj
+eat	VB	0	ROOT
+at	IN	7	case
+the	DT	7	det
+restaurant	NN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Alyssa', 'characterOffsetBegin': 9, 'characterOffsetEnd': 15, 'ner': 'PERSON'}]"	What did Alyssa eat at the restaurant?	mc500.train.0_Q19	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD did)
+      (NP (NNP Alyssa))
+      (VP (VB call)))
+    (. ?)))"	"Who	WP	4	dobj
+did	VBD	4	aux
+Alyssa	NNP	4	nsubj
+call	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Alyssa', 'characterOffsetBegin': 8, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	Who did Alyssa call?	mc500.train.0_Q20	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (DT the) (NNS ladies))
+      (VP (VBP go)
+        (ADVP (RB back))
+        (PP (TO to)
+          (NP
+            (NP (NNP Ellen) (POS 's))
+            (NN house)))))
+    (. ?)))"	"Why	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+ladies	NNS	5	nsubj
+go	VBP	0	ROOT
+back	RB	5	advmod
+to	TO	10	case
+Ellen	NNP	10	nmod:poss
+'s	POS	8	case
+house	NN	6	nmod
+?	.	5	punct
+"	"[{'docTokenBegin': 7, 'docTokenEnd': 8, 'tokenBegin': 7, 'tokenEnd': 8, 'text': 'Ellen', 'characterOffsetBegin': 30, 'characterOffsetEnd': 35, 'ner': 'PERSON'}]"	Why did the ladies go back to Ellen's house?	mc500.train.0_Q21	mc500.train.0
+"(ROOT
+  (SBARQ
+    (PP (IN In)
+      (NP (NNP Miami)))
+    (, ,)
+    (WHADVP (WRB where))
+    (SQ (VBD did)
+      (NP (NNP Alyssa))
+      (VP (VB go)
+        (ADVP (RB first))))
+    (. ?)))"	"In	IN	2	case
+Miami	NNP	0	ROOT
+,	,	2	punct
+where	WRB	7	advmod
+did	VBD	7	aux
+Alyssa	NNP	7	nsubj
+go	VB	2	acl:relcl
+first	RB	7	advmod
+?	.	2	punct
+"	"[{'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'Miami', 'characterOffsetBegin': 3, 'characterOffsetEnd': 8, 'ner': 'CITY'}, {'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'Alyssa', 'characterOffsetBegin': 20, 'characterOffsetEnd': 26, 'ner': 'PERSON'}, {'docTokenBegin': 7, 'docTokenEnd': 8, 'tokenBegin': 7, 'tokenEnd': 8, 'text': 'first', 'characterOffsetBegin': 30, 'characterOffsetEnd': 35, 'ner': 'ORDINAL', 'normalizedNER': '1.0'}]"	"In Miami, where did Alyssa go first?"	mc500.train.0_Q22	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (NNP Alyssa))
+      (VP (VB go)
+        (PP (IN after)
+          (NP (DT the) (NN beach)))))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+Alyssa	NNP	4	nsubj
+go	VB	0	ROOT
+after	IN	7	case
+the	DT	7	det
+beach	NN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Alyssa', 'characterOffsetBegin': 10, 'characterOffsetEnd': 16, 'ner': 'PERSON'}]"	Where did Alyssa go after the beach?	mc500.train.0_Q23	mc500.train.0
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD did)
+      (NP (NNP Kelly))
+      (VP (VB wake)
+        (PRT (RP up))))
+    (. ?)))"	"When	WRB	4	advmod
+did	VBD	4	aux
+Kelly	NNP	4	nsubj
+wake	VB	0	ROOT
+up	RP	4	compound:prt
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Kelly', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	When did Kelly wake up?	mc500.train.18_Q0	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHNP (WP what))
+    (SQ (VBD did)
+      (NP (NNP Kelly))
+      (VP (VB do)
+        (SBAR (IN after)
+          (S
+            (NP (PRP she))
+            (VP (VBD woke)
+              (PRT (RP up)))))))
+    (. ?)))"	"what	WP	4	dobj
+did	VBD	4	aux
+Kelly	NNP	4	nsubj
+do	VB	0	ROOT
+after	IN	7	mark
+she	PRP	7	nsubj
+woke	VBD	4	advcl
+up	RP	7	compound:prt
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Kelly', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}, {'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'she', 'characterOffsetBegin': 24, 'characterOffsetEnd': 27, 'ner': 'PERSON'}]"	what did Kelly do after she woke up?	mc500.train.18_Q1	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (ADJP (JJ big)
+        (CC and)
+        (JJ beautiful)))
+    (. ?)))"	"What	WP	0	ROOT
+is	VBZ	1	cop
+big	JJ	1	nsubj
+and	CC	3	cc
+beautiful	JJ	3	conj
+?	.	1	punct
+"	[]	What is big and beautiful?	mc500.train.18_Q2	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHNP (WP what))
+    (SQ (VBD did)
+      (NP (NNP Kelly))
+      (VP (VB get)))
+    (. ?)))"	"what	WP	4	dobj
+did	VBD	4	aux
+Kelly	NNP	4	nsubj
+get	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Kelly', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	what did Kelly get?	mc500.train.18_Q3	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Kelly))
+      (VP (VB collect)
+        (PP (IN as)
+          (NP (DT a) (JJ present)))))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+Kelly	NNP	4	nsubj
+collect	VB	0	ROOT
+as	IN	7	case
+a	DT	7	det
+present	JJ	4	advcl
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Kelly', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}, {'docTokenBegin': 6, 'docTokenEnd': 7, 'tokenBegin': 6, 'tokenEnd': 7, 'text': 'present', 'characterOffsetBegin': 28, 'characterOffsetEnd': 35, 'ner': 'DATE', 'normalizedNER': 'PRESENT_REF', 'timex': {'tid': 't1', 'type': 'DATE', 'value': 'PRESENT_REF'}}]"	What did Kelly collect as a present?	mc500.train.18_Q4	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD were)
+      (NP (DT the) (JJS best) (NNS flowers)))
+    (. ?)))"	"Where	WRB	2	advmod
+were	VBD	0	ROOT
+the	DT	5	det
+best	JJS	5	amod
+flowers	NNS	2	nsubj
+?	.	2	punct
+"	[]	Where were the best flowers?	mc500.train.18_Q5	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (NNP Kelly))
+      (VP
+        (ADVP (RB finally))
+        (VB hide)
+        (NP (DT the) (NNS flowers))))
+    (. ?)))"	"Where	WRB	5	advmod
+did	VBD	5	aux
+Kelly	NNP	5	nsubj
+finally	RB	5	advmod
+hide	VB	0	ROOT
+the	DT	7	det
+flowers	NNS	5	dobj
+?	.	5	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Kelly', 'characterOffsetBegin': 10, 'characterOffsetEnd': 15, 'ner': 'PERSON'}]"	Where did Kelly finally hide the flowers?	mc500.train.18_Q6	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD was)
+      (NP
+        (NP (NNP Kelly))
+        (PP (IN in)
+          (NP (DT a) (NN hurry)))))
+    (. ?)))"	"Why	WRB	0	ROOT
+was	VBD	1	dep
+Kelly	NNP	2	nsubj
+in	IN	6	case
+a	DT	6	det
+hurry	NN	3	nmod
+?	.	1	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Kelly', 'characterOffsetBegin': 8, 'characterOffsetEnd': 13, 'ner': 'PERSON'}]"	Why was Kelly in a hurry?	mc500.train.18_Q7	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBD did)
+      (NP (NNP Kelly))
+      (VP (VB feel)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP$ her) (NN mother))
+            (VP (VBD woke)
+              (PRT (RP up)))))))
+    (. ?)))"	"How	WRB	4	advmod
+did	VBD	4	aux
+Kelly	NNP	4	nsubj
+feel	VB	0	ROOT
+when	WRB	8	advmod
+her	PRP$	7	nmod:poss
+mother	NN	8	nsubj
+woke	VBD	4	advcl
+up	RP	8	compound:prt
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Kelly', 'characterOffsetBegin': 8, 'characterOffsetEnd': 13, 'ner': 'PERSON'}, {'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'her', 'characterOffsetBegin': 24, 'characterOffsetEnd': 27, 'ner': 'PERSON'}]"	How did Kelly feel when her mother woke up?	mc500.train.18_Q8	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHNP (WDT what)
+      (NP (NN size)))
+    (SQ (VBD were)
+      (NP (DT the) (JJ orange) (NNS ones)))
+    (. ?)))"	"what	WDT	2	det
+size	NN	3	dobj
+were	VBD	0	ROOT
+the	DT	6	det
+orange	JJ	6	amod
+ones	NNS	3	nsubj
+?	.	3	punct
+"	[]	what size were the orange ones?	mc500.train.18_Q9	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHNP (WP what))
+    (SQ (VBD did)
+      (NP (NNP Kelly))
+      (VP (VB hide)))
+    (. ?)))"	"what	WP	4	dobj
+did	VBD	4	aux
+Kelly	NNP	4	nsubj
+hide	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Kelly', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	what did Kelly hide?	mc500.train.18_Q10	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN flower))
+    (SQ (VBD was)
+      (NP
+        (NP (NN mother) (POS 's))
+        (NN favorite)))
+    (. ?)))"	"Which	WDT	2	det
+flower	NN	3	dobj
+was	VBD	0	ROOT
+mother	NN	6	nmod:poss
+'s	POS	4	case
+favorite	NN	3	nsubj
+?	.	3	punct
+"	[]	Which flower was mother's favorite?	mc500.train.18_Q11	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN time))
+    (SQ
+      (VP (VBD did)
+        (NP
+          (NP (NNP Kelly) (POS 's))
+          (NN mother) (NN wake))
+        (ADVP (RB up))))
+    (. ?)))"	"What	WDT	2	det
+time	NN	7	nmod:tmod
+did	VBD	7	aux
+Kelly	NNP	6	nmod:poss
+'s	POS	4	case
+mother	NN	7	nsubj
+wake	NN	0	ROOT
+up	RB	7	compound:prt
+?	.	7	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Kelly', 'characterOffsetBegin': 14, 'characterOffsetEnd': 19, 'ner': 'PERSON'}]"	What time did Kelly's mother wake up?	mc500.train.18_Q12	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Kelly))
+      (VP (VB use)
+        (S
+          (VP (TO to)
+            (VP (VB tie)
+              (NP (DT the) (NNS flowers))
+              (ADVP (RB together)))))))
+    (. ?)))"	"What	WP	4	dep
+did	VBD	4	aux
+Kelly	NNP	4	nsubj
+use	VB	0	ROOT
+to	TO	6	mark
+tie	VB	4	xcomp
+the	DT	8	det
+flowers	NNS	6	dobj
+together	RB	6	advmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Kelly', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	What did Kelly use to tie the flowers together?	mc500.train.18_Q13	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHNP (WP what))
+    (SQ (VBD did)
+      (NP (NNP Kelly))
+      (VP (VB give)
+        (NP (PRP$ her) (NN mom))
+        (PP (IN as)
+          (NP (DT a) (JJ present)))))
+    (. ?)))"	"what	WP	4	dep
+did	VBD	4	aux
+Kelly	NNP	4	nsubj
+give	VB	0	ROOT
+her	PRP$	6	nmod:poss
+mom	NN	4	dobj
+as	IN	9	case
+a	DT	9	det
+present	JJ	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Kelly', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}, {'docTokenBegin': 8, 'docTokenEnd': 9, 'tokenBegin': 8, 'tokenEnd': 9, 'text': 'present', 'characterOffsetBegin': 33, 'characterOffsetEnd': 40, 'ner': 'DATE', 'normalizedNER': 'PRESENT_REF', 'timex': {'tid': 't1', 'type': 'DATE', 'value': 'PRESENT_REF'}}, {'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'her', 'characterOffsetBegin': 20, 'characterOffsetEnd': 23, 'ner': 'PERSON'}]"	what did Kelly give her mom as a present?	mc500.train.18_Q14	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP
+        (NP (PRP$ her) (NN baby) (NN sister) (POS 's))
+        (NN name)))
+    (. ?)))"	"What	WP	0	ROOT
+was	VBD	1	cop
+her	PRP$	5	nmod:poss
+baby	NN	5	compound
+sister	NN	7	nmod:poss
+'s	POS	5	case
+name	NN	1	nsubj
+?	.	1	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'her', 'characterOffsetBegin': 9, 'characterOffsetEnd': 12, 'ner': 'PERSON'}]"	What was her baby sister's name?	mc500.train.18_Q15	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (NNP Kelly))
+      (VP (VB hide)
+        (NP (DT the) (NNS flowers))
+        (NP-TMP (DT a) (JJ second) (NN time))))
+    (. ?)))"	"Why	WRB	4	advmod
+did	VBD	4	aux
+Kelly	NNP	4	nsubj
+hide	VB	0	ROOT
+the	DT	6	det
+flowers	NNS	4	dobj
+a	DT	9	det
+second	JJ	9	amod
+time	NN	4	nmod:npmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Kelly', 'characterOffsetBegin': 8, 'characterOffsetEnd': 13, 'ner': 'PERSON'}, {'docTokenBegin': 6, 'docTokenEnd': 8, 'tokenBegin': 6, 'tokenEnd': 8, 'text': 'a second', 'characterOffsetBegin': 31, 'characterOffsetEnd': 39, 'ner': 'DURATION', 'normalizedNER': 'PT1S', 'timex': {'tid': 't1', 'type': 'DURATION', 'value': 'PT1S'}}]"	Why did Kelly hide the flowers a second time?	mc500.train.18_Q16	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP she))
+      (VP (VB tie)
+        (ADVP (RB together))
+        (PP (IN with)
+          (NP (DT a) (NN string)))))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+she	PRP	4	nsubj
+tie	VB	0	ROOT
+together	RB	4	advmod
+with	IN	8	case
+a	DT	8	det
+string	NN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'she', 'characterOffsetBegin': 9, 'characterOffsetEnd': 12, 'ner': 'PERSON'}]"	What did she tie together with a string?	mc500.train.18_Q17	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB where))
+    (SQ (VBD did)
+      (NP (PRP she))
+      (VP (VB pick)
+        (NP (NNS flowers) (NNS flowers))))
+    (. ?)))"	"where	WRB	4	advmod
+did	VBD	4	aux
+she	PRP	4	nsubj
+pick	VB	0	ROOT
+flowers	NNS	6	compound
+flowers	NNS	4	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'she', 'characterOffsetBegin': 10, 'characterOffsetEnd': 13, 'ner': 'PERSON'}]"	where did she pick flowers flowers?	mc500.train.18_Q18	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS flowers))
+    (SQ
+      (VP (VBD were)
+        (ADJP (JJ big))))
+    (. ?)))"	"Which	WDT	2	det
+flowers	NNS	4	dobj
+were	VBD	4	cop
+big	JJ	0	ROOT
+?	.	4	punct
+"	[]	Which flowers were big?	mc500.train.18_Q19	mc500.train.18
+"(ROOT
+  (SBARQ
+    (SBAR (IN After)
+      (S
+        (NP (PRP she))
+        (VP (VBD woke)
+          (PRT (RP up)))))
+    (, ,)
+    (WHADVP (WRB where))
+    (SQ (VBD did)
+      (NP (NNP Kelly))
+      (VP (VB go)))
+    (. ?)))"	"After	IN	3	mark
+she	PRP	3	nsubj
+woke	VBD	9	advcl
+up	RP	3	compound:prt
+,	,	9	punct
+where	WRB	9	advmod
+did	VBD	9	aux
+Kelly	NNP	9	nsubj
+go	VB	0	ROOT
+?	.	9	punct
+"	"[{'docTokenBegin': 7, 'docTokenEnd': 8, 'tokenBegin': 7, 'tokenEnd': 8, 'text': 'Kelly', 'characterOffsetBegin': 29, 'characterOffsetEnd': 34, 'ner': 'PERSON'}, {'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'she', 'characterOffsetBegin': 6, 'characterOffsetEnd': 9, 'ner': 'PERSON'}]"	"After she woke up, where did Kelly go?"	mc500.train.18_Q20	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Kelly))
+      (VP (VB do)
+        (SBAR (IN after)
+          (S
+            (NP (PRP she))
+            (VP (VBD had)
+              (VP (VBN collected)
+                (NP (DT the) (NNS flowers))))))))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+Kelly	NNP	4	nsubj
+do	VB	0	ROOT
+after	IN	8	mark
+she	PRP	8	nsubj
+had	VBD	8	aux
+collected	VBN	4	advcl
+the	DT	10	det
+flowers	NNS	8	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Kelly', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}, {'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'she', 'characterOffsetBegin': 24, 'characterOffsetEnd': 27, 'ner': 'PERSON'}]"	What did Kelly do after she had collected the flowers?	mc500.train.18_Q21	mc500.train.18
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD was)
+      (NP (NNP Andrew))
+      (VP (VBN bored)))
+    (. ?)))"	"When	WRB	4	advmod
+was	VBD	4	auxpass
+Andrew	NNP	4	nsubjpass
+bored	VBN	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Andrew', 'characterOffsetBegin': 9, 'characterOffsetEnd': 15, 'ner': 'PERSON'}]"	When was Andrew bored?	mc500.train.23_Q0	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN day))
+    (SQ (VBD was)
+      (NP (PRP it)))
+    (. ?)))"	"What	WDT	2	det
+day	NN	3	nsubj
+was	VBD	0	ROOT
+it	PRP	3	nsubj
+?	.	3	punct
+"	"[{'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'day', 'characterOffsetBegin': 5, 'characterOffsetEnd': 8, 'ner': 'DURATION', 'normalizedNER': 'P1D', 'timex': {'tid': 't1', 'type': 'DURATION', 'value': 'P1D'}}]"	What day was it?	mc500.train.23_Q1	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (NNP Andrew))
+      (VP (VB look)))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+Andrew	NNP	4	nsubj
+look	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Andrew', 'characterOffsetBegin': 10, 'characterOffsetEnd': 16, 'ner': 'PERSON'}]"	Where did Andrew look?	mc500.train.23_Q2	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHNP (WP what))
+    (SQ (VBD did)
+      (NP (NNP Andrew))
+      (VP (VB see)
+        (PP (IN by)
+          (NP (DT the) (NN door)))))
+    (. ?)))"	"what	WP	4	dobj
+did	VBD	4	aux
+Andrew	NNP	4	nsubj
+see	VB	0	ROOT
+by	IN	7	case
+the	DT	7	det
+door	NN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Andrew', 'characterOffsetBegin': 9, 'characterOffsetEnd': 15, 'ner': 'PERSON'}]"	what did Andrew see by the door?	mc500.train.23_Q3	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NN picture))
+        (PP (IN of)
+          (NP (DT the) (NN elephant)))))
+    (. ?)))"	"Where	WRB	2	advmod
+was	VBD	0	ROOT
+the	DT	4	det
+picture	NN	2	nsubj
+of	IN	7	case
+the	DT	7	det
+elephant	NN	4	nmod
+?	.	2	punct
+"	[]	Where was the picture of the elephant?	mc500.train.23_Q4	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHNP (WRB How) (RB long))
+    (SQ
+      (VP (VBN had)
+        (NP
+          (NP (NNP Andrew))
+          (VP (VBN been)
+            (VP (VBG watching)
+              (NP (NN TV)))))))
+    (. ?)))"	"How	WRB	2	advmod
+long	RB	6	advmod
+had	VBN	6	aux
+Andrew	NNP	6	nsubj
+been	VBN	6	aux
+watching	VBG	0	ROOT
+TV	NN	6	dobj
+?	.	6	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Andrew', 'characterOffsetBegin': 13, 'characterOffsetEnd': 19, 'ner': 'PERSON'}]"	How long had Andrew been watching TV?	mc500.train.23_Q5	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP
+        (NP (NNP Andrew))
+        (CC and)
+        (NP (PRP$ his) (NN dad)))
+      (VP (VB read)))
+    (. ?)))"	"What	WP	7	dobj
+did	VBD	7	aux
+Andrew	NNP	7	nsubj
+and	CC	3	cc
+his	PRP$	6	nmod:poss
+dad	NN	3	conj
+read	VB	0	ROOT
+?	.	7	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Andrew', 'characterOffsetBegin': 9, 'characterOffsetEnd': 15, 'ner': 'PERSON'}, {'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'his', 'characterOffsetBegin': 20, 'characterOffsetEnd': 23, 'ner': 'PERSON'}]"	What did Andrew and his dad read?	mc500.train.23_Q6	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (DT the) (NN circus)))
+    (. ?)))"	"Where	WRB	2	advmod
+was	VBD	0	ROOT
+the	DT	4	det
+circus	NN	2	nsubj
+?	.	2	punct
+"	[]	Where was the circus?	mc500.train.23_Q7	mc500.train.23
+"(ROOT
+  (SINV (VBD Had)
+    (NP
+      (NP (NNP Andrew))
+      (ADVP (RB ever)))
+    (VP (VBN been)
+      (PP (TO to)
+        (NP (DT the) (NN circus)))
+      (. ?))))"	"Had	VBD	7	aux
+Andrew	NNP	7	nsubj
+ever	RB	7	advmod
+been	VBN	7	cop
+to	TO	7	case
+the	DT	7	det
+circus	NN	0	ROOT
+?	.	7	punct
+"	"[{'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'Andrew', 'characterOffsetBegin': 4, 'characterOffsetEnd': 10, 'ner': 'PERSON'}]"	Had Andrew ever been to the circus?	mc500.train.23_Q8	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Andrew))
+      (VP (VB feed)
+        (NP (DT the) (NN goldfish))))
+    (. ?)))"	"What	WP	4	dep
+did	VBD	4	aux
+Andrew	NNP	4	nsubj
+feed	VB	0	ROOT
+the	DT	6	det
+goldfish	NN	4	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Andrew', 'characterOffsetBegin': 9, 'characterOffsetEnd': 15, 'ner': 'PERSON'}]"	What did Andrew feed the goldfish?	mc500.train.23_Q9	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD did)
+        (NP
+          (NP (NNS lots))
+          (PP (IN of)
+            (NP (NNS tricks))))))
+    (. ?)))"	"Who	WP	2	nsubj
+did	VBD	0	ROOT
+lots	NNS	2	dobj
+of	IN	5	case
+tricks	NNS	3	nmod
+?	.	2	punct
+"	[]	Who did lots of tricks?	mc500.train.23_Q10	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP
+        (NP (NNP Andrew))
+        (CC and)
+        (NP (PRP$ his) (NN dad)))
+      (VP (VB eat)))
+    (. ?)))"	"What	WP	7	dobj
+did	VBD	7	aux
+Andrew	NNP	7	nsubj
+and	CC	3	cc
+his	PRP$	6	nmod:poss
+dad	NN	3	conj
+eat	VB	0	ROOT
+?	.	7	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Andrew', 'characterOffsetBegin': 9, 'characterOffsetEnd': 15, 'ner': 'PERSON'}, {'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'his', 'characterOffsetBegin': 20, 'characterOffsetEnd': 23, 'ner': 'PERSON'}]"	What did Andrew and his dad eat?	mc500.train.23_Q11	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ
+      (VP (VBD did)
+        (SBAR
+          (S
+            (NP
+              (NP (NNP Andrew))
+              (CC and)
+              (NP (PRP$ his) (NN dad)))
+            (VP (VBP have)
+              (NP (NN fun)))))))
+    (. ?)))"	"Where	WRB	7	advmod
+did	VBD	7	aux
+Andrew	NNP	7	nsubj
+and	CC	3	cc
+his	PRP$	6	nmod:poss
+dad	NN	3	conj
+have	VBP	0	ROOT
+fun	NN	7	dobj
+?	.	7	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Andrew', 'characterOffsetBegin': 10, 'characterOffsetEnd': 16, 'ner': 'PERSON'}, {'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'his', 'characterOffsetBegin': 21, 'characterOffsetEnd': 24, 'ner': 'PERSON'}]"	Where did Andrew and his dad have fun?	mc500.train.23_Q12	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP
+        (NP (NNP Andrew))
+        (CC and)
+        (NP (PRP$ his) (NN dad)))
+      (VP (VB go)))
+    (. ?)))"	"Where	WRB	7	advmod
+did	VBD	7	aux
+Andrew	NNP	7	nsubj
+and	CC	3	cc
+his	PRP$	6	nmod:poss
+dad	NN	3	conj
+go	VB	0	ROOT
+?	.	7	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Andrew', 'characterOffsetBegin': 10, 'characterOffsetEnd': 16, 'ner': 'PERSON'}, {'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'his', 'characterOffsetBegin': 21, 'characterOffsetEnd': 24, 'ner': 'PERSON'}]"	Where did Andrew and his dad go?	mc500.train.23_Q13	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (DT the) (NN newspaper)))
+    (. ?)))"	"Where	WRB	2	advmod
+was	VBD	0	ROOT
+the	DT	4	det
+newspaper	NN	2	nsubj
+?	.	2	punct
+"	[]	Where was the newspaper?	mc500.train.23_Q14	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD went)
+        (ADVP (IN down)
+          (NP (DT the) (NN slide)))))
+    (. ?)))"	"Who	WP	2	nsubj
+went	VBD	0	ROOT
+down	IN	5	case
+the	DT	5	det
+slide	NN	2	nmod
+?	.	2	punct
+"	[]	Who went down the slide?	mc500.train.23_Q15	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD were)
+      (NP
+        (NP (DT the) (NNS animals))
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NN circus))
+            (VP (VBG doing))))))
+    (. ?)))"	"What	WP	0	ROOT
+were	VBD	1	cop
+the	DT	4	det
+animals	NNS	1	nsubj
+at	IN	7	case
+the	DT	7	det
+circus	NN	4	nmod
+doing	VBG	7	acl
+?	.	1	punct
+"	[]	What were the animals at the circus doing?	mc500.train.23_Q16	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP he))
+      (VP (VB bring)
+        (PP (TO to)
+          (NP (PRP$ his) (NN dad)))))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+he	PRP	4	nsubj
+bring	VB	0	ROOT
+to	TO	7	case
+his	PRP$	7	nmod:poss
+dad	NN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'he', 'characterOffsetBegin': 9, 'characterOffsetEnd': 11, 'ner': 'PERSON'}, {'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'his', 'characterOffsetBegin': 21, 'characterOffsetEnd': 24, 'ner': 'PERSON'}]"	What did he bring to his dad?	mc500.train.23_Q17	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Andrew))
+      (VP (VB need)
+        (S
+          (VP (TO to)
+            (VP (VB do)
+              (SBAR (IN before)
+                (S
+                  (NP (PRP he))
+                  (VP (MD could)
+                    (VP (VB go)
+                      (PP (TO to)
+                        (NP (DT the) (NN circus))))))))))))
+    (. ?)))"	"What	WP	4	dep
+did	VBD	4	aux
+Andrew	NNP	4	nsubj
+need	VB	0	ROOT
+to	TO	6	mark
+do	VB	4	xcomp
+before	IN	10	mark
+he	PRP	10	nsubj
+could	MD	10	aux
+go	VB	6	advcl
+to	TO	13	case
+the	DT	13	det
+circus	NN	10	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Andrew', 'characterOffsetBegin': 9, 'characterOffsetEnd': 15, 'ner': 'PERSON'}, {'docTokenBegin': 7, 'docTokenEnd': 8, 'tokenBegin': 7, 'tokenEnd': 8, 'text': 'he', 'characterOffsetBegin': 34, 'characterOffsetEnd': 36, 'ner': 'PERSON'}]"	What did Andrew need to do before he could go to the circus?	mc500.train.23_Q18	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD ate)
+        (NP (DT the) (NNS peanuts))))
+    (. ?)))"	"Who	WP	2	nsubj
+ate	VBD	0	ROOT
+the	DT	4	det
+peanuts	NNS	2	dobj
+?	.	2	punct
+"	[]	Who ate the peanuts?	mc500.train.23_Q19	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD was)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (JJ front) (NN page))
+            (PP (IN of)
+              (NP (DT the) (NN newspaper)))))))
+    (. ?)))"	"What	WP	6	nsubj
+was	VBD	6	cop
+on	IN	6	case
+the	DT	6	det
+front	JJ	6	amod
+page	NN	0	ROOT
+of	IN	9	case
+the	DT	9	det
+newspaper	NN	6	nmod
+?	.	6	punct
+"	[]	What was on the front page of the newspaper?	mc500.train.23_Q20	mc500.train.23
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBZ is)
+      (NP (DT the) (JJ beautiful) (NN pond)))
+    (. ?)))"	"Where	WRB	2	advmod
+is	VBZ	0	ROOT
+the	DT	5	det
+beautiful	JJ	5	amod
+pond	NN	2	nsubj
+?	.	2	punct
+"	[]	Where is the beautiful pond?	mc500.train.25_Q0	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (NNP Maxine))
+      (VP (VB live)))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+Maxine	NNP	4	nsubj
+live	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Maxine', 'characterOffsetBegin': 10, 'characterOffsetEnd': 16, 'ner': 'PERSON'}]"	Where did Maxine live?	mc500.train.25_Q1	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Cindy))
+      (VP (VB throw)))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+Cindy	NNP	4	nsubj
+throw	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Cindy', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	What did Cindy throw?	mc500.train.25_Q2	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD did)
+      (NP (NNP Maxine))
+      (VP (VB meet)))
+    (. ?)))"	"Who	WP	4	dobj
+did	VBD	4	aux
+Maxine	NNP	4	nsubj
+meet	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Maxine', 'characterOffsetBegin': 8, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	Who did Maxine meet?	mc500.train.25_Q3	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD did)
+      (NP (NNP Maxine))
+      (VP (VB take)
+        (NP (DT a) (NN bath))))
+    (. ?)))"	"When	WRB	4	advmod
+did	VBD	4	aux
+Maxine	NNP	4	nsubj
+take	VB	0	ROOT
+a	DT	6	det
+bath	NN	4	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Maxine', 'characterOffsetBegin': 9, 'characterOffsetEnd': 15, 'ner': 'PERSON'}]"	When did Maxine take a bath?	mc500.train.25_Q4	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP she))
+      (VP (VB love)
+        (S
+          (VP (TO to)
+            (VP (VB do))))))
+    (. ?)))"	"What	WP	4	dep
+did	VBD	4	aux
+she	PRP	4	nsubj
+love	VB	0	ROOT
+to	TO	6	mark
+do	VB	4	xcomp
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'she', 'characterOffsetBegin': 9, 'characterOffsetEnd': 12, 'ner': 'PERSON'}]"	What did she love to do?	mc500.train.25_Q5	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (PRP they))
+      (VP (VB play)))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+they	PRP	4	nsubj
+play	VB	0	ROOT
+?	.	4	punct
+"	[]	Where did they play?	mc500.train.25_Q6	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD were)
+      (NP (PRP they))
+      (ADJP (JJ happy)))
+    (. ?)))"	"Why	WRB	4	advmod
+were	VBD	4	cop
+they	PRP	4	nsubj
+happy	JJ	0	ROOT
+?	.	4	punct
+"	[]	Why were they happy?	mc500.train.25_Q7	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD threw)
+        (NP (NNS rocks))))
+    (. ?)))"	"Who	WP	2	nsubj
+threw	VBD	0	ROOT
+rocks	NNS	2	dobj
+?	.	2	punct
+"	[]	Who threw rocks?	mc500.train.25_Q8	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD did)
+      (NP (PRP she))
+      (VP (VB throw)
+        (NP (NNS rocks))
+        (PP (IN at))))
+    (. ?)))"	"Who	WP	4	dep
+did	VBD	4	aux
+she	PRP	4	nsubj
+throw	VB	0	ROOT
+rocks	NNS	4	dobj
+at	IN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'she', 'characterOffsetBegin': 8, 'characterOffsetEnd': 11, 'ner': 'PERSON'}]"	Who did she throw rocks at?	mc500.train.25_Q9	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP
+        (NP (NNP Maxine) (POS 's))
+        (NN dad))
+      (VP (VB see)))
+    (. ?)))"	"What	WP	6	dobj
+did	VBD	6	aux
+Maxine	NNP	5	nmod:poss
+'s	POS	3	case
+dad	NN	6	nsubj
+see	VB	0	ROOT
+?	.	6	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Maxine', 'characterOffsetBegin': 9, 'characterOffsetEnd': 15, 'ner': 'PERSON'}]"	What did Maxine's dad see?	mc500.train.25_Q10	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (ADJP (JJ mad)))
+    (. ?)))"	"Who	WP	0	ROOT
+was	VBD	1	cop
+mad	JJ	1	nsubj
+?	.	1	punct
+"	[]	Who was mad?	mc500.train.25_Q11	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD yelled)
+        (PP (IN at)
+          (NP (NNP Cindy)))))
+    (. ?)))"	"Who	WP	2	nsubj
+yelled	VBD	0	ROOT
+at	IN	4	case
+Cindy	NNP	2	nmod
+?	.	2	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Cindy', 'characterOffsetBegin': 14, 'characterOffsetEnd': 19, 'ner': 'PERSON'}]"	Who yelled at Cindy?	mc500.train.25_Q12	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD did)
+      (NP (NN something))
+      (VP (VB mean)))
+    (. ?)))"	"Who	WP	4	dobj
+did	VBD	4	aux
+something	NN	4	nsubj
+mean	VB	0	ROOT
+?	.	4	punct
+"	[]	Who did something mean?	mc500.train.25_Q13	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD did)
+      (NP (NNP Cindy))
+      (VP (VB do)
+        (S
+          (NP (NN something))
+          (VP (VB mean)))))
+    (. ?)))"	"When	WRB	4	advmod
+did	VBD	4	aux
+Cindy	NNP	4	nsubj
+do	VB	0	ROOT
+something	NN	6	nsubj
+mean	VB	4	ccomp
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Cindy', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}]"	When did Cindy do something mean?	mc500.train.25_Q14	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD did) (RB n't)
+        (VP (VB like)
+          (NP (NNP Thomas)))))
+    (. ?)))"	"Who	WP	4	nsubj
+did	VBD	4	aux
+n't	RB	4	neg
+like	VB	0	ROOT
+Thomas	NNP	4	dobj
+?	.	4	punct
+"	"[{'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'Thomas', 'characterOffsetBegin': 16, 'characterOffsetEnd': 22, 'ner': 'PERSON'}]"	Who didn't like Thomas?	mc500.train.25_Q15	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHNP (WDT What)
+      (NP (NNP Thomas) (NN love)))
+    (S
+      (VP (TO to)
+        (VP (VB do))))
+    (. ?)))"	"What	WDT	3	det
+Thomas	NNP	3	compound
+love	NN	5	nsubj
+to	TO	5	mark
+do	VB	0	ROOT
+?	.	5	punct
+"	"[{'docTokenBegin': 1, 'docTokenEnd': 2, 'tokenBegin': 1, 'tokenEnd': 2, 'text': 'Thomas', 'characterOffsetBegin': 5, 'characterOffsetEnd': 11, 'ner': 'PERSON'}]"	What Thomas love to do?	mc500.train.25_Q16	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD did)
+        (SBAR
+          (S
+            (NP
+              (NP (NNP Cindy) (POS 's))
+              (NN dad))
+            (VP (VBP do)
+              (PP (TO to)
+                (NP (PRP$ her))))))))
+    (. ?)))"	"What	WP	6	dobj
+did	VBD	6	aux
+Cindy	NNP	5	nmod:poss
+'s	POS	3	case
+dad	NN	6	nsubj
+do	VBP	0	ROOT
+to	TO	8	case
+her	PRP$	6	nmod
+?	.	6	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Cindy', 'characterOffsetBegin': 9, 'characterOffsetEnd': 14, 'ner': 'PERSON'}, {'docTokenBegin': 7, 'docTokenEnd': 8, 'tokenBegin': 7, 'tokenEnd': 8, 'text': 'her', 'characterOffsetBegin': 27, 'characterOffsetEnd': 30, 'ner': 'PERSON'}]"	What did Cindy's dad do to her?	mc500.train.25_Q17	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NN name))
+        (PP (IN of)
+          (NP (PRP$ her) (JJ new) (NN friend)))))
+    (. ?)))"	"What	WP	0	ROOT
+was	VBD	1	cop
+the	DT	4	det
+name	NN	1	nsubj
+of	IN	8	case
+her	PRP$	8	nmod:poss
+new	JJ	8	amod
+friend	NN	4	nmod
+?	.	1	punct
+"	"[{'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'her', 'characterOffsetBegin': 21, 'characterOffsetEnd': 24, 'ner': 'PERSON'}]"	What was the name of her new friend?	mc500.train.25_Q18	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD did)
+      (NP (NNP Cindy))
+      (VP (VB meet)))
+    (. ?)))"	"Who	WP	4	dobj
+did	VBD	4	aux
+Cindy	NNP	4	nsubj
+meet	VB	0	ROOT
+?	.	4	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'Cindy', 'characterOffsetBegin': 8, 'characterOffsetEnd': 13, 'ner': 'PERSON'}]"	Who did Cindy meet?	mc500.train.25_Q19	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (ADJP (JJ happy)))
+    (. ?)))"	"Who	WP	0	ROOT
+was	VBD	1	cop
+happy	JJ	1	nsubj
+?	.	1	punct
+"	[]	Who was happy?	mc500.train.25_Q20	mc500.train.25
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD did)
+        (S
+          (NP (NNP Will))
+          (VP (NN laugh)
+            (PP (IN at))))))
+    (. ?)))"	"What	WP	0	ROOT
+did	VBD	1	nsubj
+Will	NNP	4	compound
+laugh	NN	2	nsubj
+at	IN	4	acl
+?	.	1	punct
+"	[]	What did Will laugh at?	mc500.train.111_Q0	mc500.train.111
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Will))
+      (VP (VB hear)))
+    (. ?)))"	"What	WP	4	dobj
+did	VBD	4	aux
+Will	NNP	4	nsubj
+hear	VB	0	ROOT
+?	.	4	punct
+"	[]	What did Will hear?	mc500.train.111_Q1	mc500.train.111
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBD did)
+      (NP (NNP Will))
+      (VP (VB get)
+        (PP (TO to)
+          (NP (DT the) (NN store)))))
+    (. ?)))"	"How	WRB	4	advmod
+did	VBD	4	aux
+Will	NNP	4	nsubj
+get	VB	0	ROOT
+to	TO	7	case
+the	DT	7	det
+store	NN	4	nmod
+?	.	4	punct
+"	[]	How did Will get to the store?	mc500.train.111_Q2	mc500.train.111
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (NNP Will))
+      (VP (VB walk)
+        (PP (TO to))))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+Will	NNP	4	nsubj
+walk	VB	0	ROOT
+to	TO	4	nmod
+?	.	4	punct
+"	[]	Where did Will walk to?	mc500.train.111_Q3	mc500.train.111
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (NNP Will))
+      (VP (VB eat)
+        (NP (NN dinner))))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+Will	NNP	4	nsubj
+eat	VB	0	ROOT
+dinner	NN	4	dobj
+?	.	4	punct
+"	[]	Where did Will eat dinner?	mc500.train.111_Q4	mc500.train.111
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (VP (VBN put)
+        (PP (IN in)
+          (NP (DT the) (NN trashcan)))))
+    (. ?)))"	"What	WP	3	nsubjpass
+was	VBD	3	auxpass
+put	VBN	0	ROOT
+in	IN	6	case
+the	DT	6	det
+trashcan	NN	3	nmod
+?	.	3	punct
+"	[]	What was put in the trashcan?	mc500.train.111_Q5	mc500.train.111
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (NNP Will))
+      (VP (VBD put)
+        (NP (DT the) (NN napkin))))
+    (. ?)))"	"Where	WRB	4	advmod
+did	VBD	4	aux
+Will	NNP	4	nsubj
+put	VBD	0	ROOT
+the	DT	6	det
+napkin	NN	4	dobj
+?	.	4	punct
+"	[]	Where did Will put the napkin?	mc500.train.111_Q6	mc500.train.111
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP (DT the) (NN song))
+      (ADJP (IN about)))
+    (. ?)))"	"What	WP	0	ROOT
+was	VBD	1	cop
+the	DT	4	det
+song	NN	1	nsubj
+about	IN	4	nmod
+?	.	1	punct
+"	[]	What was the song about?	mc500.train.111_Q7	mc500.train.111
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP (NNP Will))
+      (VP (VBG playing)))
+    (. ?)))"	"What	WP	4	dobj
+was	VBD	1	cop
+Will	NNP	4	nsubj
+playing	VBG	0	ROOT
+?	.	4	punct
+"	[]	What was Will playing?	mc500.train.111_Q8	mc500.train.111
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (DT the) (NN star)))
+    (. ?)))"	"Where	WRB	2	advmod
+was	VBD	0	ROOT
+the	DT	4	det
+star	NN	2	nsubj
+?	.	2	punct
+"	[]	Where was the star?	mc500.train.111_Q9	mc500.train.111
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD got)
+        (NP (DT a) (NN biscuit))))
+    (. ?)))"	"Who	WP	2	nsubj
+got	VBD	0	ROOT
+a	DT	4	det
+biscuit	NN	2	dobj
+?	.	2	punct
+"	[]	Who got a biscuit?	mc500.train.111_Q10	mc500.train.111
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD did)
+        (SBAR
+          (S
+            (VP (MD will)
+              (VP (VB have)
+                (PP (IN with)
+                  (NP (PRP$ his) (NN biscuit)))))))))
+    (. ?)))"	"What	WP	4	nsubj
+did	VBD	4	aux
+will	MD	4	aux
+have	VB	0	ROOT
+with	IN	7	case
+his	PRP$	7	nmod:poss
+biscuit	NN	4	nmod
+?	.	4	punct
+"	"[{'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'his', 'characterOffsetBegin': 24, 'characterOffsetEnd': 27, 'ner': 'PERSON'}]"	What did will have with his biscuit?	mc500.train.111_Q11	mc500.train.111
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD did)
+        (SBAR
+          (S
+            (VP (MD Will) (RB not)
+              (VP (VB want)
+                (PP (IN with)
+                  (NP (PRP$ his) (NN biscuit)))))))))
+    (. ?)))"	"What	WP	5	nsubj
+did	VBD	5	aux
+Will	MD	5	aux
+not	RB	5	neg
+want	VB	0	ROOT
+with	IN	8	case
+his	PRP$	8	nmod:poss
+biscuit	NN	5	nmod
+?	.	5	punct
+"	"[{'docTokenBegin': 6, 'docTokenEnd': 7, 'tokenBegin': 6, 'tokenEnd': 7, 'text': 'his', 'characterOffsetBegin': 28, 'characterOffsetEnd': 31, 'ner': 'PERSON'}]"	What did Will not want with his biscuit?	mc500.train.111_Q12	mc500.train.111
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD was)
+      (NP (NNP Will))
+      (ADJP (JJ happy)))
+    (. ?)))"	"Why	WRB	4	advmod
+was	VBD	4	cop
+Will	NNP	4	nsubj
+happy	JJ	0	ROOT
+?	.	4	punct
+"	[]	Why was Will happy?	mc500.train.111_Q13	mc500.train.111
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD happened)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (VP (MD Will)
+              (VP (VBD was)
+                (PP (IN in)
+                  (NP (DT the) (NN living) (NN room)))))))))
+    (. ?)))"	"What	WP	2	nsubj
+happened	VBD	0	ROOT
+when	WRB	9	advmod
+Will	MD	9	nsubj
+was	VBD	9	cop
+in	IN	9	case
+the	DT	9	det
+living	NN	9	amod
+room	NN	2	advcl
+?	.	2	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Will', 'characterOffsetBegin': 19, 'characterOffsetEnd': 23, 'ner': 'PERSON'}]"	What happened when Will was in the living room?	mc500.train.111_Q14	mc500.train.111
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (DT the) (NN crow))
+      (VP (VBG sitting)))
+    (. ?)))"	"Where	WRB	5	advmod
+was	VBD	5	aux
+the	DT	4	det
+crow	NN	5	nsubj
+sitting	VBG	0	ROOT
+?	.	5	punct
+"	[]	Where was the crow sitting?	fables-01_Q1	fables-01
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD set)
+        (NP (PRP$ his) (NNS wits))
+        (S
+          (VP (TO to)
+            (VP (VB work))))))
+    (. ?)))"	"Who	WP	2	nsubj
+set	VBD	0	ROOT
+his	PRP$	4	nmod:poss
+wits	NNS	2	dobj
+to	TO	6	mark
+work	VB	2	advcl
+?	.	2	punct
+"	"[{'docTokenBegin': 2, 'docTokenEnd': 3, 'tokenBegin': 2, 'tokenEnd': 3, 'text': 'his', 'characterOffsetBegin': 8, 'characterOffsetEnd': 11, 'ner': 'PERSON'}]"	Who set his wits to work?	fables-01_Q10	fables-01
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD tried)
+        (S
+          (VP (TO to)
+            (VP (VB discover)
+              (SBAR
+                (WHADVP (WRB how))
+                (S
+                  (VP (TO to)
+                    (VP (VB get)
+                      (NP (DT the) (NN cheese)))))))))))
+    (. ?)))"	"Who	WP	2	nsubj
+tried	VBD	0	ROOT
+to	TO	4	mark
+discover	VB	2	xcomp
+how	WRB	7	advmod
+to	TO	7	mark
+get	VB	4	ccomp
+the	DT	9	det
+cheese	NN	7	dobj
+?	.	2	punct
+"	[]	Who tried to discover how to get the cheese?	fables-01_Q11	fables-01
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN fox))
+      (VP (VBP say)
+        (PP (IN about)
+          (NP
+            (NP (DT the) (NN bird))
+            (`` `)
+            (NP (NNS Äôs) (NN beauty))))))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+fox	NN	5	nsubj
+say	VBP	0	ROOT
+about	IN	11	case
+the	DT	11	det
+bird	NN	11	compound
+`	``	11	punct
+Äôs	NNS	11	compound
+beauty	NN	5	nmod
+?	.	5	punct
+"	[]	What did the fox say about the bird‚Äôs beauty?	fables-01_Q12	fables-01
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SINV (VBD did)
+      (NP (DT the) (NN crow) (NN caw)))
+    (. ?)))"	"How	WRB	0	ROOT
+did	VBD	1	root
+the	DT	5	det
+crow	NN	5	compound
+caw	NN	2	nsubj
+?	.	2	punct
+"	[]	How did the crow caw?	fables-01_Q13	fables-01
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD did)
+        (NP (DT the) (NN fox) (NN notice))))
+    (. ?)))"	"Who	WP	0	ROOT
+did	VBD	1	dep
+the	DT	5	det
+fox	NN	5	compound
+notice	NN	2	dobj
+?	.	1	punct
+"	[]	Who did the fox notice?	fables-01_Q14	fables-01
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD observed)
+        (NP (DT the) (NN corvine) (NN bird))))
+    (. ?)))"	"Who	WP	2	nsubj
+observed	VBD	0	ROOT
+the	DT	5	det
+corvine	NN	5	compound
+bird	NN	2	dobj
+?	.	2	punct
+"	[]	Who observed the corvine bird?	fables-01_Q15	fables-01
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD needed)
+        (NP (NN intelligence))))
+    (. ?)))"	"Who	WP	2	nsubj
+needed	VBD	0	ROOT
+intelligence	NN	2	dobj
+?	.	2	punct
+"	[]	Who needed intelligence?	fables-01_Q16	fables-01
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (VP (VBN perched)
+        (PP (IN on)
+          (NP (DT a) (NN branch)))))
+    (. ?)))"	"Who	WP	3	nsubjpass
+was	VBD	3	auxpass
+perched	VBN	0	ROOT
+on	IN	6	case
+a	DT	6	det
+branch	NN	3	nmod
+?	.	3	punct
+"	[]	Who was perched on a branch?	fables-01_Q17	fables-01
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD felt)
+        (VP (VBN buttered)
+          (PRT (RP up)))))
+    (. ?)))"	"Who	WP	2	nsubj
+felt	VBD	0	ROOT
+buttered	VBN	2	xcomp
+up	RP	3	compound:prt
+?	.	2	punct
+"	[]	Who felt buttered up?	fables-01_Q18	fables-01
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN crow))
+      (VP (VBP have)
+        (PP (IN in)
+          (NP (PRP$ her) (NN beak)))))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+crow	NN	5	nsubj
+have	VBP	0	ROOT
+in	IN	8	case
+her	PRP$	8	nmod:poss
+beak	NN	5	nmod
+?	.	5	punct
+"	"[{'docTokenBegin': 6, 'docTokenEnd': 7, 'tokenBegin': 6, 'tokenEnd': 7, 'text': 'her', 'characterOffsetBegin': 26, 'characterOffsetEnd': 29, 'ner': 'PERSON'}]"	What did the crow have in her beak?	fables-01_Q2	fables-01
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP (DT the) (NNP Story))
+      (ADJP (IN about)))
+    (. ?)))"	"Who	WP	0	ROOT
+is	VBZ	1	cop
+the	DT	4	det
+Story	NNP	1	nsubj
+about	IN	4	dep
+?	.	1	punct
+"	[]	Who is the Story about?	fables-01_Q3	fables-01
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN fox))
+      (VP (VBP do)
+        (PP (TO to)
+          (NP (DT the) (NN cheese)))))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+fox	NN	5	nsubj
+do	VBP	0	ROOT
+to	TO	8	case
+the	DT	8	det
+cheese	NN	5	nmod
+?	.	5	punct
+"	[]	What did the fox do to the cheese?	fables-01_Q4	fables-01
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (DT the) (NN fox) (NN standing)))
+    (. ?)))"	"Where	WRB	5	advmod
+was	VBD	5	cop
+the	DT	5	det
+fox	NN	5	compound
+standing	NN	0	ROOT
+?	.	5	punct
+"	[]	Where was the fox standing?	fables-01_Q5	fables-01
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN crow))
+      (VP (VB feel)))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+crow	NN	5	nsubj
+feel	VB	0	ROOT
+?	.	5	punct
+"	[]	What did the crow feel?	fables-01_Q6	fables-01
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD flattered)
+        (NP (DT the) (NN crow))))
+    (. ?)))"	"Who	WP	2	nsubj
+flattered	VBD	0	ROOT
+the	DT	4	det
+crow	NN	2	dobj
+?	.	2	punct
+"	[]	Who flattered the crow?	fables-01_Q7	fables-01
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP (DT the) (NN crow))
+      (VP (VBG doing)))
+    (. ?)))"	"What	WP	5	dobj
+was	VBD	1	cop
+the	DT	4	det
+crow	NN	5	nsubj
+doing	VBG	0	ROOT
+?	.	5	punct
+"	[]	What was the crow doing?	fables-01_Q8	fables-01
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (DT the) (NN cheese)))
+    (. ?)))"	"Where	WRB	2	advmod
+was	VBD	0	ROOT
+the	DT	4	det
+cheese	NN	2	nsubj
+?	.	2	punct
+"	[]	Where was the cheese?	fables-01_Q9	fables-01
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (VBG feeding))
+        (PP (IN in)
+          (NP (DT a) (NN meadow)))))
+    (. ?)))"	"Who	WP	3	nsubj
+was	VBD	3	aux
+feeding	VBG	0	ROOT
+in	IN	6	case
+a	DT	6	det
+meadow	NN	3	nmod
+?	.	3	punct
+"	[]	Who was feeding in a meadow?	fables-02_Q1	fables-02
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did) (RB not)
+      (NP (DT the) (NN lion) (NN attack)))
+    (FRAG
+      (X (DT the))
+      (NP (NN bull)))
+    (. ?)))"	"Why	WRB	6	advmod
+did	VBD	6	aux
+not	RB	6	neg
+the	DT	6	det
+lion	NN	6	compound
+attack	NN	0	ROOT
+the	DT	8	det
+bull	NN	6	dobj
+?	.	6	punct
+"	"[{'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'attack', 'characterOffsetBegin': 21, 'characterOffsetEnd': 27, 'ner': 'CAUSE_OF_DEATH'}]"	Why did not the lion attack the bull?	fables-02_Q10	fables-02
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD did)
+        (NP (DT the) (NN lion) (NN fear))))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+lion	NN	5	nsubj
+fear	NN	0	ROOT
+?	.	5	punct
+"	[]	What did the lion fear?	fables-02_Q11	fables-02
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (ADJP (JJ ugly)))
+    (. ?)))"	"What	WP	0	ROOT
+is	VBZ	1	cop
+ugly	JJ	1	nsubj
+?	.	1	punct
+"	[]	What is ugly?	fables-02_Q12	fables-02
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBN salivated)))
+    (. ?)))"	"Who	WP	2	nsubj
+salivated	VBN	0	ROOT
+?	.	2	punct
+"	[]	Who salivated?	fables-02_Q13	fables-02
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (DT the) (NN lion))
+      (VP (VB salivate)))
+    (. ?)))"	"Why	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+lion	NN	5	nsubj
+salivate	VB	0	ROOT
+?	.	5	punct
+"	[]	Why did the lion salivate?	fables-02_Q14	fables-02
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN lion))
+      (VP (VBP advise)
+        (NP (DT the) (NN bull))))
+    (. ?)))"	"What	WP	5	dep
+did	VBD	5	aux
+the	DT	4	det
+lion	NN	5	nsubj
+advise	VBP	0	ROOT
+the	DT	7	det
+bull	NN	5	dobj
+?	.	5	punct
+"	[]	What did the lion advise the bull?	fables-02_Q15	fables-02
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (DT the) (NN lion))
+      (VP (VBP advise)
+        (NP (DT the) (NN bull))
+        (S
+          (VP (TO to)
+            (VP (VB remove)
+              (NP (PRP$ its) (NNS horns)))))))
+    (. ?)))"	"Why	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+lion	NN	5	nsubj
+advise	VBP	0	ROOT
+the	DT	7	det
+bull	NN	5	dobj
+to	TO	9	mark
+remove	VB	5	advcl
+its	PRP$	11	nmod:poss
+horns	NNS	9	dobj
+?	.	5	punct
+"	[]	Why did the lion advise the bull to remove its horns?	fables-02_Q16	fables-02
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN lion))
+      (VP (VB decide)))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+lion	NN	5	nsubj
+decide	VB	0	ROOT
+?	.	5	punct
+"	[]	What did the lion decide?	fables-02_Q17	fables-02
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBZ has)
+        (NP (NNS horns))))
+    (. ?)))"	"Who	WP	2	nsubj
+has	VBZ	0	ROOT
+horns	NNS	2	dobj
+?	.	2	punct
+"	[]	Who has horns?	fables-02_Q18	fables-02
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD did)
+        (NP (DT the) (JJ big) (NN cat) (NN witness))))
+    (. ?)))"	"Who	WP	2	nsubj
+did	VBD	0	ROOT
+the	DT	6	det
+big	JJ	6	amod
+cat	NN	6	compound
+witness	NN	2	dobj
+?	.	2	punct
+"	[]	Who did the big cat witness?	fables-02_Q19	fables-02
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (VP (VBN persuaded)
+        (PP (IN by)
+          (NP (DT this) (NN flattery)))))
+    (. ?)))"	"Who	WP	3	nsubjpass
+was	VBD	3	auxpass
+persuaded	VBN	0	ROOT
+by	IN	6	case
+this	DT	6	det
+flattery	NN	3	nmod
+?	.	3	punct
+"	[]	Who was persuaded by this flattery?	fables-02_Q2	fables-02
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did) (RB not)
+      (NP (DT the) (NN lion))
+      (VP (VB strike)
+        (NP (DT the) (NN bull))))
+    (. ?)))"	"Why	WRB	6	advmod
+did	VBD	6	aux
+not	RB	6	neg
+the	DT	5	det
+lion	NN	6	nsubj
+strike	VB	0	ROOT
+the	DT	8	det
+bull	NN	6	dobj
+?	.	6	punct
+"	[]	Why did not the lion strike the bull?	fables-02_Q20	fables-02
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD did)
+        (NP (DT the) (NN lion) (NN gobble))))
+    (. ?)))"	"What	WP	0	ROOT
+did	VBD	1	root
+the	DT	5	det
+lion	NN	5	compound
+gobble	NN	2	nsubj
+?	.	2	punct
+"	[]	What did the lion gobble?	fables-02_Q21	fables-02
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN lion))
+      (VP (VB consume)))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+lion	NN	5	nsubj
+consume	VB	0	ROOT
+?	.	5	punct
+"	[]	What did the lion consume?	fables-02_Q22	fables-02
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD tried)
+        (S
+          (VP (TO to)
+            (VP (VB kill)
+              (NP (DT the) (NN bull)))))))
+    (. ?)))"	"Who	WP	2	nsubj
+tried	VBD	0	ROOT
+to	TO	4	mark
+kill	VB	2	xcomp
+the	DT	6	det
+bull	NN	4	dobj
+?	.	2	punct
+"	[]	Who tried to kill the bull?	fables-02_Q23	fables-02
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (DT the) (NN bull)))
+    (. ?)))"	"Where	WRB	2	advmod
+was	VBD	0	ROOT
+the	DT	4	det
+bull	NN	2	nsubj
+?	.	2	punct
+"	[]	Where was the bull?	fables-02_Q3	fables-02
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP (NN grazing)))
+    (. ?)))"	"Who	WP	0	ROOT
+was	VBD	1	cop
+grazing	NN	1	nsubj
+?	.	1	punct
+"	[]	Who was grazing?	fables-02_Q4	fables-02
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD watched)
+        (NP (DT the) (NN bull))))
+    (. ?)))"	"Who	WP	2	nsubj
+watched	VBD	0	ROOT
+the	DT	4	det
+bull	NN	2	dobj
+?	.	2	punct
+"	[]	Who watched the bull?	fables-02_Q5	fables-02
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN lion))
+      (VP (VB feign)))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+lion	NN	5	nsubj
+feign	VB	0	ROOT
+?	.	5	punct
+"	[]	What did the lion feign?	fables-02_Q6	fables-02
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP (DT the) (NN story))
+      (ADJP (IN about)))
+    (. ?)))"	"Who	WP	0	ROOT
+is	VBZ	1	cop
+the	DT	4	det
+story	NN	1	nsubj
+about	IN	4	nmod
+?	.	1	punct
+"	[]	Who is the story about?	fables-02_Q7	fables-02
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (ADJP (JJ foolish)))
+    (. ?)))"	"Who	WP	0	ROOT
+was	VBD	1	cop
+foolish	JJ	1	nsubj
+?	.	1	punct
+"	[]	Who was foolish?	fables-02_Q8	fables-02
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN lion))
+      (VP (VB want)))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+lion	NN	5	nsubj
+want	VB	0	ROOT
+?	.	5	punct
+"	[]	What did the lion want?	fables-02_Q9	fables-02
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP (DT the) (NN story))
+      (ADJP (IN about)))
+    (. ?)))"	"Who	WP	0	ROOT
+is	VBZ	1	cop
+the	DT	4	det
+story	NN	1	nsubj
+about	IN	4	nmod
+?	.	1	punct
+"	[]	Who is the story about?	fables-03_Q1	fables-03
+"(ROOT
+  (FRAG
+    (SBAR
+      (WHADVP (WRB Where) (WRB where))
+      (S
+        (NP
+          (NP (DT the) (NNS contents))
+          (PP (IN of)
+            (NP (DT the) (NN horn))))
+        (VP (VBN spilled))))
+    (. ?)))"	"Where	WRB	8	advmod
+where	WRB	8	advmod
+the	DT	4	det
+contents	NNS	8	nsubj
+of	IN	7	case
+the	DT	7	det
+horn	NN	4	nmod
+spilled	VBN	0	ROOT
+?	.	8	punct
+"	[]	Where where the contents of the horn spilled?	fables-03_Q10	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (VP (VBN heated)))
+    (. ?)))"	"What	WP	3	nsubjpass
+was	VBD	3	auxpass
+heated	VBN	0	ROOT
+?	.	3	punct
+"	[]	What was heated?	fables-03_Q11	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NNP Serpent))
+      (VP (VBP do)
+        (PP (IN in)
+          (NP (NN revenge)))))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+Serpent	NNP	5	nsubj
+do	VBP	0	ROOT
+in	IN	7	case
+revenge	NN	5	nmod
+?	.	5	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Serpent', 'characterOffsetBegin': 13, 'characterOffsetEnd': 20, 'ner': 'MISC'}]"	What did the Serpent do in revenge?	fables-03_Q12	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD seized)
+        (NP (PRP it))))
+    (. ?)))"	"Who	WP	2	nsubj
+seized	VBD	0	ROOT
+it	PRP	2	dobj
+?	.	2	punct
+"	[]	Who seized it?	fables-03_Q13	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD had)
+        (NP (PRP$ its) (NNS coils))
+        (PP (IN around)
+          (NP (PRP him)))))
+    (. ?)))"	"Who	WP	2	nsubj
+had	VBD	0	ROOT
+its	PRP$	4	nmod:poss
+coils	NNS	2	dobj
+around	IN	6	case
+him	PRP	2	nmod
+?	.	2	punct
+"	"[{'docTokenBegin': 5, 'docTokenEnd': 6, 'tokenBegin': 5, 'tokenEnd': 6, 'text': 'him', 'characterOffsetBegin': 25, 'characterOffsetEnd': 28, 'ner': 'PERSON'}]"	Who had its coils around him?	fables-03_Q14	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (DT a) (NN witness))
+        (PP (IN of)
+          (NP (DT the) (NN encounter)))))
+    (. ?)))"	"Who	WP	0	ROOT
+was	VBD	1	cop
+a	DT	4	det
+witness	NN	1	nsubj
+of	IN	7	case
+the	DT	7	det
+encounter	NN	4	nmod
+?	.	1	punct
+"	[]	Who was a witness of the encounter?	fables-03_Q15	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD came)
+        (PP (TO to)
+          (NP
+            (NP (DT the) (NN assistance))
+            (PP (IN of)
+              (NP (DT the) (NNP Eagle)))))))
+    (. ?)))"	"Who	WP	2	nsubj
+came	VBD	0	ROOT
+to	TO	5	case
+the	DT	5	det
+assistance	NN	2	nmod
+of	IN	8	case
+the	DT	8	det
+Eagle	NNP	5	nmod
+?	.	2	punct
+"	[]	Who came to the assistance of the Eagle?	fables-03_Q16	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN countryman))
+      (VP (VB own)))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+countryman	NN	5	nsubj
+own	VB	0	ROOT
+?	.	5	punct
+"	[]	What did the countryman own?	fables-03_Q17	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD succeeded)
+        (PP (IN in)
+          (S
+            (VP (VBG freeing)
+              (NP (PRP him)))))))
+    (. ?)))"	"Who	WP	2	nsubj
+succeeded	VBD	0	ROOT
+in	IN	4	mark
+freeing	VBG	2	advcl
+him	PRP	4	dobj
+?	.	2	punct
+"	"[{'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'him', 'characterOffsetBegin': 25, 'characterOffsetEnd': 28, 'ner': 'PERSON'}]"	Who succeeded in freeing him?	fables-03_Q18	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD did)
+        (NP (DT the) (NN countryman))
+        (ADVP (JJ free)
+          (NP (DT the) (NN eagle)))
+        (PP (IN from))))
+    (. ?)))"	"What	WP	5	dep
+did	VBD	5	aux
+the	DT	4	det
+countryman	NN	5	nsubj
+free	JJ	0	ROOT
+the	DT	7	det
+eagle	NN	5	dobj
+from	IN	5	nmod
+?	.	5	punct
+"	[]	What did the countryman free the eagle from?	fables-03_Q19	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD swooped)
+        (PRT (RP down))
+        (PP (IN upon)
+          (NP (DT a) (NNP Serpant)))))
+    (. ?)))"	"Who	WP	2	nsubj
+swooped	VBD	0	ROOT
+down	RP	2	compound:prt
+upon	IN	6	case
+a	DT	6	det
+Serpant	NNP	2	nmod
+?	.	2	punct
+"	[]	Who swooped down upon a Serpant?	fables-03_Q2	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD did)
+        (NP (DT the) (NNP Serpent) (NN spat))))
+    (. ?)))"	"What	WP	0	ROOT
+did	VBD	1	root
+the	DT	5	det
+Serpent	NNP	5	compound
+spat	NN	2	nsubj
+?	.	2	punct
+"	[]	What did the Serpent spat?	fables-03_Q20	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD spilled)
+        (NP (PRP$ its) (NNS contents))))
+    (. ?)))"	"Who	WP	2	nsubj
+spilled	VBD	0	ROOT
+its	PRP$	4	nmod:poss
+contents	NNS	2	dobj
+?	.	2	punct
+"	[]	Who spilled its contents?	fables-03_Q21	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD swooped)
+        (PP (IN towards)
+          (NP (DT a) (NN snake)))))
+    (. ?)))"	"Who	WP	2	nsubj
+swooped	VBD	0	ROOT
+towards	IN	5	case
+a	DT	5	det
+snake	NN	2	nmod
+?	.	2	punct
+"	[]	Who swooped towards a snake?	fables-03_Q22	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD spiraled)
+        (PP (IN around)
+          (NP (DT the) (NN eagle)))))
+    (. ?)))"	"Who	WP	2	nsubj
+spiraled	VBD	0	ROOT
+around	IN	5	case
+the	DT	5	det
+eagle	NN	2	nmod
+?	.	2	punct
+"	[]	Who spiraled around the eagle?	fables-03_Q23	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD did)
+        (NP
+          (NP (DT the) (NN bird))
+          (PP (IN of)
+            (NP (NN prey) (NN descend))))
+        (PP (IN toward))))
+    (. ?)))"	"What	WP	0	ROOT
+did	VBD	1	nsubj
+the	DT	4	det
+bird	NN	2	dobj
+of	IN	7	case
+prey	NN	7	compound
+descend	NN	4	nmod
+toward	IN	4	acl
+?	.	1	punct
+"	[]	What did the bird of prey descend toward?	fables-03_Q24	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD skirmished)
+        (PP (IN with)
+          (NP (DT the) (NN serpent)))))
+    (. ?)))"	"Who	WP	2	nsubj
+skirmished	VBD	0	ROOT
+with	IN	5	case
+the	DT	5	det
+serpent	NN	2	nmod
+?	.	2	punct
+"	[]	Who skirmished with the serpent?	fables-03_Q25	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD tried)
+        (S
+          (VP (TO to)
+            (VP (VB support)
+              (NP (DT the) (NN eagle)))))))
+    (. ?)))"	"Who	WP	2	nsubj
+tried	VBD	0	ROOT
+to	TO	4	mark
+support	VB	2	xcomp
+the	DT	6	det
+eagle	NN	4	dobj
+?	.	2	punct
+"	[]	Who tried to support the eagle?	fables-03_Q26	fables-03
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (DT the) (NN serpent))
+      (VP (VBD spat)
+        (NP (DT some) (NN toxin))))
+    (. ?)))"	"Where	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+serpent	NN	5	nsubj
+spat	VBD	0	ROOT
+some	DT	7	det
+toxin	NN	5	dobj
+?	.	5	punct
+"	[]	Where did the serpent spat some toxin?	fables-03_Q27	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NNP Eagle))
+      (VP (VB seize)
+        (NP (PRP it))
+        (PP (IN with))))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+Eagle	NNP	5	nsubj
+seize	VB	0	ROOT
+it	PRP	5	dobj
+with	IN	5	nmod
+?	.	5	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Eagle', 'characterOffsetBegin': 13, 'characterOffsetEnd': 18, 'ner': 'ORGANIZATION'}]"	What did the Eagle seize it with?	fables-03_Q3	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD came)
+        (PP (TO to)
+          (NP
+            (NP (DT the) (NN assistance))
+            (PP (IN of)
+              (NP (DT the) (NNP Eagle)))))))
+    (. ?)))"	"Who	WP	2	nsubj
+came	VBD	0	ROOT
+to	TO	5	case
+the	DT	5	det
+assistance	NN	2	nmod
+of	IN	8	case
+the	DT	8	det
+Eagle	NNP	5	nmod
+?	.	2	punct
+"	[]	Who came to the assistance of the Eagle?	fables-03_Q4	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD did)
+        (NP (DT the) (NNP Serpent) (NN spit))))
+    (. ?)))"	"What	WP	0	ROOT
+did	VBD	1	root
+the	DT	5	det
+Serpent	NNP	5	compound
+spit	NN	2	nsubj
+?	.	2	punct
+"	[]	What did the Serpent spit?	fables-03_Q5	fables-03
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (DT the) (NNP Serpent))
+      (VP (VB spit)
+        (NP (DT some) (NN poison))))
+    (. ?)))"	"Where	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+Serpent	NNP	5	nsubj
+spit	VB	0	ROOT
+some	DT	7	det
+poison	NN	5	dobj
+?	.	5	punct
+"	"[{'docTokenBegin': 6, 'docTokenEnd': 7, 'tokenBegin': 6, 'tokenEnd': 7, 'text': 'poison', 'characterOffsetBegin': 32, 'characterOffsetEnd': 38, 'ner': 'CAUSE_OF_DEATH'}]"	Where did the Serpent spit some poison?	fables-03_Q6	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN countryman))
+      (VP (VB decide)))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+countryman	NN	5	nsubj
+decide	VB	0	ROOT
+?	.	5	punct
+"	[]	What did the countryman decide?	fables-03_Q7	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD spilled)
+        (NP (DT the) (NN drinking) (NN vessel))))
+    (. ?)))"	"Who	WP	2	nsubj
+spilled	VBD	0	ROOT
+the	DT	5	det
+drinking	NN	5	compound
+vessel	NN	2	dobj
+?	.	2	punct
+"	[]	Who spilled the drinking vessel?	fables-03_Q8	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD did)
+        (NP (DT the) (NN eagle) (NN spill))))
+    (. ?)))"	"What	WP	0	ROOT
+did	VBD	1	nsubj
+the	DT	5	det
+eagle	NN	5	compound
+spill	NN	2	dobj
+?	.	1	punct
+"	[]	What did the eagle spill?	fables-03_Q9	fables-03
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD did)
+      (NP (DT the) (NNP Fox))
+      (VP (VB invite)
+        (PP (TO to)
+          (NP (NN dinner)))))
+    (. ?)))"	"Who	WP	5	dep
+did	VBD	5	aux
+the	DT	4	det
+Fox	NNP	5	nsubj
+invite	VB	0	ROOT
+to	TO	7	case
+dinner	NN	5	nmod
+?	.	5	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Fox', 'characterOffsetBegin': 12, 'characterOffsetEnd': 15, 'ner': 'PERSON'}]"	Who did the Fox invite to dinner?	fables-04_Q1	fables-04
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD failed)
+        (S
+          (VP (TO to)
+            (VP (VB drink)
+              (NP (DT some) (NN broth)))))))
+    (. ?)))"	"Who	WP	2	nsubj
+failed	VBD	0	ROOT
+to	TO	4	mark
+drink	VB	2	xcomp
+some	DT	6	det
+broth	NN	4	dobj
+?	.	2	punct
+"	[]	Who failed to drink some broth?	fables-04_Q10	fables-04
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NN shape))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN neck))
+            (PP (IN of)
+              (NP (DT the) (NN pitcher)))))))
+    (. ?)))"	"What	WP	0	ROOT
+was	VBD	1	cop
+the	DT	4	det
+shape	NN	1	nsubj
+of	IN	7	case
+the	DT	7	det
+neck	NN	4	nmod
+of	IN	10	case
+the	DT	10	det
+pitcher	NN	7	nmod
+?	.	1	punct
+"	"[{'docTokenBegin': 9, 'docTokenEnd': 10, 'tokenBegin': 9, 'tokenEnd': 10, 'text': 'pitcher', 'characterOffsetBegin': 38, 'characterOffsetEnd': 45, 'ner': 'TITLE'}]"	What was the shape of the neck of the pitcher?	fables-04_Q11	fables-04
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (ADJP (JJ clever)))
+    (. ?)))"	"What	WP	0	ROOT
+was	VBD	1	cop
+clever	JJ	1	nsubj
+?	.	1	punct
+"	[]	What was clever?	fables-04_Q12	fables-04
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NN soup))
+        (SBAR
+          (S
+            (VP (VBD served)
+              (PP (IN in)))))))
+    (. ?)))"	"What	WP	5	dobj
+was	VBD	1	cop
+the	DT	4	det
+soup	NN	5	nsubj
+served	VBD	0	ROOT
+in	IN	5	compound:prt
+?	.	5	punct
+"	[]	What was the soup served in?	fables-04_Q13	fables-04
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD tried)
+        (S
+          (VP (TO to)
+            (VP (VB drink)
+              (NP
+                (NP (DT some) (JJ savory) (NN broth))
+                (CC and)
+                (NP (VBN failed))))))))
+    (. ?)))"	"Who	WP	2	nsubj
+tried	VBD	0	ROOT
+to	TO	4	mark
+drink	VB	2	xcomp
+some	DT	7	det
+savory	JJ	7	amod
+broth	NN	4	dobj
+and	CC	4	cc
+failed	VBN	4	conj
+?	.	2	punct
+"	[]	Who tried to drink some savory broth and failed?	fables-04_Q14	fables-04
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD tried)
+        (S
+          (VP (TO to)
+            (VP (VB drink)
+              (NP (DT some) (JJ savory) (NN stock)))))))
+    (. ?)))"	"Who	WP	2	nsubj
+tried	VBD	0	ROOT
+to	TO	4	mark
+drink	VB	2	xcomp
+some	DT	7	det
+savory	JJ	7	amod
+stock	NN	4	dobj
+?	.	2	punct
+"	[]	Who tried to drink some savory stock?	fables-04_Q15	fables-04
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (JJ canine))
+      (VP (VB serve)))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+canine	JJ	5	nsubj
+serve	VB	0	ROOT
+?	.	5	punct
+"	[]	What did the canine serve?	fables-04_Q16	fables-04
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD attempted)
+        (S
+          (VP (TO to)
+            (VP (VB drink)
+              (NP (DT some) (JJ savory) (NN soup)))))))
+    (. ?)))"	"Who	WP	2	nsubj
+attempted	VBD	0	ROOT
+to	TO	4	mark
+drink	VB	2	xcomp
+some	DT	7	det
+savory	JJ	7	amod
+soup	NN	4	dobj
+?	.	2	punct
+"	[]	Who attempted to drink some savory soup?	fables-04_Q17	fables-04
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP (DT the) (JJ only) (NN fare))
+      (VP (VBN provided)))
+    (. ?)))"	"What	WP	0	ROOT
+was	VBD	1	cop
+the	DT	5	det
+only	JJ	5	amod
+fare	NN	1	nsubj
+provided	VBN	5	acl
+?	.	1	punct
+"	[]	What was the only fare provided?	fables-04_Q2	fables-04
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (DT some) (NN soup))
+      (VP (VBN served)))
+    (. ?)))"	"Where	WRB	5	advmod
+was	VBD	5	auxpass
+some	DT	4	det
+soup	NN	5	nsubjpass
+served	VBN	0	ROOT
+?	.	5	punct
+"	[]	Where was some soup served?	fables-04_Q3	fables-04
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP (DT the) (NN story))
+      (ADJP (IN about)))
+    (. ?)))"	"Who	WP	0	ROOT
+is	VBZ	1	cop
+the	DT	4	det
+story	NN	1	nsubj
+about	IN	4	nmod
+?	.	1	punct
+"	[]	Who is the story about?	fables-04_Q4	fables-04
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN fox))
+      (VP (VBP do)
+        (PP (TO to)
+          (NP (DT the) (NN soup)))))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+fox	NN	5	nsubj
+do	VBP	0	ROOT
+to	TO	8	case
+the	DT	8	det
+soup	NN	5	nmod
+?	.	5	punct
+"	[]	What did the fox do to the soup?	fables-04_Q5	fables-04
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (DT the) (NN fox))
+      (VP (VB begin)
+        (S
+          (VP (TO to)
+            (VP
+              (VP (VB be)
+                (ADJP (JJ hungry)))
+              (CC and)
+              (VP (VB begin)
+                (S
+                  (VP (TO to)
+                    (VP (VB be)
+                      (ADJP (JJ helpless)))))))))))
+    (. ?)))"	"Why	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+fox	NN	5	nsubj
+begin	VB	0	ROOT
+to	TO	8	mark
+be	VB	8	cop
+hungry	JJ	5	xcomp
+and	CC	5	cc
+begin	VB	5	conj
+to	TO	13	mark
+be	VB	13	cop
+helpless	JJ	10	xcomp
+?	.	5	punct
+"	[]	Why did the fox begin to be hungry and begin to be helpless?	fables-04_Q6	fables-04
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN stork))
+      (VP
+        (ADVP (RB easily))
+        (VBD fitted)
+        (NP (DT the) (JJ long) (NN bill))
+        (PP (IN into))))
+    (. ?)))"	"What	WP	6	dep
+did	VBD	6	aux
+the	DT	4	det
+stork	NN	6	nsubj
+easily	RB	6	advmod
+fitted	VBD	0	ROOT
+the	DT	9	det
+long	JJ	9	amod
+bill	NN	6	dobj
+into	IN	6	nmod
+?	.	6	punct
+"	[]	What did the stork easily fitted the long bill into?	fables-04_Q7	fables-04
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (DT the) (NNP Fox))
+      (VP (VBP sit)
+        (PP (IN by)
+          (ADJP (JJ hungry)
+            (CC and)
+            (JJ helpless)))))
+    (. ?)))"	"Why	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+Fox	NNP	5	nsubj
+sit	VBP	0	ROOT
+by	IN	7	case
+hungry	JJ	5	nmod
+and	CC	7	cc
+helpless	JJ	7	conj
+?	.	5	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Fox', 'characterOffsetBegin': 12, 'characterOffsetEnd': 15, 'ner': 'PERSON'}]"	Why did the Fox sit by hungry and helpless?	fables-04_Q8	fables-04
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP (NN savoury)))
+    (. ?)))"	"What	WP	0	ROOT
+was	VBD	1	cop
+savoury	NN	1	nsubj
+?	.	1	punct
+"	[]	What was savoury?	fables-04_Q9	fables-04
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NNP Farmer))
+        (SBAR
+          (S
+            (VP
+              (ADVP (RB greatly))
+              (VBD annoyed)
+              (PP (IN by)))))))
+    (. ?)))"	"Who	WP	6	dobj
+was	VBD	1	cop
+the	DT	4	det
+Farmer	NNP	6	nsubj
+greatly	RB	6	advmod
+annoyed	VBD	0	ROOT
+by	IN	6	advmod
+?	.	6	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Farmer', 'characterOffsetBegin': 12, 'characterOffsetEnd': 18, 'ner': 'TITLE'}]"	Who was the Farmer greatly annoyed by?	fables-05_Q1	fables-05
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD caught)
+        (NP (DT the) (NN fox))))
+    (. ?)))"	"Who	WP	2	nsubj
+caught	VBD	0	ROOT
+the	DT	4	det
+fox	NN	2	dobj
+?	.	2	punct
+"	[]	Who caught the fox?	fables-05_Q10	fables-05
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD freed)
+        (NP (DT the) (NN fox))))
+    (. ?)))"	"Who	WP	2	nsubj
+freed	VBD	0	ROOT
+the	DT	4	det
+fox	NN	2	dobj
+?	.	2	punct
+"	[]	Who freed the fox?	fables-05_Q11	fables-05
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (DT the) (NN agriculturist))
+      (VP (VB begin)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (ADJP (JJ unlucky)))))))
+    (. ?)))"	"Why	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+agriculturist	NN	5	nsubj
+begin	VB	0	ROOT
+to	TO	8	mark
+be	VB	8	cop
+unlucky	JJ	5	xcomp
+?	.	5	punct
+"	[]	Why did the agriculturist begin to be unlucky?	fables-05_Q12	fables-05
+"(ROOT
+  (X
+    (SBARQ
+      (WHNP (WDT What)
+        (NP (JJ burned)))
+      (ADVP (RB completely)))
+    (. ?)))"	"What	WDT	2	det
+burned	JJ	0	ROOT
+completely	RB	2	advmod
+?	.	2	punct
+"	[]	What burned completely?	fables-05_Q13	fables-05
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (VP (VBG stealing)
+        (NP (DT the) (NN chicken))))
+    (. ?)))"	"Who	WP	3	nsubj
+was	VBD	3	aux
+stealing	VBG	0	ROOT
+the	DT	5	det
+chicken	NN	3	dobj
+?	.	3	punct
+"	[]	Who was stealing the chicken?	fables-05_Q14	fables-05
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN agriculturist))
+      (VP (VB ignite)))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+agriculturist	NN	5	nsubj
+ignite	VB	0	ROOT
+?	.	5	punct
+"	[]	What did the agriculturist ignite?	fables-05_Q15	fables-05
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD did)
+        (NP (DT the) (NN agriculturist) (NN unloosen))))
+    (. ?)))"	"Who	WP	0	ROOT
+did	VBD	1	dep
+the	DT	5	det
+agriculturist	NN	5	compound
+unloosen	NN	2	dobj
+?	.	1	punct
+"	[]	Who did the agriculturist unloosen?	fables-05_Q16	fables-05
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (DT the) (NNP Fox))
+      (VP (VBP make)
+        (ADJP (JJ straight)
+          (PP (IN for)))))
+    (. ?)))"	"Where	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+Fox	NNP	5	nsubj
+make	VBP	0	ROOT
+straight	JJ	5	xcomp
+for	IN	6	nmod
+?	.	5	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'Fox', 'characterOffsetBegin': 14, 'characterOffsetEnd': 17, 'ner': 'PERSON'}]"	Where did the Fox make straight for?	fables-05_Q2	fables-05
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD lost)
+        (NP (PDT all) (PRP$ his) (NN harvest))))
+    (. ?)))"	"Who	WP	2	nsubj
+lost	VBD	0	ROOT
+all	PDT	5	det:predet
+his	PRP$	5	nmod:poss
+harvest	NN	2	dobj
+?	.	2	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'his', 'characterOffsetBegin': 13, 'characterOffsetEnd': 16, 'ner': 'PERSON'}]"	Who lost all his harvest?	fables-05_Q3	fables-05
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD set)
+        (NP (DT a) (NN trap))))
+    (. ?)))"	"Who	WP	2	nsubj
+set	VBD	0	ROOT
+a	DT	4	det
+trap	NN	2	dobj
+?	.	2	punct
+"	[]	Who set a trap?	fables-05_Q4	fables-05
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SINV
+      (VP (VBD did)
+        (NP (DT the) (JJ agriculturist) (NN tie)))
+      (NP (DT some) (NN fiber))
+      (PP (IN onto)))
+    (. ?)))"	"Where	WRB	0	ROOT
+did	VBD	1	root
+the	DT	5	det
+agriculturist	JJ	5	amod
+tie	NN	2	nsubj
+some	DT	7	det
+fiber	NN	5	dep
+onto	IN	7	acl
+?	.	2	punct
+"	[]	Where did the agriculturist tie some fiber onto?	fables-05_Q5	fables-05
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD kindled)
+        (NP (DT the) (NN fiber))))
+    (. ?)))"	"Who	WP	2	nsubj
+kindled	VBD	0	ROOT
+the	DT	4	det
+fiber	NN	2	dobj
+?	.	2	punct
+"	[]	Who kindled the fiber?	fables-05_Q6	fables-05
+"(ROOT
+  (SBARQ
+    (WHNP (WDT What))
+    (SQ
+      (VP
+        (VP (VBD ignited))
+        (CC and)
+        (VP (VBD burned)
+          (ADVP (RB completely)))))
+    (. ?)))"	"What	WDT	2	nsubj
+ignited	VBD	0	ROOT
+and	CC	2	cc
+burned	VBD	2	conj
+completely	RB	2	advmod
+?	.	2	punct
+"	[]	What ignited and burned completely?	fables-05_Q7	fables-05
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD lost)
+        (NP (PRP$ their) (NN crop))))
+    (. ?)))"	"Who	WP	2	nsubj
+lost	VBD	0	ROOT
+their	PRP$	4	nmod:poss
+crop	NN	2	dobj
+?	.	2	punct
+"	[]	Who lost their crop?	fables-05_Q8	fables-05
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN farmer))
+      (VP (VB lose)))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+farmer	NN	5	nsubj
+lose	VB	0	ROOT
+?	.	5	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'farmer', 'characterOffsetBegin': 13, 'characterOffsetEnd': 19, 'ner': 'TITLE'}]"	What did the farmer lose?	fables-05_Q9	fables-05
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (DT the) (NN lion))
+      (VP (VBG sleeping)))
+    (. ?)))"	"Where	WRB	5	advmod
+was	VBD	5	aux
+the	DT	4	det
+lion	NN	5	nsubj
+sleeping	VBG	0	ROOT
+?	.	5	punct
+"	[]	Where was the lion sleeping?	fables-06_Q1	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WDT What))
+    (SQ
+      (VP (VBD woke)
+        (PRT (RP up))
+        (NP (DT the) (NN lion))))
+    (. ?)))"	"What	WDT	2	nsubj
+woke	VBD	0	ROOT
+up	RP	2	compound:prt
+the	DT	5	det
+lion	NN	2	dobj
+?	.	2	punct
+"	[]	What woke up the lion?	fables-06_Q10	fables-06
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (DT the) (NN trapper))
+      (VP (VBD spread)
+        (NP (DT some) (NN net))))
+    (. ?)))"	"Why	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+trapper	NN	5	nsubj
+spread	VBD	0	ROOT
+some	DT	7	det
+net	NN	5	dobj
+?	.	5	punct
+"	[]	Why did the trapper spread some net?	fables-06_Q11	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD entreated)
+        (NP (DT the) (NN lion))))
+    (. ?)))"	"Who	WP	2	nsubj
+entreated	VBD	0	ROOT
+the	DT	4	det
+lion	NN	2	dobj
+?	.	2	punct
+"	[]	Who entreated the lion?	fables-06_Q12	fables-06
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (DT the) (NN mouse))
+      (VP (VB run)))
+    (. ?)))"	"Where	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+mouse	NN	5	nsubj
+run	VB	0	ROOT
+?	.	5	punct
+"	[]	Where did the mouse run?	fables-06_Q13	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN mouse))
+      (VP (VB recognise)))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+mouse	NN	5	nsubj
+recognise	VB	0	ROOT
+?	.	5	punct
+"	[]	What did the mouse recognise?	fables-06_Q14	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD were)
+      (NP
+        (NP (DT the) (NNS ropes))
+        (SBAR
+          (S
+            (VP (VBD gnawed)
+              (PP (IN with)))))))
+    (. ?)))"	"What	WP	5	dobj
+were	VBD	1	cop
+the	DT	4	det
+ropes	NNS	5	nsubj
+gnawed	VBD	0	ROOT
+with	IN	5	nmod
+?	.	5	punct
+"	[]	What were the ropes gnawed with?	fables-06_Q15	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD expressed)
+        (NP (NN mirth))))
+    (. ?)))"	"Who	WP	2	nsubj
+expressed	VBD	0	ROOT
+mirth	NN	2	dobj
+?	.	2	punct
+"	[]	Who expressed mirth?	fables-06_Q16	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD gnawed)
+        (NP (DT the) (NN bungee))))
+    (. ?)))"	"Who	WP	2	nsubj
+gnawed	VBD	0	ROOT
+the	DT	4	det
+bungee	NN	2	dobj
+?	.	2	punct
+"	[]	Who gnawed the bungee?	fables-06_Q17	fables-06
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD was)
+      (NP (DT the) (NN mouse))
+      (VP (VBN terrified)))
+    (. ?)))"	"Why	WRB	5	advmod
+was	VBD	5	auxpass
+the	DT	4	det
+mouse	NN	5	nsubjpass
+terrified	VBN	0	ROOT
+?	.	5	punct
+"	[]	Why was the mouse terrified?	fables-06_Q18	fables-06
+"(ROOT
+  (FRAG
+    (WHNP (WP Who))
+    (ADVP (JJ entangled))
+    (PP
+      (NP (PRP himself))
+      (PP (IN in)
+        (NP (DT the) (NN meshing))))
+    (. ?)))"	"Who	WP	2	nsubj
+entangled	JJ	0	ROOT
+himself	PRP	2	dobj
+in	IN	6	case
+the	DT	6	det
+meshing	NN	2	nmod
+?	.	2	punct
+"	[]	Who entangled himself in the meshing?	fables-06_Q19	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP (VBN terrified)))
+    (. ?)))"	"Who	WP	3	nsubjpass
+is	VBZ	3	auxpass
+terrified	VBN	0	ROOT
+?	.	3	punct
+"	[]	Who is terrified?	fables-06_Q2	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD did)
+        (NP (DT the) (NN hunter) (NN spread))))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+hunter	NN	5	nsubj
+spread	NN	0	ROOT
+?	.	5	punct
+"	"[{'docTokenBegin': 3, 'docTokenEnd': 4, 'tokenBegin': 3, 'tokenEnd': 4, 'text': 'hunter', 'characterOffsetBegin': 13, 'characterOffsetEnd': 19, 'ner': 'TITLE'}]"	What did the hunter spread?	fables-06_Q20	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WDT What))
+    (SQ
+      (VP (VBD seized)
+        (NP (DT the) (NN mouse))))
+    (. ?)))"	"What	WDT	2	nsubj
+seized	VBD	0	ROOT
+the	DT	4	det
+mouse	NN	2	dobj
+?	.	2	punct
+"	[]	What seized the mouse?	fables-06_Q21	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NNP Lion))
+      (VP (VB seize)
+        (NP (DT the) (NN mouse))
+        (PP (IN with))))
+    (. ?)))"	"What	WP	5	dep
+did	VBD	5	aux
+the	DT	4	det
+Lion	NNP	5	nsubj
+seize	VB	0	ROOT
+the	DT	7	det
+mouse	NN	5	dobj
+with	IN	5	nmod
+?	.	5	punct
+"	[]	What did the Lion seize the mouse with?	fables-06_Q22	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP it))
+      (VP (VBD set)
+        (S
+          (VP (TO to)
+            (VP (VB work)
+              (S
+                (VP (TO to)
+                  (VP (VB gnaw)))))))))
+    (. ?)))"	"What	WP	4	dep
+did	VBD	4	aux
+it	PRP	4	nsubj
+set	VBD	0	ROOT
+to	TO	6	mark
+work	VB	4	xcomp
+to	TO	8	mark
+gnaw	VB	6	xcomp
+?	.	4	punct
+"	[]	What did it set to work to gnaw?	fables-06_Q23	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (PRP it))
+      (VP (VB gnaw)
+        (NP (DT the) (NNS ropes))
+        (PP (IN with))))
+    (. ?)))"	"What	WP	4	dep
+did	VBD	4	aux
+it	PRP	4	nsubj
+gnaw	VB	0	ROOT
+the	DT	6	det
+ropes	NNS	4	dobj
+with	IN	4	nmod
+?	.	4	punct
+"	[]	What did it gnaw the ropes with?	fables-06_Q24	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (MD would)
+        (VP (VB reward)
+          (NP (NN kindness)))))
+    (. ?)))"	"Who	WP	3	nsubj
+would	MD	3	aux
+reward	VB	0	ROOT
+kindness	NN	3	dobj
+?	.	3	punct
+"	[]	Who would reward kindness?	fables-06_Q25	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN mouse))
+      (VP (VB know)))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+mouse	NN	5	nsubj
+know	VB	0	ROOT
+?	.	5	punct
+"	[]	What did the mouse know?	fables-06_Q26	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN lion))
+      (VP (VB take)
+        (PP (IN with)
+          (NP (PRP$ its) (NN paw)))))
+    (. ?)))"	"What	WP	5	dobj
+did	VBD	5	aux
+the	DT	4	det
+lion	NN	5	nsubj
+take	VB	0	ROOT
+with	IN	8	case
+its	PRP$	8	nmod:poss
+paw	NN	5	nmod
+?	.	5	punct
+"	[]	What did the lion take with its paw?	fables-06_Q27	fables-06
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ
+      (VP (VBD did)
+        (NP (DT the) (NN lion) (NN wake))
+        (ADVP (RB up))))
+    (. ?)))"	"Why	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+lion	NN	5	nsubj
+wake	NN	0	ROOT
+up	RB	5	compound:prt
+?	.	5	punct
+"	[]	Why did the lion wake up?	fables-06_Q28	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WDT What))
+    (SQ
+      (VP (VBD amused)
+        (NP (DT the) (NNP Lion))
+        (ADVP (RB so) (RB much))))
+    (. ?)))"	"What	WDT	2	nsubj
+amused	VBD	0	ROOT
+the	DT	4	det
+Lion	NNP	2	dobj
+so	RB	6	advmod
+much	RB	2	advmod
+?	.	2	punct
+"	[]	What amused the Lion so much?	fables-06_Q3	fables-06
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (DT the) (NNP Lion))
+      (VP (VB get)
+        (ADJP (JJ entangled)
+          (PP (IN in)
+            (NP (CD one))))
+        (NP-TMP (NN day))))
+    (. ?)))"	"Where	WRB	5	advmod
+did	VBD	5	aux
+the	DT	4	det
+Lion	NNP	5	nsubj
+get	VB	0	ROOT
+entangled	JJ	5	xcomp
+in	IN	9	case
+one	CD	9	nummod
+day	NN	5	nmod
+?	.	5	punct
+"	"[{'docTokenBegin': 7, 'docTokenEnd': 9, 'tokenBegin': 7, 'tokenEnd': 9, 'text': 'one day', 'characterOffsetBegin': 36, 'characterOffsetEnd': 43, 'ner': 'DURATION', 'normalizedNER': 'P1D', 'timex': {'tid': 't1', 'type': 'DURATION', 'value': 'P1D'}}]"	Where did the Lion get entangled in one day?	fables-06_Q4	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP
+        (VP (VBD heard))
+        (CC and)
+        (VP (VBD recognised)
+          (SBAR
+            (S
+              (NP (PRP$ his))
+              (VP
+                (VP (VBZ roars)
+                  (PP (IN of)
+                    (NP (NN anger))))
+                (CC and)
+                (VP (VBD ran)
+                  (PP (TO to)
+                    (NP (DT the) (NN spot))))))))))
+    (. ?)))"	"Who	WP	2	nsubj
+heard	VBD	0	ROOT
+and	CC	2	cc
+recognised	VBD	2	conj
+his	PRP$	6	nmod:poss
+roars	VBZ	2	dobj
+of	IN	8	case
+anger	NN	6	nmod
+and	CC	2	cc
+ran	VBD	2	conj
+to	TO	13	case
+the	DT	13	det
+spot	NN	10	nmod
+?	.	2	punct
+"	"[{'docTokenBegin': 4, 'docTokenEnd': 5, 'tokenBegin': 4, 'tokenEnd': 5, 'text': 'his', 'characterOffsetBegin': 25, 'characterOffsetEnd': 28, 'ner': 'PERSON'}]"	Who heard and recognised his roars of anger and ran to the spot?	fables-06_Q5	fables-06
+"(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD was)
+      (NP (DT the) (NN lion))
+      (VP (VBN awaked)))
+    (. ?)))"	"Why	WRB	5	advmod
+was	VBD	5	auxpass
+the	DT	4	det
+lion	NN	5	nsubjpass
+awaked	VBN	0	ROOT
+?	.	5	punct
+"	[]	Why was the lion awaked?	fables-06_Q6	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD spread)
+        (NP (DT some) (NN net))
+        (SBAR (IN in) (NN order)
+          (S
+            (VP (TO to)
+              (VP (VB catch)
+                (NP (DT a) (JJ big) (NN game))))))))
+    (. ?)))"	"Who	WP	2	nsubj
+spread	VBD	0	ROOT
+some	DT	4	det
+net	NN	2	dobj
+in	IN	8	mark
+order	NN	5	mwe
+to	TO	8	mark
+catch	VB	2	advcl
+a	DT	11	det
+big	JJ	11	amod
+game	NN	8	dobj
+?	.	2	punct
+"	[]	Who spread some net in order to catch a big game?	fables-06_Q7	fables-06
+"(ROOT
+  (FRAG
+    (WHNP (WP Who))
+    (ADVP (JJ entangled))
+    (PP
+      (NP (PRP himself))
+      (PP (IN in)
+        (NP (DT the) (NN net))))
+    (. ?)))"	"Who	WP	2	nsubj
+entangled	JJ	0	ROOT
+himself	PRP	2	dobj
+in	IN	6	case
+the	DT	6	det
+net	NN	2	nmod
+?	.	2	punct
+"	[]	Who entangled himself in the net?	fables-06_Q8	fables-06
+"(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (DT the) (NN mouse))
+      (VP
+        (ADVP (RB immediately))
+        (VB begin)
+        (NP (NN gnawing))))
+    (. ?)))"	"What	WP	6	dep
+did	VBD	6	aux
+the	DT	4	det
+mouse	NN	6	nsubj
+immediately	RB	6	advmod
+begin	VB	0	ROOT
+gnawing	NN	6	dobj
+?	.	6	punct
+"	[]	What did the mouse immediately begin gnawing?	fables-06_Q9	fables-06

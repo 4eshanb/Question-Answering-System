@@ -208,7 +208,8 @@ Method 2 -
     text fields of each coreference in the story to the sentence in terms of overlap.
 
 ### Who Questions
-Method 1 (constituency parsing utilized) - 
+Method 1 (constituency parsing utilized) -  
+   
     For the who questions, we use constituency parsing to find the first noun phrase in the sentence.
     This is a simplistic approach, but it yielded a higher f-measure than the who question approach
     we implemented in the prior assignment. 
@@ -229,7 +230,7 @@ Method 2 -
     If this method does not work, we try and find the same name entities mentioned above in the 
     coreferences and return the most likely one.
 
-# Why Questions
+### Why Questions
 Method 1 - 
     To implement the why questions we tokenized the question to find the last word of it and
     tokenized the sentence to compare the last question word to the sentence tokens. If the 

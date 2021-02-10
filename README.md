@@ -186,11 +186,11 @@ Examples of regex tag patterns:
 The QA system uses chunking with regexes in nltk.
 > import nltk  
   sentence = [("the", "DT"), ("little", "JJ"), ("blue", "JJ"), ("fish","NN"), ("swam", "VBD"), ("to","TO"), ("the", "DT"), ("food", "NN")]  
-  grammar = "NP: {<DT>?<JJ>*<NN>}"  
+  grammar = "NP: {<DT>?<JJ>*<NN>}"   
   cp = nltk.RegexpParser(grammar)  
   result = cp.parse(sentence)  
   print(result)  
-  > (S  
+  >> (S  
       (NP the/DT little/JJ blue/JJ fish/NN)  
       swam/VBD  
       to/TO  

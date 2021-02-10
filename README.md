@@ -179,9 +179,9 @@ The chunk parser begins with a structure, in which no tokens are chunked. Each r
 chunk structure. Once all the rules have been applied the resulting chunk structure is returned.
 
 Examples of regex tag patterns:
-> <NN>+ matches one or more repetitions of the tag string <NN>.
-  <NN.*> matches any single tag starting with NN.
-  <DT>?<JJ.*><NN.*> matches an optional determiner(DT), followed by 0 or more instances of adjectives<JJ.*>, ending with any type of noun phrase (NN).
+> \<NN\>+ matches one or more repetitions of the tag string \<NN\>.
+  \<NN.*\> matches any single tag starting with NN.
+  \<DT\>?\<JJ.*\>\<NN.*\> matches an optional determiner(DT), followed by 0 or more instances of adjectives\<JJ.*\>, ending with any type of noun phrase (NN).
 
 The QA system uses chunking with regexes in nltk.
 > import nltk  

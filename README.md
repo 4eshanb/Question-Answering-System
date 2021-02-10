@@ -166,11 +166,11 @@ otherwise, chunks and labels. It is an efficient and robust approach to parsing 
 Chunks are defined as non-overlapping regions of text, which contains a head word (ex: noun, verb) and adjacent modifiers and function words.
 
 This is an example of chunk structure:
-> (S: (NP: 'I')
-    'saw'
-    (NP:'the' 'big' 'dog')
-    'on'
-    (NP:'the' 'hill'))
+> (S: (NP: 'I')  
+    &emsp; 'saw'  
+    &emsp; (NP:'the' 'big' 'dog')
+    &emsp;'on'  
+     &emsp; (NP:'the' 'hill'))  
 
 In the QA system, regex tag patterns are used to extract chunks. NLTK provides a regular expression chunk parser that allows one to define 
 the kinds of chunks that you are interested in, and then chunk the tagged text.
@@ -179,9 +179,9 @@ The chunk parser begins with a structure, in which no tokens are chunked. Each r
 chunk structure. Once all the rules have been applied the resulting chunk structure is returned.
 
 Examples of regex tag patterns:
-> \<NN\>+ matches one or more repetitions of the tag string \<NN\>.
-  \<NN.\*\> matches any single tag starting with NN.
-  \<DT\>?\<JJ.\*\>\<NN.\*\> matches an optional determiner(DT), followed by 0 or more instances of adjectives\<JJ.*\>, ending with any type of noun phrase (NN).
+> \<NN\>+ matches one or more repetitions of the tag string \<NN\>.  
+  \<NN.\*\> matches any single tag starting with NN.  
+  \<DT\>?\<JJ.\*\>\<NN.\*\> matches an optional determiner(DT), followed by 0 or more instances of adjectives\<JJ.*\>, ending with any type of noun phrase (NN).  
 
 The QA system uses chunking with regexes in nltk.
 > import nltk  
@@ -191,10 +191,10 @@ The QA system uses chunking with regexes in nltk.
   result = cp.parse(sentence)  
   print(result)  
   >> (S  
-      (NP the/DT little/JJ blue/JJ fish/NN)  
-      swam/VBD  
-      to/TO  
-      (NP the/DT food/NN))  
+       &emsp;(NP the/DT little/JJ blue/JJ fish/NN)  
+       &emsp;swam/VBD  
+       &emsp;to/TO  
+       &emsp;(NP the/DT food/NN))  
 
   
 <img src="Diagrams/Chunk-Tree.png">

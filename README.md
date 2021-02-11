@@ -205,6 +205,8 @@ For the QA system, Chunking is used for what, where, and why questions.
 Dependency and Constituency parsing are very complicated. They are essentially ways to parse consistuency and dependency structures. These 
 structures are different ways to store a sentence's language parts in tree form. The structures are obtained by converting the output of "Stanford Parser Dependencies"
 to "universal dependencies".
+  
+https://nlp.stanford.edu/software/lex-parser.shtml
 
 More information about parsing can be found in the Demos folder.
 

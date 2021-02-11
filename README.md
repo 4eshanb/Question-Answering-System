@@ -203,7 +203,16 @@ For the QA system, Chunking is used for what, where, and why questions.
 ### Dependency Parsing and Constituency Parsing
 Dependency and Constituency parsing are very complicated. They are essentially ways to parse consistuency and dependency structures. These 
 structures are different ways to store a sentence's language parts in tree form. The structures are obtained by converting the output of "Stanford Parser Dependencies"
-to "universal dependencies"
+to "universal dependencies".
+
+More information about parsing can be found in the Demos folder.
+
+This is an example of a constituency tree
+<img src="Diagrams/Const-Parse.png">
+
+This is an example of a dependency tree
+<img src="Diagrams/Dependency-Tree.png">
+
 
 ## Answer Retrieval
 
@@ -228,7 +237,7 @@ Method 2 -
   
     If the above method does not work, we use chunking with a grammar of 
     "INNP: {<TO|IN><PRP.+|DT>?<JJ>*<NN.*>+<POS>?<NN.*>*}".If there was only one tree found in the sentence given 
-    this grammar, we return the INNP answer phrase in that tree without the pos tags.   
+    this grammar, the INNP answer phrase in that tree without the pos tags is returned.   
     If there is more than one tree found in the sentence, we compare the last question word after
     tokenizing the question to see if that question word was in the sentnce. We find this word in
     the sentence and slice the sentence from this question word to the end of the sentence and return.
@@ -237,14 +246,25 @@ Method 2 -
     text fields of each coreference in the story to the sentence in terms of overlap.
 
 ### Who Questions
-Method 1 (constituency parsing utilized) -  
+Method 1 -  
    
-    For the who questions, we use constituency parsing to find the first noun phrase in the sentence.
-    This is a simplistic approach, but it yielded a higher f-measure than the who question approach
-    we implemented in the prior assignment. 
+    For the who questions, constituency parsing is utilized to find the first noun phrase in the sentence.
+    This is a simplistic approach, but it yielded a higher f-measure than the prior approach. 
+
+Prior Approach - 
+    The prior approach was to firstly use
+    chunking with a grammar of "NPVBD: {<PRP.+|DT>?<JJ>*<NN.*>+<VBD>}". We search 
+    through this tree to find the Noun phrase with the verb and return the answer phrase
+    without pos tags with the verb removed.
+
+    If there is no NPVBD found, we use name entities to find phrases in the sentence that 
+    have a name entity of 'PERSON' or 'ORG'.
+
+    If there are no name entities found, we find the noun phrases in the sentence with the 
+    spacy.
 
 ### When Questions
-Method 1 (constituency parsing utilized) -  
+Method 1 -  
   
     For when questions, first WHADPV phrases are checked in the constiuency parse tree. If one exists, the correct subtree is determined.
 

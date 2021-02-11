@@ -195,7 +195,8 @@ The QA system uses chunking with regexes in nltk.
        &emsp;swam/VBD  
        &emsp;to/TO  
        &emsp;(NP the/DT food/NN))  
-  
+
+
 <img src="Diagrams/Chunk-Tree.png">
   
 For the QA system, Chunking is used for what, where, and why questions.
@@ -207,10 +208,10 @@ to "universal dependencies".
 
 More information about parsing can be found in the Demos folder.
 
-This is an example of a constituency tree
+This is an example of a constituency tree. 
 <img src="Diagrams/Const-Parse.png">
 
-This is an example of a dependency tree
+This is an example of a dependency tree. 
 <img src="Diagrams/Dependency-Tree.png">
 
 

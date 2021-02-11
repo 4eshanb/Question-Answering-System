@@ -338,13 +338,13 @@ Method 1 (constituency parsing utilized) -
 ### What Questions
 Method 1 (dependency parsing, hypernym, hyponym utilized) -  
   
-    Improved previous system by using dependency graph to find headwords, then returning dependents of the selected headwords
+    Improved previous system by using dependency graph to find headwords, then returning dependents of the selected headwords.
 
     If the headword found id determined to not be ideal (by being a stop word, for example), then the old system for is used.
-    The old system is improved however through the use of hyper/hyponyms
+    The old system is improved however through the use of hyper/hyponyms.
 
     When trying to find the headword in the selected sentence that best matches the headword in the question, the similarity of
-    hyper and hyponyms of both each word is taken into account
+    hyper and hyponyms of both each word is taken into account.
 
 Method 2 -  
   
@@ -364,11 +364,7 @@ Method 2 -
 Method 1 (constituency parse utilized) -  
   
     Improved how questions by filtering out when type questions, like questions that start with how long old, and number type questions.
-    These questions are filtered to when, which can better handle these types of questions
-
-
-Methods used: constituency parsing, dependency parsing, synonyms (synsets, path similarirty),
-                                    hypernyms, hyponyms.
+    These questions are filtered to when, which can better handle these types of questions.
 
 This assignment was done in CSE 143 at UCSC with Professor Dilek Hakkani Tür.
 

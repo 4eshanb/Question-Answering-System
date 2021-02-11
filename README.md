@@ -200,9 +200,10 @@ The QA system uses chunking with regexes in nltk.
   
 For the QA system, Chunking is used for what, where, and why questions.
 
-### Dependency Parsing
-
-### Constituency Parsing
+### Dependency Parsing and Constituency Parsing
+Dependency and Constituency parsing are very complicated. They are essentially ways to parse consistuency and dependency structures. These 
+structures are different ways to store a sentence's language parts in tree form. The structures are obtained by converting the output of "Stanford Parser Dependencies"
+to "universal dependencies"
 
 ## Answer Retrieval
 

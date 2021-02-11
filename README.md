@@ -208,10 +208,10 @@ to "universal dependencies".
 
 More information about parsing can be found in the Demos folder.
 
-This is an example of a constituency tree.   
+This is an example of a constituency tree.     
 <img src="Diagrams/Const-Parse.png">
 
-This is an example of a dependency tree.   
+This is an example of a dependency tree.     
 <img src="Diagrams/Dependency-Tree.png">
 
 

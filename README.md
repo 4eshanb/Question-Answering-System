@@ -275,7 +275,7 @@ Method 1 -
     For when questions, first WHADPV phrases are checked in the constiuency parse tree. If one exists, the correct subtree is determined.
 
     If not, then check NER for time, data, cardinal, etc. Find NER word if it exists, then find corresponding noun phrases
-    in const tree
+    in constituency tree.
 
 
 Method 2 -   
@@ -290,13 +290,13 @@ Method 2 -
 ### Why Questions
 Method 1 -  
   
-    To implement the why questions we tokenized the question to find the last word of it and
-    tokenized the sentence to compare the last question word to the sentence tokens. If the 
+    To implement the why questions, the questions are tokenized to find the last word of it. Then
+    the sentence is tokenized to compare the last question word to the sentence tokens. If the 
     last question word was present in the sentence tokens we slice the sentence from that word
-    in the sentence to the end of the sentence. Then we remove punctutaion in the sentence and 
-    return it.
+    in the sentence to the end of the sentence. Then punctutaion is removed in the sentence and the sentence is 
+    returned.
 
-    If this method does not work, we use chunking with a grammar of 
+    If this method does not work, chunking is used with a grammar of 
     "INNP: {<PRP.*><VBD><PRP.*|JJ|DT|RB|MD|CD|IN|VB.*|TO>*<NN.*|RB>+<POS>?<NN.*>*}". We find
     the tree that contains the INNP and return the answer phrase of it without the pos tags 
     attached. 
@@ -306,7 +306,7 @@ Method 2 (synonyms, path similarity utilized) -
     After finding the root word in the question, we use path similarity between that lemmatized word 
     and each lemmatized word in the sentence. The word that returns that highest path similarity
     with the root question word is used as the index in the sentence that we will slice the 
-    sentence from and return.
+    sentence from and return. (Refer to Language Models Repository to learn more about path similarity)
 
 Method 3 (dependency parsing utilized) -  
   
@@ -363,7 +363,7 @@ Method 2 -
 ### How Questions
 Method 1 (constituency parse utilized) -  
   
-    Improved how by filtering out when type questions, like questions that start with how long old, and number type questions.
+    Improved how questions by filtering out when type questions, like questions that start with how long old, and number type questions.
     These questions are filtered to when, which can better handle these types of questions
 
 

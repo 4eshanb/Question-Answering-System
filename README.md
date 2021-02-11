@@ -256,7 +256,8 @@ Method 1 -
     For the who questions, constituency parsing is utilized to find the first noun phrase in the sentence.
     This is a simplistic approach, but it yielded a higher f-measure than the prior approach. 
 
-Prior Approach - 
+Prior Approach -  
+  
     The prior approach was to firstly use
     chunking with a grammar of "NPVBD: {<PRP.+|DT>?<JJ>*<NN.*>+<VBD>}". We search 
     through this tree to find the Noun phrase with the verb and return the answer phrase

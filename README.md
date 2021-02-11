@@ -195,16 +195,15 @@ The QA system uses chunking with regexes in nltk.
        &emsp;swam/VBD  
        &emsp;to/TO  
        &emsp;(NP the/DT food/NN))  
+  
+<img src="Diagrams/Chunk-Tree.png">
+  
+For the QA system, Chunking is used for what, where, and why questions.
 
 ### Dependency Parsing
 
 ### Constituency Parsing
-  
-<img src="Diagrams/Chunk-Tree.png">
 
-
-  
-For the QA system, Chunking is used for what, where, and why questions.
 ## Answer Retrieval
 
 Answer retrieval was split up into the different types of questions supplied
